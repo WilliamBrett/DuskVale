@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
 
     public bool DJReady;
     private bool onGround;
+    private bool jumping;
     
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,13 @@ public class PlayerController : MonoBehaviour
                 DJReady = false;
             }
         }
+        else if (Input.GetButtonUp("Jump"))
+        {
+            if (thisRB2D.velocity.y > 0)
+            {
+                thisRB2D.velocity = new Vector2(thisRB2D.velocity.y, (thisRB2D.velocity.y/ 2));
+            }
+        }
 
         if (thisRB2D.velocity.x > 0)
         {
@@ -54,8 +62,9 @@ public class PlayerController : MonoBehaviour
             thisSR.flipX = true;
         }
 
+        thisAnim.SetFloat("moveSpeedY", thisRB2D.velocity.y);
         thisAnim.SetBool("onGround", onGround);
-        thisAnim.SetFloat("moveSpeed", Math.Abs(thisRB2D.velocity.x));
+        thisAnim.SetFloat("moveSpeedX", Math.Abs(thisRB2D.velocity.x));
 
     }
 }
