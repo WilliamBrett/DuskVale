@@ -1,558 +1,392 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1662858674375020, "dur": 2198874, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1662858674376273, "dur": 30247, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1662858674406527, "dur": 191801, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1662858674598335, "dur": 1107651, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1662858675705991, "dur": 865210, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1662858676571208, "dur": 2682, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1662858676576136, "dur": 131, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
-{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1662858675250466, "dur": 413962, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1662858675252717, "dur": 115194, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1662858675581381, "dur": 26888, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1662858675608288, "dur": 56105, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1662858675611270, "dur": 31802, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1662858675676373, "dur": 3818, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1662858675674518, "dur": 5735, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1662858676576607, "dur": 4042, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1663035602323239, "dur": 315831, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1663035602324220, "dur": 12786, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1663035602337011, "dur": 294535, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1663035602631551, "dur": 7515, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1663035602640703, "dur": 47, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1662858675866315, "dur":8825, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858675875157, "dur":265, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1662858675875461, "dur":92, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1662858675875559, "dur":979, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1662858675876618, "dur":2123, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858675878741, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676375938, "dur":521, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376459, "dur":104, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376563, "dur":32, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376595, "dur":71, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376667, "dur":23, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376690, "dur":32, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376722, "dur":13, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376735, "dur":45, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376780, "dur":12, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376792, "dur":23, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376815, "dur":10, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376825, "dur":28, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376853, "dur":10, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376863, "dur":20, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376883, "dur":10, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376893, "dur":26, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376919, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376948, "dur":6, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676376984, "dur":23709, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1662858675878293, "dur":475, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858675878769, "dur":18440, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858675897211, "dur":10694, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":1, "ts":1662858675907913, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858675908739, "dur":14851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":1, "ts":1662858675923827, "dur":354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1662858675924189, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858675924375, "dur":61202, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1662858675985760, "dur":911, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858675986681, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858675987732, "dur":4298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858675992192, "dur":631, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858675992831, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858675992968, "dur":4246, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858675997425, "dur":864, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858675998299, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858675998317, "dur":4562, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676003059, "dur":797, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676003864, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676003880, "dur":4243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676008292, "dur":691, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676008992, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676009013, "dur":4702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676013878, "dur":777, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676014665, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676014681, "dur":5682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676020559, "dur":727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676021296, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676021314, "dur":4991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676026604, "dur":689, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676027303, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676027320, "dur":5624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676033121, "dur":792, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676033920, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676033937, "dur":13254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676047362, "dur":1460, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676048835, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676048852, "dur":9030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676058084, "dur":791, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676058884, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676058901, "dur":9049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676068122, "dur":651, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676068788, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676068810, "dur":7535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676076485, "dur":610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676077103, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676077125, "dur":28027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676105361, "dur":649, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676106023, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676106045, "dur":7967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676114168, "dur":704, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676114881, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676114920, "dur":9182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676124278, "dur":6691, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676130985, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676131009, "dur":8666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676139846, "dur":709, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676140563, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676140580, "dur":12861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676153639, "dur":698, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676154346, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676154363, "dur":10795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676165321, "dur":2427, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676167761, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676167871, "dur":13157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676181238, "dur":651, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676181903, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676181924, "dur":7230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676189329, "dur":642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676189980, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676190001, "dur":4969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676195132, "dur":2082, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676197238, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676197255, "dur":20032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676217471, "dur":763, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676218247, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676218272, "dur":6101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676224545, "dur":647, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.IK.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676225202, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676225223, "dur":25484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.IK.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676250914, "dur":2845, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676253773, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676253796, "dur":53754, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":1, "ts":1662858676307734, "dur":1082, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":1, "ts":1662858676308825, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676312021, "dur":28492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":1, "ts":1662858676340671, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":1, "ts":1662858676340866, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676340881, "dur":8081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":1, "ts":1662858676349110, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/level0" }}
-,{ "pid":12345, "tid":1, "ts":1662858676349283, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676349295, "dur":5529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/level0" }}
-,{ "pid":12345, "tid":1, "ts":1662858676355065, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":1, "ts":1662858676355257, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1662858676355278, "dur":5052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":1, "ts":1662858676360487, "dur":15421, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858675878433, "dur":383, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858675878816, "dur":18410, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858675897239, "dur":475, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1662858675897722, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858675907905, "dur":28508, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1662858675936600, "dur":946, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1662858675937557, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858675937616, "dur":83996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1662858676021949, "dur":682, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676022639, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676022652, "dur":5427, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676028232, "dur":780, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676029019, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676029034, "dur":12941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676042151, "dur":803, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676042969, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676042989, "dur":11945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676055128, "dur":759, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676055895, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676055994, "dur":11340, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676067512, "dur":678, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676068203, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676068224, "dur":8031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676076423, "dur":1147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676077667, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676077689, "dur":12638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676090532, "dur":688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676091234, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676091251, "dur":57210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676148648, "dur":971, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676149633, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676149655, "dur":7328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676157186, "dur":3339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676160534, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676160553, "dur":15490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676176504, "dur":702, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676177224, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676177245, "dur":29548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676206979, "dur":990, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676207982, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676208008, "dur":22256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676230487, "dur":782, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676231277, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676231297, "dur":20034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676251507, "dur":1000, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676252521, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676252540, "dur":13708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676266397, "dur":961, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676267365, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676267378, "dur":7274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676274962, "dur":2970, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676277942, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676277961, "dur":7409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676285542, "dur":716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676286273, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676286298, "dur":10831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676297345, "dur":3919, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676301279, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676301303, "dur":12984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":2, "ts":1662858676314466, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1662858676314795, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676314953, "dur":25611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1662858676340731, "dur":6518, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1662858676347264, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1662858676347286, "dur":27063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1662858676374547, "dur":1371, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858675878404, "dur":385, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858675878790, "dur":18556, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858675897347, "dur":1275, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1662858675898631, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858675910890, "dur":12672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1662858675923730, "dur":404, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1662858675924146, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858675924347, "dur":6434, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1662858675930934, "dur":363, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1662858675931309, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858675933510, "dur":14478, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1662858675948160, "dur":74135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676022310, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676023351, "dur":5004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676028500, "dur":727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676029233, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676029381, "dur":8638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676038171, "dur":1644, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676039823, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676039843, "dur":12050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676052077, "dur":666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676052751, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676052765, "dur":14488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676067437, "dur":830, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676068276, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676068291, "dur":17904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676086383, "dur":1135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676087529, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676087546, "dur":8983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676096670, "dur":645, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676097323, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676097339, "dur":8201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676105734, "dur":1586, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676107335, "dur":23, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676107480, "dur":6635, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676114277, "dur":687, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676114971, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676114991, "dur":9456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676124627, "dur":687, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676125322, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676125338, "dur":6069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676131614, "dur":1013, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676132634, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676132650, "dur":15245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676148063, "dur":1434, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676149507, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676149525, "dur":16121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676165875, "dur":627, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676166511, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676166529, "dur":13628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676180344, "dur":619, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676180971, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676180992, "dur":39022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676220262, "dur":1042, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676221314, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676221333, "dur":29251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676251065, "dur":2120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676253194, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676253209, "dur":12689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676266087, "dur":1253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676267352, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676267375, "dur":22538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676290190, "dur":1739, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676291945, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676291969, "dur":12649, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676304821, "dur":42954, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676347784, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1662858676347801, "dur":12299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":3, "ts":1662858676360321, "dur":15593, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858675878545, "dur":290, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858675878836, "dur":18436, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858675897274, "dur":4171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1662858675901461, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858675905984, "dur":86060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1662858675992233, "dur":680, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858675992920, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858675993071, "dur":6552, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676000267, "dur":1128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676001405, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676001423, "dur":4122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676005708, "dur":613, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676006329, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676006346, "dur":4064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676010624, "dur":724, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676011358, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676011375, "dur":4026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676015606, "dur":652, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676016267, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676016283, "dur":6574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676022999, "dur":605, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676023612, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676023626, "dur":5135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676028894, "dur":673, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676029575, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676029590, "dur":7960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676037714, "dur":6815, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676044541, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676044559, "dur":7599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676052443, "dur":1076, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676053527, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676053542, "dur":13776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676068453, "dur":1105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676069565, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676069579, "dur":11629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676081390, "dur":741, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676082144, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676082168, "dur":31938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676120328, "dur":1182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676121521, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676121541, "dur":34910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676156654, "dur":2328, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676158997, "dur":13, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676159032, "dur":7489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676166712, "dur":569, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676167314, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676167353, "dur":14218, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676181745, "dur":628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676182381, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676182397, "dur":8280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676190835, "dur":4395, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676195244, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676195264, "dur":12361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676207816, "dur":2342, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676210168, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676210185, "dur":20370, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676230734, "dur":1221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676232056, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676232079, "dur":34113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676266381, "dur":662, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676267052, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676267073, "dur":7689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676274976, "dur":14549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676289541, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676289564, "dur":70513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":4, "ts":1662858676360273, "dur":602, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1662858676360883, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1662858676360898, "dur":4536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1662858676365611, "dur":10294, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858675878638, "dur":223, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858675878862, "dur":18396, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858675897260, "dur":14416, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1662858675911683, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858675911717, "dur":27125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1662858675939019, "dur":373, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":5, "ts":1662858675939400, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858675939417, "dur":13928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":5, "ts":1662858675953628, "dur":68970, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":5, "ts":1662858676022609, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676022626, "dur":6116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":5, "ts":1662858676028888, "dur":689, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676029585, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676029602, "dur":8577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676038376, "dur":746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676039129, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676039146, "dur":8734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676048040, "dur":769, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676048818, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676048834, "dur":8340, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676057352, "dur":2050, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676059410, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676059424, "dur":8179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676067772, "dur":713, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676068498, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676068517, "dur":17077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676085795, "dur":689, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676086498, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676086534, "dur":7665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676094351, "dur":1406, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676095769, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676095786, "dur":9379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676105383, "dur":701, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676106092, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676106106, "dur":7928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676114178, "dur":1082, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676115272, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676115293, "dur":8843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676124327, "dur":671, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676125012, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676125125, "dur":6242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676131542, "dur":716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676132272, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676132294, "dur":7207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676139683, "dur":872, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676140562, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676140580, "dur":15499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676156282, "dur":775, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676157071, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676157090, "dur":9069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676166376, "dur":717, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676167106, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676167128, "dur":9961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676177279, "dur":823, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676178109, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676178125, "dur":29238, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676207538, "dur":765, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676208316, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676208337, "dur":21865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676230390, "dur":648, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676231044, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676231059, "dur":20207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676251461, "dur":5235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676256707, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676256725, "dur":9956, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676266877, "dur":752, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676267636, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676267650, "dur":7395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676275213, "dur":11259, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676286486, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676286508, "dur":10670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676297391, "dur":965, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676298366, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676298389, "dur":7599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676306147, "dur":685, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676306845, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676306867, "dur":36717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":5, "ts":1662858676343934, "dur":870, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1662858676344819, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1662858676344842, "dur":24210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1662858676369268, "dur":6677, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1662858675878746, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1662858675878747, "dur":18437, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1662858675897211, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":6, "ts":1662858675897221, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1662858675902767, "dur":7701, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":6, "ts":1662858675910475, "dur":237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/app.info" }}
-,{ "pid":12345, "tid":6, "ts":1662858675910718, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1662858675913629, "dur":10162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/app.info" }}
-,{ "pid":12345, "tid":6, "ts":1662858675923793, "dur":6065, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1662858675929943, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1662858675929962, "dur":3732, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1662858675933874, "dur":425, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1662858675934308, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1662858675934607, "dur":18277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1662858675953067, "dur":293120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":6, "ts":1662858676246201, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1662858676246218, "dur":102265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":6, "ts":1662858676348684, "dur":587, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":6, "ts":1662858676349280, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1662858676349295, "dur":5849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":6, "ts":1662858676355320, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":6, "ts":1662858676355490, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1662858676355505, "dur":4875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":6, "ts":1662858676360531, "dur":15380, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858675878848, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858675878849, "dur":18384, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858675897235, "dur":15048, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1662858675912292, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858675912309, "dur":23510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1662858675935997, "dur":6481, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1662858675942489, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858675942637, "dur":4160, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1662858675946978, "dur":430, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":7, "ts":1662858675947416, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858675947439, "dur":24773, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":7, "ts":1662858675972376, "dur":3341, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale.exe" }}
-,{ "pid":12345, "tid":7, "ts":1662858675975728, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858675975741, "dur":5400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale.exe" }}
-,{ "pid":12345, "tid":7, "ts":1662858675981322, "dur":424, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":7, "ts":1662858675981755, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858675982880, "dur":62919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":7, "ts":1662858676046025, "dur":1071, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676047108, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676047124, "dur":10772, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676058139, "dur":803, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676058952, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676058965, "dur":9133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676068374, "dur":778, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676069161, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676069182, "dur":7558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676076887, "dur":1246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676078141, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676078156, "dur":13717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676092063, "dur":750, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676092822, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676092840, "dur":12595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676105576, "dur":726, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676106310, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676106324, "dur":42760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676149267, "dur":864, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676150138, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676150153, "dur":8659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676158994, "dur":1126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676160229, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676160248, "dur":6295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676166784, "dur":1458, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676168251, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676168266, "dur":14100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676182549, "dur":1553, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676184124, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676184148, "dur":9667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676193974, "dur":645, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676194632, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676194658, "dur":29407, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676224288, "dur":663, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676224960, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676224978, "dur":25620, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676250851, "dur":1022, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676251882, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676251900, "dur":14200, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676266278, "dur":1168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676267459, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676267481, "dur":17928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676285579, "dur":7911, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676293498, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676293515, "dur":12491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676306187, "dur":61886, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676368084, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1662858676370119, "dur":5488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":7, "ts":1662858676375835, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":7, "ts":1662858676375846, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858675878953, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858675878954, "dur":18301, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858675897256, "dur":6044, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1662858675903423, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858675906079, "dur":17461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1662858675923684, "dur":5359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1662858675929053, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858675929074, "dur":3587, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1662858675932842, "dur":4750, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1662858675937600, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858675937618, "dur":13082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1662858675950975, "dur":125543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676076527, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858676076686, "dur":86951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676163849, "dur":11286, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676175146, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858676175165, "dur":7742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676183074, "dur":871, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676183955, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858676183972, "dur":9306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676193446, "dur":607, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676194061, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858676194079, "dur":9476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676203734, "dur":775, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676204519, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858676204537, "dur":26147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676230908, "dur":26778, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676257700, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858676257722, "dur":32966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676291264, "dur":2070, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676293351, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858676293376, "dur":12562, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676306125, "dur":2036, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676308170, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1662858676308188, "dur":57902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":8, "ts":1662858676366293, "dur":9671, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1662858676422429, "dur":11105, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1662858676581454, "dur": 9516, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1662858676576070, "dur": 15026, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1663035602479078, "dur":6139, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602485239, "dur":696, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1663035602486003, "dur":60, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1663035602486067, "dur":898, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1663035602487022, "dur":1884, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602488907, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602567748, "dur":257, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568005, "dur":72, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568077, "dur":125, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568202, "dur":66, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568268, "dur":17, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568285, "dur":21, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568306, "dur":8, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568314, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568330, "dur":7, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568337, "dur":20, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568357, "dur":7, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568364, "dur":15, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568379, "dur":7, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568386, "dur":15, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568401, "dur":7, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568408, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568424, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568458, "dur":4, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602568514, "dur":12170, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1663035602488260, "dur":676, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602488936, "dur":28325, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602517280, "dur":640, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1663035602517920, "dur":1570, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602519492, "dur":442, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1663035602519935, "dur":1130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602521068, "dur":375, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602521444, "dur":554, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602522000, "dur":392, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602522393, "dur":2497, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602524893, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602525070, "dur":303, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602525375, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602525557, "dur":672, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602526232, "dur":834, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602527067, "dur":1080, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602528150, "dur":2714, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602530864, "dur":815, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602531681, "dur":2708, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602534390, "dur":312, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602534703, "dur":603, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602535307, "dur":674, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602535983, "dur":459, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602536443, "dur":509, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602536955, "dur":755, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602537711, "dur":534, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602538248, "dur":318, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602538566, "dur":487, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602539056, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602539229, "dur":458, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602539690, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602539868, "dur":651, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602540521, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1663035602540692, "dur":426, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602541121, "dur":292, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1663035602541456, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1663035602548126, "dur":15508, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1663035602563807, "dur":3913, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602488474, "dur":519, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602488994, "dur":28264, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602517279, "dur":1300, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1663035602518579, "dur":557, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602519139, "dur":1314, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1663035602520454, "dur":424, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602520881, "dur":393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1663035602521275, "dur":747, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602522024, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1663035602522223, "dur":1857, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602524083, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1663035602524281, "dur":1133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602525417, "dur":246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1663035602525664, "dur":703, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602526370, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1663035602526548, "dur":374, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602526925, "dur":527, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1663035602527453, "dur":298, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602527753, "dur":383, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1663035602528136, "dur":349, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602528488, "dur":254, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1663035602528743, "dur":898, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602529643, "dur":234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1663035602529877, "dur":11842, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602541722, "dur":651, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1663035602542373, "dur":679, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602543055, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1663035602543278, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602556347, "dur":6826, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1663035602563310, "dur":638, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1663035602563949, "dur":566, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1663035602564518, "dur":3226, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602488623, "dur":386, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602489009, "dur":28386, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602517399, "dur":977, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1663035602518377, "dur":1360, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602519739, "dur":445, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1663035602520184, "dur":1141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602521328, "dur":674, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale.exe" }}
+,{ "pid":12345, "tid":3, "ts":1663035602522003, "dur":424, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602522429, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602522645, "dur":1190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602523839, "dur":272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602524111, "dur":395, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602524508, "dur":301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602524809, "dur":689, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602525501, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602525742, "dur":460, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602526205, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602526433, "dur":304, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602526739, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602526913, "dur":460, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602527376, "dur":249, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602527625, "dur":532, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602528159, "dur":238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602528398, "dur":346, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602528746, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602528969, "dur":597, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602529568, "dur":258, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602529827, "dur":489, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602530318, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602530497, "dur":444, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602530943, "dur":727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602531671, "dur":417, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602532091, "dur":679, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602532770, "dur":325, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602533098, "dur":550, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602533649, "dur":690, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602534342, "dur":543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602534886, "dur":529, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602535418, "dur":1901, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602537320, "dur":521, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602537844, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602538038, "dur":683, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602538723, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602538904, "dur":474, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602539380, "dur":184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602539565, "dur":506, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602540073, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602540280, "dur":297, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602540579, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1663035602540733, "dur":537, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602541272, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1663035602541454, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1663035602546505, "dur":16624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1663035602563412, "dur":4313, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602488748, "dur":273, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602489021, "dur":28270, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602517299, "dur":766, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1663035602518066, "dur":1906, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602519975, "dur":366, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1663035602520342, "dur":1758, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602522103, "dur":220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1663035602522324, "dur":5431, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602527758, "dur":672, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1663035602528431, "dur":478, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602528911, "dur":596, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1663035602529508, "dur":1153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602530664, "dur":1039, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1663035602531704, "dur":2550, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602534257, "dur":3841, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1663035602538098, "dur":318, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602538419, "dur":3849, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1663035602542268, "dur":676, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602542987, "dur":512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1663035602543520, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1663035602558899, "dur":5389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1663035602564469, "dur":3309, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602488904, "dur":7, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602488911, "dur":28325, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602517280, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1663035602517283, "dur":736, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602518035, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1663035602518042, "dur":700, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602518747, "dur":432, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1663035602519179, "dur":528, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602519710, "dur":477, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1663035602520187, "dur":980, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602521170, "dur":940, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":5, "ts":1663035602522111, "dur":489, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602522603, "dur":215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602522819, "dur":1044, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602523866, "dur":279, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602524146, "dur":306, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602524455, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602524632, "dur":466, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602525100, "dur":229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602525329, "dur":473, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602525804, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602525996, "dur":452, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602526450, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602526629, "dur":451, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602527082, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602527264, "dur":312, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602527578, "dur":234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602527813, "dur":540, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602528355, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602528527, "dur":323, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602528852, "dur":184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602529036, "dur":472, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602529510, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602529672, "dur":497, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602530171, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602530363, "dur":463, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602530828, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602531017, "dur":301, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602531320, "dur":2181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602533502, "dur":320, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602533824, "dur":772, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602534597, "dur":491, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602535090, "dur":563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602535654, "dur":496, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602536152, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602536343, "dur":293, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602536638, "dur":590, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602537229, "dur":472, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602537703, "dur":727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602538431, "dur":508, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602538941, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602539131, "dur":469, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602539602, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602539786, "dur":446, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602540234, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602540422, "dur":445, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602540869, "dur":598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602541480, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1663035602550244, "dur":12872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1663035602563310, "dur":4420, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602489033, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602489034, "dur":28397, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602517432, "dur":454, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1663035602517887, "dur":1224, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602519114, "dur":467, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1663035602519581, "dur":457, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602520041, "dur":398, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":6, "ts":1663035602520440, "dur":241, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602520683, "dur":354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602521038, "dur":942, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602521982, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602522180, "dur":3680, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602525862, "dur":263, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602526125, "dur":449, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602526576, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602526787, "dur":506, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602527295, "dur":323, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602527619, "dur":318, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602527940, "dur":385, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602528326, "dur":658, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602528986, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602529167, "dur":560, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602529729, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602529918, "dur":482, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602530403, "dur":318, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602530722, "dur":688, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602531412, "dur":3083, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602534496, "dur":327, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602534825, "dur":3964, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602538790, "dur":476, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602539269, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602539452, "dur":496, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602539951, "dur":197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602540149, "dur":297, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602540449, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":6, "ts":1663035602540618, "dur":528, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602541148, "dur":481, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1663035602541642, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1663035602552000, "dur":11732, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1663035602563916, "dur":3876, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602489176, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602489177, "dur":28138, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602517322, "dur":855, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1663035602518179, "dur":1690, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602519871, "dur":393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1663035602520265, "dur":1309, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602521577, "dur":392, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":7, "ts":1663035602521970, "dur":797, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602522770, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602522942, "dur":1007, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602523951, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602524208, "dur":548, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602524759, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602524952, "dur":744, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602525698, "dur":353, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602526051, "dur":607, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602526661, "dur":229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602526891, "dur":442, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602527335, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602527525, "dur":472, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602527999, "dur":300, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602528299, "dur":473, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602528775, "dur":237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602529013, "dur":602, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602529617, "dur":535, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602530153, "dur":630, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602530784, "dur":307, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602531092, "dur":324, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602531419, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602531590, "dur":359, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602531951, "dur":619, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602532571, "dur":311, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602532884, "dur":625, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602533510, "dur":382, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602533894, "dur":548, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602534443, "dur":339, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602534784, "dur":542, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602535327, "dur":327, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602535657, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602535824, "dur":458, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602536284, "dur":638, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602536923, "dur":305, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602537231, "dur":684, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602537916, "dur":604, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602538523, "dur":241, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602538765, "dur":332, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602539099, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602539313, "dur":512, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602539827, "dur":283, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602540111, "dur":778, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602540892, "dur":1195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602542189, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1663035602554910, "dur":8409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":7, "ts":1663035602563571, "dur":4147, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602489319, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602489320, "dur":27951, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602517280, "dur":707, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1663035602517988, "dur":1273, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602519264, "dur":398, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1663035602519663, "dur":849, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602520515, "dur":369, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1663035602520884, "dur":717, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602521602, "dur":521, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602522123, "dur":1781, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602523906, "dur":289, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602524196, "dur":512, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602524710, "dur":205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602524916, "dur":499, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602525418, "dur":1820, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602527240, "dur":465, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602527708, "dur":197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602527906, "dur":522, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602528430, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602528598, "dur":458, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602529058, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602529231, "dur":524, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602529757, "dur":389, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602530146, "dur":630, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602530779, "dur":289, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602531068, "dur":426, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602531496, "dur":1235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602532732, "dur":331, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602533065, "dur":553, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602533618, "dur":546, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602534166, "dur":567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602534734, "dur":464, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602535200, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602535367, "dur":327, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602535696, "dur":318, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602536015, "dur":353, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602536370, "dur":900, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602537271, "dur":544, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602537818, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602538006, "dur":681, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602538690, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602538857, "dur":491, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602539350, "dur":195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602539546, "dur":357, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602539905, "dur":459, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1663035602540365, "dur":608, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602540975, "dur":854, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":8, "ts":1663035602541830, "dur":576, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602542410, "dur":666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1663035602543077, "dur":535, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602543615, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1663035602543809, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1663035602563106, "dur":4419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1663035602567663, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":8, "ts":1663035602567675, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1663035602590629, "dur":4021, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1663035602640982, "dur": 2340, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1663035602640658, "dur": 2732, "ph": "X", "name": "Write chrome-trace events", "args": {} },

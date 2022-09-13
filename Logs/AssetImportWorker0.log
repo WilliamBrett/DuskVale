@@ -15,7 +15,7 @@ C:/Users/William Brett/Documents/GitHub/DuskVale
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62481
+60485
 Successfully changed project path to: C:/Users/William Brett/Documents/GitHub/DuskVale
 C:/Users/William Brett/Documents/GitHub/DuskVale
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/William Brett/Documents/GitHub/DuskVale
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 616.47 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 294.94 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.8f1 (b30333d56e81)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -63,7 +63,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
@@ -71,7 +71,7 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.074210 seconds.
+Registered in 0.025278 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
@@ -80,39 +80,39 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 332.87 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 196.99 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  7.057 seconds
+- Completed reload, in  1.582 seconds
 Domain Reload Profiling:
-	ReloadAssembly (7059ms)
-		BeginReloadAssembly (1857ms)
+	ReloadAssembly (1583ms)
+		BeginReloadAssembly (206ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (4ms)
-		EndReloadAssembly (4420ms)
-			LoadAssemblies (1844ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1137ms)
+			LoadAssemblies (201ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (739ms)
+			SetupTypeCache (247ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (97ms)
-			SetupLoadedEditorAssemblies (3352ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (707ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (277ms)
+				InitializePlatformSupportModulesInManaged (134ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (333ms)
-				BeforeProcessingInitializeOnLoad (5ms)
-				ProcessInitializeOnLoadAttributes (2511ms)
-				ProcessInitializeOnLoadMethodAttributes (224ms)
+				RefreshPlugins (197ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (261ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.063830 seconds.
+Registered in 0.033363 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -121,46 +121,46 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 246.34 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 181.08 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.975 seconds
+- Completed reload, in  2.695 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2978ms)
-		BeginReloadAssembly (270ms)
+	ReloadAssembly (2697ms)
+		BeginReloadAssembly (242ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (19ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (2440ms)
-			LoadAssemblies (256ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (2214ms)
+			LoadAssemblies (199ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (539ms)
+			SetupTypeCache (542ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (144ms)
-			SetupLoadedEditorAssemblies (1365ms)
+			RebuildScriptCaches (135ms)
+			SetupLoadedEditorAssemblies (1191ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (78ms)
+				InitializePlatformSupportModulesInManaged (77ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (247ms)
-				BeforeProcessingInitializeOnLoad (264ms)
-				ProcessInitializeOnLoadAttributes (627ms)
-				ProcessInitializeOnLoadMethodAttributes (126ms)
+				RefreshPlugins (181ms)
+				BeforeProcessingInitializeOnLoad (235ms)
+				ProcessInitializeOnLoadAttributes (564ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
 				AfterProcessingInitializeOnLoad (23ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.47 seconds
-Refreshing native plugins compatible for Editor in 1.69 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 1.04 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4068 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 44 unused Assets / (222.9 KB). Loaded Objects now: 4520.
-Memory consumption went from 151.5 MB to 151.3 MB.
-Total: 8.270400 ms (FindLiveObjects: 0.616100 ms CreateObjectMapping: 0.600900 ms MarkObjects: 6.717200 ms  DeleteObjects: 0.333600 ms)
+Memory consumption went from 151.4 MB to 151.2 MB.
+Total: 5.827100 ms (FindLiveObjects: 0.537900 ms CreateObjectMapping: 0.519000 ms MarkObjects: 4.527400 ms  DeleteObjects: 0.241200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -175,20 +175,650 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1036146.136119 seconds.
-  path: Assets/Scripts/CameraController.cs
-  artifactKey: Guid(92c47b55c3bd65b41883f4cd3bad04d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CameraController.cs using Guid(92c47b55c3bd65b41883f4cd3bad04d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e34cada2191759c4dd6b6bd4899415') in 0.119276 seconds 
+  Time since last request: 1135076.448571 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build.png
+  artifactKey: Guid(6d28f55f1b0572546b2632db94416d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build.png using Guid(6d28f55f1b0572546b2632db94416d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893809686993fa01b7addd275339a24a') in 1.851993 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 146.446723 seconds.
-  path: Assets/Scripts/CameraController.cs
-  artifactKey: Guid(92c47b55c3bd65b41883f4cd3bad04d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CameraController.cs using Guid(92c47b55c3bd65b41883f4cd3bad04d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc348d6a882be4cfa7dcf7891256bbab') in 0.023591 seconds 
+  Time since last request: 69.530868 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_0.asset
+  artifactKey: Guid(969839af1c62a6042946188781ea71b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_0.asset using Guid(969839af1c62a6042946188781ea71b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c46c702ea507d4ebef87e535311eb48') in 0.087244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_18.asset
+  artifactKey: Guid(e0b3699204f9f46488b4282edd3c720a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_18.asset using Guid(e0b3699204f9f46488b4282edd3c720a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d035d3e37cc13f5408324e6f6fd483') in 0.044479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_8.asset
+  artifactKey: Guid(37416429a3162b0459a6776b462085fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_8.asset using Guid(37416429a3162b0459a6776b462085fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf0de72ee39ba5fa06bb533f77371d2') in 0.027300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_6.asset
+  artifactKey: Guid(d9b664afbaee61849a799d142413aaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_6.asset using Guid(d9b664afbaee61849a799d142413aaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9a54fad6ae31620e7f14d193bd5774') in 0.028254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_15.asset
+  artifactKey: Guid(575fef3cde447354b85c0e3a5546897c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_15.asset using Guid(575fef3cde447354b85c0e3a5546897c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1537c88cbe86424fd5dbad537bdf9c83') in 0.034396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_16.asset
+  artifactKey: Guid(bcdaf62fa61507a4fbeb1deb7e5a5b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_16.asset using Guid(bcdaf62fa61507a4fbeb1deb7e5a5b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc68c2665a1ae3681c53c5fc5249788') in 0.028136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_7.asset
+  artifactKey: Guid(586016bb7997358409628eb60994994c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_7.asset using Guid(586016bb7997358409628eb60994994c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6d8335d4968c49fec399135d273861') in 0.033739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_13.asset
+  artifactKey: Guid(12667e81296df384c9b8190130aafa9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_13.asset using Guid(12667e81296df384c9b8190130aafa9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a23ca2b0b8bb6f63da56089ca4f4f493') in 0.029870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_3.asset
+  artifactKey: Guid(79ef780d1c31e3f4c89a0a627995e15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_3.asset using Guid(79ef780d1c31e3f4c89a0a627995e15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726b08628b796be2adf0c108ff8dbdb2') in 0.029955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_2.asset
+  artifactKey: Guid(74d9348644f313f4f9c4947e2dce1b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_2.asset using Guid(74d9348644f313f4f9c4947e2dce1b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b165fcd8d91379329f28e6a51dacf5b') in 0.033741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.536574 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_20.asset
+  artifactKey: Guid(3c6a1311c5fc38f4ba6b88bc2e380ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_20.asset using Guid(3c6a1311c5fc38f4ba6b88bc2e380ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57897a255fdd3ef334956824e566fc32') in 0.081106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_27.asset
+  artifactKey: Guid(f9e552bfa07c65e4093e5a7d49558b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_27.asset using Guid(f9e552bfa07c65e4093e5a7d49558b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f6544a7c6a3baa30b7ee23c112f733') in 0.037810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_23.asset
+  artifactKey: Guid(b7223d28d2350b7498b74e80a62bf4a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_23.asset using Guid(b7223d28d2350b7498b74e80a62bf4a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b506afa612062fa540cc1b401f17f6') in 0.027518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000459 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_22.asset
+  artifactKey: Guid(afb839cfa8dbf5947aa5b31115180f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_22.asset using Guid(afb839cfa8dbf5947aa5b31115180f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99146ff4c12d63b3abd691cdf2969d64') in 0.030579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_25.asset
+  artifactKey: Guid(cc6a50f1e531251418d19279e0a9df54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_25.asset using Guid(cc6a50f1e531251418d19279e0a9df54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff2ab6d254eb290ef21a4c80911258f9') in 0.031202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.089607 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_29.asset
+  artifactKey: Guid(ac0cfdb0db5efff4dbf4b5faa094e877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_29.asset using Guid(ac0cfdb0db5efff4dbf4b5faa094e877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6305908fea11748192bb3bd58d6b6f8') in 0.031490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_34.asset
+  artifactKey: Guid(be3c0f8f885b80647aa28e87a684b443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_34.asset using Guid(be3c0f8f885b80647aa28e87a684b443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4824f20a563932139b8f0f4cb014e4d') in 0.029070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_37.asset
+  artifactKey: Guid(cb9d5c72614207a4ea5bd08c5419af25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_37.asset using Guid(cb9d5c72614207a4ea5bd08c5419af25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29b5643abfff73f31c8b43a6940a013') in 0.032018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_36.asset
+  artifactKey: Guid(4241876aeba72eb429c80adf8703a3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_36.asset using Guid(4241876aeba72eb429c80adf8703a3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2a58b53743c2958449cb58508ff571b') in 0.031033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_45.asset
+  artifactKey: Guid(f3ed7a1d2e21cbf4da75dd2ab165cbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_45.asset using Guid(f3ed7a1d2e21cbf4da75dd2ab165cbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ad50a4b63fff38aca7247abe8937ca') in 0.032916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_46.asset
+  artifactKey: Guid(5241d0a2bb089c94b9d433e940a141e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_46.asset using Guid(5241d0a2bb089c94b9d433e940a141e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f7dcb6e5f74a298ddd5cd098c176c13') in 0.029528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_41.asset
+  artifactKey: Guid(fed5feb7d8b0c424f91fd7e14f62a49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_41.asset using Guid(fed5feb7d8b0c424f91fd7e14f62a49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a52dd08fe6acdd7f68106163f0bc8edc') in 0.033278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_44.asset
+  artifactKey: Guid(b4d144dfd957a55498e7db39180bdd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_44.asset using Guid(b4d144dfd957a55498e7db39180bdd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebfecf76e0554bbf8c37dbe08bb9cb90') in 0.030496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_39.asset
+  artifactKey: Guid(90ab2e83f2ab8054f86361d228e2d20d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_39.asset using Guid(90ab2e83f2ab8054f86361d228e2d20d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712fc17f82d809339f43b228bb5ecb0e') in 0.039293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.060202 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_47.asset
+  artifactKey: Guid(20c031d1da1658d4180610aed53a90a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_47.asset using Guid(20c031d1da1658d4180610aed53a90a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f9922b152025368fd72938d4af0499d') in 0.035476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_66.asset
+  artifactKey: Guid(8555e769475bd154c81df6699a937988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_66.asset using Guid(8555e769475bd154c81df6699a937988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '649e7081552409d9e95edeb407dbe868') in 0.034648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_72.asset
+  artifactKey: Guid(68ed5ad2f0f2b1c4f8fd1a3cfe3ab731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_72.asset using Guid(68ed5ad2f0f2b1c4f8fd1a3cfe3ab731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942412ed96b81a6fab7f25f00bf6dfb0') in 0.026301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_50.asset
+  artifactKey: Guid(96b50fe49ecc48845a6b8f2befb4e493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_50.asset using Guid(96b50fe49ecc48845a6b8f2befb4e493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb07f471240d40e0da37587b22abe46') in 0.057378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_54.asset
+  artifactKey: Guid(3e9def201e7e2994ab255606db319ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_54.asset using Guid(3e9def201e7e2994ab255606db319ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7730810d96961361dea1c6d1a0e5f42') in 0.030501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_60.asset
+  artifactKey: Guid(e158b04da88793248823d771c17df15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_60.asset using Guid(e158b04da88793248823d771c17df15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c013e2421da1ba4e293b4465b88222a1') in 0.029836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_64.asset
+  artifactKey: Guid(05eb85151775f074c87d73d6418ead64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_64.asset using Guid(05eb85151775f074c87d73d6418ead64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c99994de5b54c1fce070edbada95345') in 0.059403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_62.asset
+  artifactKey: Guid(4b7a213912d09e74ea128e464593f5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_62.asset using Guid(4b7a213912d09e74ea128e464593f5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e1d658db44e1c432ebbfb3a4b52c3d') in 0.075148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_81.asset
+  artifactKey: Guid(0edbe912df5b8524bb8512cff8fb44e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_81.asset using Guid(0edbe912df5b8524bb8512cff8fb44e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3421024ea7af8bb1a8720e590b576b2') in 0.037612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_51.asset
+  artifactKey: Guid(2acba3afd22df4e48af3b596cceb6f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_51.asset using Guid(2acba3afd22df4e48af3b596cceb6f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '588cd4e72d5155e5e34f16a247dfbb2b') in 0.045039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_58.asset
+  artifactKey: Guid(8c3286f9222935e4c9d32ee9434d3095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_58.asset using Guid(8c3286f9222935e4c9d32ee9434d3095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c373ea8275aecbde29c8b3ecd7cdf354') in 0.036519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_68.asset
+  artifactKey: Guid(d6cd5915566048f49812db3dc71b0e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_68.asset using Guid(d6cd5915566048f49812db3dc71b0e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4efde5c558517309c9c5a1cccf3849e') in 0.035746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_84.asset
+  artifactKey: Guid(93ff6d8d9a3b6a8439b7dd4ff2147cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_84.asset using Guid(93ff6d8d9a3b6a8439b7dd4ff2147cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98cf03d16737d6bcd43d826854aed983') in 0.029886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_93.asset
+  artifactKey: Guid(663541bd9cabf564da1a443e553e579b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_93.asset using Guid(663541bd9cabf564da1a443e553e579b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3351fabeb7da81e18e62cc3761e85a') in 0.056272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_108.asset
+  artifactKey: Guid(be4168cf32eadfa4195c66e45c8d7d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_108.asset using Guid(be4168cf32eadfa4195c66e45c8d7d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe59577b454750bcd63beb14eb0102e0') in 0.034218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_96.asset
+  artifactKey: Guid(b6b0da9641be7aa4094686fa8f5ca978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_96.asset using Guid(b6b0da9641be7aa4094686fa8f5ca978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2a2053e2c356c443bc27dab30ecb70') in 0.038463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_104.asset
+  artifactKey: Guid(57a9c7a80465184468969b95b54a6406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_104.asset using Guid(57a9c7a80465184468969b95b54a6406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f056e9ace3c92dd9e5c3184682493761') in 0.033985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_74.asset
+  artifactKey: Guid(20cd49790d0eb9c49898cc4f5f3d29fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_74.asset using Guid(20cd49790d0eb9c49898cc4f5f3d29fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739ed69b55177ba8e1cb9a2b3ff65690') in 0.039609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_75.asset
+  artifactKey: Guid(f7b7171cddbdb9a4a9ee136d22b06b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_75.asset using Guid(f7b7171cddbdb9a4a9ee136d22b06b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac5915d6a5d8bb38d73f9559f0ab471a') in 0.037801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_97.asset
+  artifactKey: Guid(edc56a7f824534746ac70eaa319e69d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_97.asset using Guid(edc56a7f824534746ac70eaa319e69d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d638b37e1d6b3d861ecb2edfb9e944') in 0.042568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_110.asset
+  artifactKey: Guid(d97c41aea1053314f84bd8c2af98b7c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_110.asset using Guid(d97c41aea1053314f84bd8c2af98b7c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '092e2a4f0bbe082945d1eef8c3ca15d0') in 0.035480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_117.asset
+  artifactKey: Guid(0e71abdee1e0a1a47a0d46926d269e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_117.asset using Guid(0e71abdee1e0a1a47a0d46926d269e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4492e4a1674dc275e02e0d0cd2c12ab6') in 0.047224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_154.asset
+  artifactKey: Guid(c5bbb74f38eccb242a62d2dbdfb9a354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_154.asset using Guid(c5bbb74f38eccb242a62d2dbdfb9a354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '698130fdb10dfef4a7a63988ed905909') in 0.037953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_148.asset
+  artifactKey: Guid(dab2d26bf1402ed4588762b97d40a874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_148.asset using Guid(dab2d26bf1402ed4588762b97d40a874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9673451a495ad81a4d343afbb97c487') in 0.032446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_125.asset
+  artifactKey: Guid(5055e15559f6a9c419b10ad024fdef3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_125.asset using Guid(5055e15559f6a9c419b10ad024fdef3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6159d94acd6ea7ef52d5c4775e2a68fb') in 0.028458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_122.asset
+  artifactKey: Guid(67517dc55f9bfd64b8891b291b61e1a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_122.asset using Guid(67517dc55f9bfd64b8891b291b61e1a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c4d93d26995c44ecb9d497a8481692') in 0.030047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_137.asset
+  artifactKey: Guid(0238549b26d5bd747853477c3bb1abdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_137.asset using Guid(0238549b26d5bd747853477c3bb1abdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1536091180b5d031646aff2919f5cb25') in 0.028058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_145.asset
+  artifactKey: Guid(7d06dd94acd1c6c469beed2154f74151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_145.asset using Guid(7d06dd94acd1c6c469beed2154f74151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770d8b8f9fc062349246284713597c3d') in 0.025777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_174.asset
+  artifactKey: Guid(0e5cea0a131e0b748837447d2eb846ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_174.asset using Guid(0e5cea0a131e0b748837447d2eb846ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a65b0e68d7dfd1f883f82b7ec1dd862') in 0.029236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_131.asset
+  artifactKey: Guid(72f584f51b2396d438481bf55c9b1209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_131.asset using Guid(72f584f51b2396d438481bf55c9b1209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01f6b21110bc87f5dd53194aec045a1b') in 0.032636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_112.asset
+  artifactKey: Guid(cb25372f2862d9a4f81d9e11a4f87606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_112.asset using Guid(cb25372f2862d9a4f81d9e11a4f87606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7262c4dbd2d2fc725af90b24b9e73d51') in 0.032181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_167.asset
+  artifactKey: Guid(7ef6faf6b9a9148459cb7a1decd6c75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_167.asset using Guid(7ef6faf6b9a9148459cb7a1decd6c75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0f0d99320d58428c874f924b548fd74') in 0.033167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_197.asset
+  artifactKey: Guid(9c169fa469414624ba3cadb85f2b3d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_197.asset using Guid(9c169fa469414624ba3cadb85f2b3d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99b43926d4a71f14b9ce19679bd573d0') in 0.032731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_144.asset
+  artifactKey: Guid(7648f1e98c98bad4f8f71e4e1403ab65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_144.asset using Guid(7648f1e98c98bad4f8f71e4e1403ab65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9cf0a9460d39fb397ce6f34c48e246') in 0.076848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_165.asset
+  artifactKey: Guid(05972a8a19a902646ad424a69df2e7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_165.asset using Guid(05972a8a19a902646ad424a69df2e7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcd4616bb4385b7fbec070d2453a128') in 0.032553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_83.asset
+  artifactKey: Guid(1e5aaa0d508e2aa498792cf361035b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_83.asset using Guid(1e5aaa0d508e2aa498792cf361035b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f39593dbffdac6f9e55ead05464c860') in 0.028259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_113.asset
+  artifactKey: Guid(550e58b1444b55a45a538f456e56d5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_113.asset using Guid(550e58b1444b55a45a538f456e56d5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4ce0a09bf8ae3ca8e49c3ac37e404d') in 0.034442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_202.asset
+  artifactKey: Guid(e63f1515b11832e41bad7332c08ff4d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_202.asset using Guid(e63f1515b11832e41bad7332c08ff4d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ed40fd97fca854f2652775b1d218b3') in 0.038491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_150.asset
+  artifactKey: Guid(cb872c4141ba1df408c116f47b77d13e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_150.asset using Guid(cb872c4141ba1df408c116f47b77d13e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d47d55755876a25c1963532d61d4f8d') in 0.042901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_153.asset
+  artifactKey: Guid(4a0d61c07f33a5e4cad09166b9c75b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_153.asset using Guid(4a0d61c07f33a5e4cad09166b9c75b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff235c1b67ff724215b3a97c3a7a314e') in 0.033415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_103.asset
+  artifactKey: Guid(98e79a49f1b29024998c498446939a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_103.asset using Guid(98e79a49f1b29024998c498446939a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce037a95a5cc7c0e7b401039ca5c852') in 0.028382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_90.asset
+  artifactKey: Guid(0675b27e2e0a115409ca48ad58758efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_90.asset using Guid(0675b27e2e0a115409ca48ad58758efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19273e01beb07b9cc6681b9808dfe770') in 0.036686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_175.asset
+  artifactKey: Guid(f02c7021c46d82c40b895bebee02ffb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_175.asset using Guid(f02c7021c46d82c40b895bebee02ffb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b4e0a7af3f83a3b15a898e6b237e41d') in 0.031186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_102.asset
+  artifactKey: Guid(b901c127aa64b2d45a03b22b811ba184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_102.asset using Guid(b901c127aa64b2d45a03b22b811ba184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bf3205539f607186da7f2580bf321e0') in 0.036915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_181.asset
+  artifactKey: Guid(4be8c7fea075b4b4c80335caa8f9b353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_181.asset using Guid(4be8c7fea075b4b4c80335caa8f9b353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c20ca4dfb93cc10b1cdbd7304715e13a') in 0.034801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_201.asset
+  artifactKey: Guid(8a1a3d5cf049e4743a6febe27a986cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_201.asset using Guid(8a1a3d5cf049e4743a6febe27a986cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a2ed369c0f041438225937d86317a50') in 0.028121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_139.asset
+  artifactKey: Guid(5bfb02e0a6d362540b76ef1764a4eeb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_139.asset using Guid(5bfb02e0a6d362540b76ef1764a4eeb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b61722a3d0dbc3e64c3895cc7e3d283') in 0.035104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_100.asset
+  artifactKey: Guid(9a7b59f6465945642817511102967d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_100.asset using Guid(9a7b59f6465945642817511102967d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2fb19c72fc4219b3e0d1877041947b') in 0.030712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_180.asset
+  artifactKey: Guid(86dd79daca28fdb4db715525e955bf9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_180.asset using Guid(86dd79daca28fdb4db715525e955bf9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '835b744ba790f8a2d024a407ec3bf912') in 0.058761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_194.asset
+  artifactKey: Guid(e9d01b114b58f994faed8c13ff47163c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_194.asset using Guid(e9d01b114b58f994faed8c13ff47163c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aa3a7f057f71a20dfb322e97827ea2e') in 0.040552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_177.asset
+  artifactKey: Guid(78a1b9282e5c82f449d4db7d8d859665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_177.asset using Guid(78a1b9282e5c82f449d4db7d8d859665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc2ab714c70ea7a744414f816cab0b6') in 0.033597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_171.asset
+  artifactKey: Guid(aa966197de72f844ab35c41e60747396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_171.asset using Guid(aa966197de72f844ab35c41e60747396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e1f161789389f8e5834e49214e8359') in 0.029112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_115.asset
+  artifactKey: Guid(bae212e039d35b64698a5df9b3fddc5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_115.asset using Guid(bae212e039d35b64698a5df9b3fddc5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b600f8236c9d03d0d8727266542e35') in 0.035121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_163.asset
+  artifactKey: Guid(46ab24913e03be2488c2c02176c0f296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_163.asset using Guid(46ab24913e03be2488c2c02176c0f296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3e7ec0405be5b969c4190e37cb0302') in 0.030642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_140.asset
+  artifactKey: Guid(5efb5b494e0f10c48b8e89793373af59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_140.asset using Guid(5efb5b494e0f10c48b8e89793373af59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ccd11b3eb79e0fdc1f229c845af1bf') in 0.030347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_203.asset
+  artifactKey: Guid(64328d9fdecf3fb479e0319dbdf1cfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_203.asset using Guid(64328d9fdecf3fb479e0319dbdf1cfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a9aab011d6dabde2d9c327e146ba54') in 0.028525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_200.asset
+  artifactKey: Guid(327e5ba6e12c28743a8b07e74240e267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_200.asset using Guid(327e5ba6e12c28743a8b07e74240e267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25e385ea6592698afd504d10f4f7e98c') in 0.034090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_70.asset
+  artifactKey: Guid(ad58e4275179ee34f9337a6d3b68f9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_70.asset using Guid(ad58e4275179ee34f9337a6d3b68f9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec5d6773ea9ccc74fd71c919db755b2') in 0.029422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_190.asset
+  artifactKey: Guid(265e59df29a885340abac7f852551dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_190.asset using Guid(265e59df29a885340abac7f852551dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae293b3c869777587fb8c79a550dd666') in 0.032549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_109.asset
+  artifactKey: Guid(7acbcdd9a122eab4bb4ef6528dea9d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_109.asset using Guid(7acbcdd9a122eab4bb4ef6528dea9d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb654bb626cbd8b0322bee716b54130') in 0.035274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_183.asset
+  artifactKey: Guid(ff4edd3005e31d643bd8cb45ae491f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_183.asset using Guid(ff4edd3005e31d643bd8cb45ae491f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa38a1be980b9ced21ce2295e66aa90') in 0.042550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_170.asset
+  artifactKey: Guid(4179bdd3975c3d54a88ea11abf494de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_170.asset using Guid(4179bdd3975c3d54a88ea11abf494de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c4e8ed3aa1c21a2a48995f39c2608d') in 0.032319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_157.asset
+  artifactKey: Guid(8de9edc99fc012c4cae956c1e72fb453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_157.asset using Guid(8de9edc99fc012c4cae956c1e72fb453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b926a7803115ff5fd001dd126cb56c') in 0.032884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_155.asset
+  artifactKey: Guid(8d2b8a25ee6c3d843bf1536898ac5ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_155.asset using Guid(8d2b8a25ee6c3d843bf1536898ac5ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7034106b873f5ac2c648515bf6876d') in 0.044755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_159.asset
+  artifactKey: Guid(f482487b63e9f1a46b1d9a18138497a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_159.asset using Guid(f482487b63e9f1a46b1d9a18138497a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0971c9ffffe0f504f4c43586e943030') in 0.031348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_161.asset
+  artifactKey: Guid(9f09140a22573984387b2890175faadf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_161.asset using Guid(9f09140a22573984387b2890175faadf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ac1003980edb02ace2054b7a23bafeb') in 0.031409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_182.asset
+  artifactKey: Guid(09a07154aa1738d4ea67c3156c511e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_182.asset using Guid(09a07154aa1738d4ea67c3156c511e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '179aa999b49451a5a51e6f18351574a6') in 0.063059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_172.asset
+  artifactKey: Guid(4dfae77506dfec0448642c2786aee987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_172.asset using Guid(4dfae77506dfec0448642c2786aee987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cde484735a847c4759482bfb730bc8c') in 0.031646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_191.asset
+  artifactKey: Guid(01c7dbe92d3c7b84aa8c014c2afd7920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_191.asset using Guid(01c7dbe92d3c7b84aa8c014c2afd7920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa0fde4a0c50d4019a79b9c3411f0f3') in 0.031756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_128.asset
+  artifactKey: Guid(e9f78038d2daf1d4b90e733f1c2f68e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_128.asset using Guid(e9f78038d2daf1d4b90e733f1c2f68e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4312d4daa3918d6780c94123711e1941') in 0.030214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_120.asset
+  artifactKey: Guid(ebaaa423c65f9964bbb89340bb4db9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_120.asset using Guid(ebaaa423c65f9964bbb89340bb4db9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5247be42e9e12fd2bd97bc743732e3c7') in 0.029457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_132.asset
+  artifactKey: Guid(0f5729a41cf30de48b744c38d9316433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_132.asset using Guid(0f5729a41cf30de48b744c38d9316433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ba408e2fa811f9ceda9c490befdbf9') in 0.030012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_105.asset
+  artifactKey: Guid(0991cf060c2aafa4faaea3cb57b646e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_105.asset using Guid(0991cf060c2aafa4faaea3cb57b646e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cddf7a57c395834db7954c2d113ff18') in 0.043723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_106.asset
+  artifactKey: Guid(9eacd5d68fa60a44682c594c72b03110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_106.asset using Guid(9eacd5d68fa60a44682c594c72b03110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9d02fff7ab6813cb862cdbb4ce3db3') in 0.033758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_77.asset
+  artifactKey: Guid(82f924ecef6081c479b83b130b559e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_77.asset using Guid(82f924ecef6081c479b83b130b559e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38ec5f662b7080ff0540d23c440f5c1') in 0.035227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_136.asset
+  artifactKey: Guid(b0077e34b4a5917418d0a132cd488e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_136.asset using Guid(b0077e34b4a5917418d0a132cd488e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '071683a5d2f5ed1cc979949e45126e91') in 0.037166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_78.asset
+  artifactKey: Guid(183d284a293bd62438e2f65e3d749175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_78.asset using Guid(183d284a293bd62438e2f65e3d749175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840ac6c7b7b081501681e148683d2249') in 0.046558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_59.asset
+  artifactKey: Guid(79ab2b9341cc228409f8f9d6f0189e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_59.asset using Guid(79ab2b9341cc228409f8f9d6f0189e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8efe22efc5c08dfcc2cfc74af50cc1f9') in 0.085643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_173.asset
+  artifactKey: Guid(fe7c841196791fc4886f65447fc65531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_173.asset using Guid(fe7c841196791fc4886f65447fc65531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f902ee9836cb6df16b537d77f09f39') in 0.081894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Library/PlatformerSet1/main_lev_build_92.asset
+  artifactKey: Guid(b9bbf615ee36a9e49a5dbb8f8e97902f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_lev_build_92.asset using Guid(b9bbf615ee36a9e49a5dbb8f8e97902f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde59ed9480f220a737f051424390e54') in 0.043351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.647342 seconds.
+  path: Assets/Library/PlatformerSet1/main_level_slices
+  artifactKey: Guid(16bf9b04da6641149915d7217234a7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_level_slices using Guid(16bf9b04da6641149915d7217234a7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7f87f121c7b144f883a04caed06447') in 0.016413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.762498 seconds.
+  path: Assets/Library/PlatformerSet1/main_level_tiles
+  artifactKey: Guid(16bf9b04da6641149915d7217234a7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/PlatformerSet1/main_level_tiles using Guid(16bf9b04da6641149915d7217234a7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92e3954957ae82aec472e58fef697d3') in 0.010484 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.039411 seconds.
+Registered in 0.023336 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -197,43 +827,43 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.61 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.73 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.631 seconds
+- Completed reload, in  5.153 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3633ms)
-		BeginReloadAssembly (344ms)
+	ReloadAssembly (5155ms)
+		BeginReloadAssembly (351ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (30ms)
+			DisableScriptedObjects (22ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (95ms)
-		EndReloadAssembly (3043ms)
-			LoadAssemblies (236ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (1175ms)
-			ReleaseScriptCaches (5ms)
-			RebuildScriptCaches (168ms)
-			SetupLoadedEditorAssemblies (1292ms)
+			CreateAndSetChildDomain (103ms)
+		EndReloadAssembly (4380ms)
+			LoadAssemblies (319ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1167ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (225ms)
+			SetupLoadedEditorAssemblies (2228ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (113ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (198ms)
+				SetLoadedEditorAssemblies (2ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (247ms)
-				ProcessInitializeOnLoadAttributes (801ms)
-				ProcessInitializeOnLoadMethodAttributes (106ms)
-				AfterProcessingInitializeOnLoad (21ms)
+				BeforeProcessingInitializeOnLoad (453ms)
+				ProcessInitializeOnLoadAttributes (1339ms)
+				ProcessInitializeOnLoadMethodAttributes (190ms)
+				AfterProcessingInitializeOnLoad (43ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (33ms)
+			AwakeInstancesAfterBackupRestoration (66ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 7.79 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 16.70 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4063 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (190.3 KB). Loaded Objects now: 4523.
-Memory consumption went from 151.5 MB to 151.3 MB.
-Total: 13.575800 ms (FindLiveObjects: 0.770300 ms CreateObjectMapping: 0.691800 ms MarkObjects: 11.545100 ms  DeleteObjects: 0.565900 ms)
+Unloading 31 unused Assets / (190.2 KB). Loaded Objects now: 4611.
+Memory consumption went from 156.0 MB to 155.8 MB.
+Total: 13.632300 ms (FindLiveObjects: 0.641600 ms CreateObjectMapping: 0.807400 ms MarkObjects: 11.616500 ms  DeleteObjects: 0.563900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -247,307 +877,50 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.039649 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.85 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  8.266 seconds
-Domain Reload Profiling:
-	ReloadAssembly (8269ms)
-		BeginReloadAssembly (2235ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (1360ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (339ms)
-		EndReloadAssembly (5448ms)
-			LoadAssemblies (542ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1082ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (198ms)
-			SetupLoadedEditorAssemblies (3368ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (1128ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (404ms)
-				ProcessInitializeOnLoadAttributes (1431ms)
-				ProcessInitializeOnLoadMethodAttributes (344ms)
-				AfterProcessingInitializeOnLoad (54ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (77ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 9.83 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4063 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (190.2 KB). Loaded Objects now: 4526.
-Memory consumption went from 151.5 MB to 151.3 MB.
-Total: 8.847600 ms (FindLiveObjects: 0.554600 ms CreateObjectMapping: 0.421600 ms MarkObjects: 7.563100 ms  DeleteObjects: 0.305500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 298.490011 seconds.
+  path: Assets/Library/GothicVania Church/Environment
+  artifactKey: Guid(bf678482ad0bb4e2d9fc66d3ba3b925d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/GothicVania Church/Environment using Guid(bf678482ad0bb4e2d9fc66d3ba3b925d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b7079f1861dfcf1997a2e7e700f739') in 0.025166 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.024918 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 3.44 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  7.430 seconds
-Domain Reload Profiling:
-	ReloadAssembly (7434ms)
-		BeginReloadAssembly (503ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (31ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (158ms)
-		EndReloadAssembly (5736ms)
-			LoadAssemblies (373ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1378ms)
-			ReleaseScriptCaches (7ms)
-			RebuildScriptCaches (309ms)
-			SetupLoadedEditorAssemblies (3153ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (292ms)
-				SetLoadedEditorAssemblies (5ms)
-				RefreshPlugins (4ms)
-				BeforeProcessingInitializeOnLoad (1381ms)
-				ProcessInitializeOnLoadAttributes (1118ms)
-				ProcessInitializeOnLoadMethodAttributes (291ms)
-				AfterProcessingInitializeOnLoad (62ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (58ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 9.22 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4063 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (190.5 KB). Loaded Objects now: 4529.
-Memory consumption went from 151.5 MB to 151.3 MB.
-Total: 7.246000 ms (FindLiveObjects: 0.534700 ms CreateObjectMapping: 0.434700 ms MarkObjects: 5.983200 ms  DeleteObjects: 0.290700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.047311 seconds.
+  path: Assets/Library/GothicVania Church/Environment/bg-1.png
+  artifactKey: Guid(4088e222fbea240ceb318507c580aa2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/GothicVania Church/Environment/bg-1.png using Guid(4088e222fbea240ceb318507c580aa2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd70cad5e171cf7ed75655a3e0c76b21') in 0.229418 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.040120 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.50 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  6.764 seconds
-Domain Reload Profiling:
-	ReloadAssembly (6769ms)
-		BeginReloadAssembly (742ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (41ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (170ms)
-		EndReloadAssembly (5485ms)
-			LoadAssemblies (563ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1976ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (247ms)
-			SetupLoadedEditorAssemblies (2532ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (182ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (424ms)
-				ProcessInitializeOnLoadAttributes (1713ms)
-				ProcessInitializeOnLoadMethodAttributes (173ms)
-				AfterProcessingInitializeOnLoad (34ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (45ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 13.62 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4063 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (189.9 KB). Loaded Objects now: 4532.
-Memory consumption went from 151.5 MB to 151.3 MB.
-Total: 95.465600 ms (FindLiveObjects: 35.830700 ms CreateObjectMapping: 1.852300 ms MarkObjects: 56.968700 ms  DeleteObjects: 0.807800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Library/GothicVania Church/Environment/bg-5.png
+  artifactKey: Guid(f8298875ddc0d4fa4bb8d9a60b80fa3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/GothicVania Church/Environment/bg-5.png using Guid(f8298875ddc0d4fa4bb8d9a60b80fa3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c5ae65c8db237b2e7924f12493b99c') in 0.056521 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.043408 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 3.90 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  6.678 seconds
-Domain Reload Profiling:
-	ReloadAssembly (6681ms)
-		BeginReloadAssembly (541ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (35ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (158ms)
-		EndReloadAssembly (5449ms)
-			LoadAssemblies (438ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (959ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (205ms)
-			SetupLoadedEditorAssemblies (2837ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (205ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (4ms)
-				BeforeProcessingInitializeOnLoad (416ms)
-				ProcessInitializeOnLoadAttributes (1972ms)
-				ProcessInitializeOnLoadMethodAttributes (193ms)
-				AfterProcessingInitializeOnLoad (44ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (40ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 7.83 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4063 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (189.9 KB). Loaded Objects now: 4535.
-Memory consumption went from 151.5 MB to 151.3 MB.
-Total: 8.349600 ms (FindLiveObjects: 0.606100 ms CreateObjectMapping: 0.406100 ms MarkObjects: 6.896400 ms  DeleteObjects: 0.438200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Library/GothicVania Church/Environment/column.png
+  artifactKey: Guid(41d8855c301eb4f37bddd0d3dfac611b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/GothicVania Church/Environment/column.png using Guid(41d8855c301eb4f37bddd0d3dfac611b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42312b3b06a745e9b7751f6bfcf0677d') in 0.059342 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.044496 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.68 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  6.248 seconds
-Domain Reload Profiling:
-	ReloadAssembly (6257ms)
-		BeginReloadAssembly (658ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (57ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (193ms)
-		EndReloadAssembly (5165ms)
-			LoadAssemblies (407ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1839ms)
-			ReleaseScriptCaches (5ms)
-			RebuildScriptCaches (229ms)
-			SetupLoadedEditorAssemblies (1779ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (241ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (410ms)
-				ProcessInitializeOnLoadAttributes (885ms)
-				ProcessInitializeOnLoadMethodAttributes (198ms)
-				AfterProcessingInitializeOnLoad (38ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (33ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 6.09 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4063 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (189.7 KB). Loaded Objects now: 4538.
-Memory consumption went from 151.5 MB to 151.4 MB.
-Total: 6.076100 ms (FindLiveObjects: 0.455400 ms CreateObjectMapping: 0.349600 ms MarkObjects: 5.022100 ms  DeleteObjects: 0.247200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Library/GothicVania Church/Environment/tileset.png
+  artifactKey: Guid(aaa6ed922388941e8a1e8c9a7cb2a712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/GothicVania Church/Environment/tileset.png using Guid(aaa6ed922388941e8a1e8c9a7cb2a712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '149a1b96b77e8e034270303c9780a57b') in 0.077048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.145918 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment
+  artifactKey: Guid(a962f62f0695f486998bb7fbef833193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment using Guid(a962f62f0695f486998bb7fbef833193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d42ab4e5a9b535452a8d16420b8ab72') in 0.009715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.081127 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/background.png
+  artifactKey: Guid(df73b4bce81f34a13ad5c1760f1a7a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/background.png using Guid(df73b4bce81f34a13ad5c1760f1a7a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32cc0fb132ef1fad31cd5fa25fa71c41') in 0.068355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset-sliced.png
+  artifactKey: Guid(297a514ba6a7c44e6a1eac9511e640e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset-sliced.png using Guid(297a514ba6a7c44e6a1eac9511e640e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36675e23ec109e89d8e178805f33924e') in 0.709803 seconds 
