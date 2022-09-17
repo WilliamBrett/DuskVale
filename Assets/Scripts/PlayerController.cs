@@ -5,24 +5,44 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject[] Metadata;
     private Rigidbody2D thisRB2D;
     private Animator thisAnim;
     private SpriteRenderer thisSR;
+    public Transform thistf;
     public Transform BottomPoint;
     public LayerMask Ground;
     public float moveSpeed;
     public float jumpForce;
+    public string SpawnID;
 
     public bool DJReady;
     private bool onGround;
     private bool jumping;
-    
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         thisRB2D = this.GetComponent<Rigidbody2D>();
         thisSR = this.GetComponent<SpriteRenderer>();
         thisAnim = this.GetComponent<Animator>();
+        thistf = this.GetComponent<Transform>();
+    }
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+        Metadata = GameObject.FindGameObjectsWithTag("Metadata");
+        if (Metadata.Length != 0)
+        {
+            thistf.position = Metadata[0].GetComponent<MetadataRecord>().GetSpawn(SpawnID);
+        }
+        else //error handling for cells without a metadata
+        {
+            thistf.position = new Vector3(0, 0, 0);
+        }
     }
 
     // Update is called once per frame
