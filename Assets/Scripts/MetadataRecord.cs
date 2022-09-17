@@ -8,18 +8,8 @@ public class MetadataRecord : MonoBehaviour
     public float CameraXMin;
     public float CameraYMax;
     public float CameraYMin;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject FarScenery;
+    public GameObject MidScenery;
 
 
 }

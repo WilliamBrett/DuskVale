@@ -2,12 +2,12 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraController
+    - MetadataRecord
     - PlayerController
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
@@ -41,7 +41,7 @@ ScriptsOnlyBuild:
   serializedClasses: {}
   methodsToPreserve: []
   sceneClasses:
-    Assets/Scenes/DevCell.unity:
+    Assets/Scenes/FortCell1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -55,6 +55,8 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 50
+      Script: {instanceID: 0}
+    - Class: 62
       Script: {instanceID: 0}
     - Class: 66
       Script: {instanceID: 0}
@@ -75,7 +77,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2508}
     - Class: 114
-      Script: {instanceID: 9554}
+      Script: {instanceID: 9304}
+    - Class: 114
+      Script: {instanceID: 9556}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -205,7 +209,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 972a1d41ef28dfd92237e4eaad8d5a67
+      Hash: d79bf02b4c33cc7764b9a068495b17aa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraController
@@ -991,6 +995,12 @@ ScriptsOnlyBuild:
     className: SpriteLibrarySourceAsset
   - hash:
       serializedVersion: 2
+      Hash: bfab62aa4ca8df5bd06642cc175fa410
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MetadataRecord
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1031,13 +1041,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 71e8d5cc3a1dd0e2dec00f369af98256
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MetadataRecord
   platform: 19
   scenePathNames:
-  - Assets/Scenes/DevCell.unity
+  - Assets/Scenes/FortCell1.unity
   playerPath: C:/Users/William Brett/Documents/DuskValeTestBuild/DuskVale.exe

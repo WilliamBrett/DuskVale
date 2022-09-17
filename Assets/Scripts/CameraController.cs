@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
     private Transform CameraPos;
     public Transform PlayerPos;
     public Transform FarScenery;
+    public Transform MidScenery;
     public float CameraXMax;
     public float CameraXMin;
     public float CameraYMax;
@@ -53,19 +54,20 @@ public class CameraController : MonoBehaviour
     {
         xCord = PlayerPos.position.x;
         yCord = PlayerPos.position.y;
-        if (xCord > CameraXMax)
+
+        if (xCord >= CameraXMax)
         {
-            xCord =CameraXMax;
+            xCord = CameraXMax;
         }
-        else if (xCord < CameraXMin)
+        else if (xCord <= CameraXMin)
         {
             xCord = CameraXMin;
         }
-        if (yCord > CameraYMax)
+        if (yCord >= CameraYMax)
         {
             yCord = CameraYMax;
         }
-        else if (yCord < CameraYMin)
+        else if (yCord <= CameraYMin)
         {
             yCord = CameraYMin;
         }
@@ -74,6 +76,8 @@ public class CameraController : MonoBehaviour
         Vector3 newFarSceneryPos = new Vector3(xCord, yCord, FarScenery.position.z);
         Vector3 changeCameraPos = new Vector3(newCameraPos.x - CameraPos.position.x, newCameraPos.y - CameraPos.position.y, newCameraPos.z - CameraPos.position.z);
         CameraPos.position = newCameraPos;
+        MidScenery.position = new Vector3(MidScenery.position.x + (changeCameraPos.x / 2), MidScenery.position.y, MidScenery.position.z);
         FarScenery.position = newFarSceneryPos;
+        
     }
 }
