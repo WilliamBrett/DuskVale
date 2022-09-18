@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     private GameObject[] Metadata;
+    private GameObject[] PlayerRef;
     private Transform CameraPos;
     public Transform PlayerPos;
     public Transform FarScenery;
@@ -15,11 +16,21 @@ public class CameraController : MonoBehaviour
     public float CameraYMin;
     private float xCord;
     private float yCord;
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
         this.CameraPos = this.GetComponent<Transform>();
+        PlayerRef = GameObject.FindGameObjectsWithTag("Player");
+        if (PlayerRef.Length != 0)
+        {
+            PlayerPos = PlayerRef[0].GetComponent<Transform>();
+        }
+        else
+        {
+            PlayerPos = this.transform;
+        }
         //using the tag "metadata", the cell's camera settings are retrieved
         Metadata = GameObject.FindGameObjectsWithTag("Metadata");
         if (Metadata.Length != 0)
@@ -46,8 +57,9 @@ public class CameraController : MonoBehaviour
         {
             CameraYMin = 9999;
         }
-
     }
+
+
 
     // Update is called once per frame
     void Update()

@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CellPathway : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private GameObject[] PlayerRef;
+    public string ConnectedCell;
+    public string ConnectedSpawn;
+    
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        if (collision.tag == "Player")
+        {
+            PlayerRef = GameObject.FindGameObjectsWithTag("Player");
+            if (PlayerRef.Length != 0)
+            {
+                PlayerRef[0].GetComponent<PlayerController>().SpawnID = ConnectedSpawn;
+                //PlayerRef[0].GetComponent<PlayerController>();
+                SceneManager.LoadScene(ConnectedCell);
+            }
+        }
         
     }
 }

@@ -20,29 +20,23 @@ public class PlayerController : MonoBehaviour
     private bool onGround;
     private bool jumping;
 
-    private void Awake()
+    public bool testbool;
+
+
+    // Start is called before the first frame update
+    void Start()
     {
         DontDestroyOnLoad(gameObject);
         thisRB2D = this.GetComponent<Rigidbody2D>();
         thisSR = this.GetComponent<SpriteRenderer>();
         thisAnim = this.GetComponent<Animator>();
         thistf = this.GetComponent<Transform>();
+        ZoneIn();
     }
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void OnLevelWasLoaded(int level)
     {
-        
-        Metadata = GameObject.FindGameObjectsWithTag("Metadata");
-        if (Metadata.Length != 0)
-        {
-            thistf.position = Metadata[0].GetComponent<MetadataRecord>().GetSpawn(SpawnID);
-        }
-        else //error handling for cells without a metadata
-        {
-            thistf.position = new Vector3(0, 0, 0);
-        }
+        ZoneIn();
     }
 
     // Update is called once per frame
@@ -86,5 +80,18 @@ public class PlayerController : MonoBehaviour
         thisAnim.SetBool("onGround", onGround);
         thisAnim.SetFloat("moveSpeedX", Math.Abs(thisRB2D.velocity.x));
 
+    }
+
+    public void ZoneIn()
+    {
+        Metadata = GameObject.FindGameObjectsWithTag("Metadata");
+        if (Metadata.Length != 0)
+        {
+            thistf.position = Metadata[0].GetComponent<MetadataRecord>().GetSpawn(SpawnID);
+        }
+        else //error handling for cells without a metadata
+        {
+            thistf.position = new Vector3(0, 0, 0);
+        }
     }
 }
