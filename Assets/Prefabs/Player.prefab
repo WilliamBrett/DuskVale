@@ -106,8 +106,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2099226529
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8fafb0f7ac835417d9ad4d4337d461ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,7 +136,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1.5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 977e25fe9cd946a4ea30fdceade44280, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -169,13 +169,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f3dffbafbe5c14bbcdbeae26ffdfdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Metadata: []
+  thistf: {fileID: 0}
   BottomPoint: {fileID: 2611503059182624089}
   Ground:
     serializedVersion: 2
     m_Bits: 256
   moveSpeed: 5
   jumpForce: 10
+  SpawnID: 
   DJReady: 0
+  testbool: 0
 --- !u!95 &2611503059936278584
 Animator:
   serializedVersion: 4
