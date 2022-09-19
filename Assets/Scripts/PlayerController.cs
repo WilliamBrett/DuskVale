@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer thisSR;
     public Transform thistf;
     public Transform BottomPoint;
+    public Transform FirePointRight;
+    public Transform FirePointLeft;
     public LayerMask Ground;
     public float moveSpeed;
     public float jumpForce;
@@ -21,6 +23,8 @@ public class PlayerController : MonoBehaviour
     private bool jumping;
 
     public bool testbool;
+
+    public GameObject Bullet;
 
 
     // Start is called before the first frame update
@@ -67,11 +71,16 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (thisRB2D.velocity.x > 0)
+        if (Input.GetButtonDown("Fire1"))
+        {
+            FireBullet();
+        }
+
+        if (thisRB2D.velocity.x > 0.1)
         {
             thisSR.flipX = false;
         }
-        else if (thisRB2D.velocity.x < 0)
+        else if (thisRB2D.velocity.x < -0.1)
         {
             thisSR.flipX = true;
         }
@@ -93,5 +102,19 @@ public class PlayerController : MonoBehaviour
         {
             thistf.position = new Vector3(0, 0, 0);
         }
+    }
+
+    public void FireBullet()
+    {
+        if (thisSR.flipX)
+        {
+            Instantiate(Bullet, FirePointLeft.position, FirePointLeft.rotation);
+
+        }
+        else
+        {
+            Instantiate(Bullet, FirePointRight.position, FirePointRight.rotation);
+        }
+            
     }
 }

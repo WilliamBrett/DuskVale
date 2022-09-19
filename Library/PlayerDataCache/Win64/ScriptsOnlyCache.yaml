@@ -29,6 +29,9 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.RandomBrush
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TestTools.CodeCoverage.Editor.dll:
+    - UnityEditor.TestTools.CodeCoverage.CodeCoverageWindow
+    - UnityEditor.TestTools.CodeCoverage.CoverageRunData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -76,15 +79,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 654}
+      Script: {instanceID: 656}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2526}
     - Class: 114
-      Script: {instanceID: 8930}
+      Script: {instanceID: 9058}
     - Class: 114
-      Script: {instanceID: 9306}
+      Script: {instanceID: 9440}
     - Class: 114
-      Script: {instanceID: 9558}
+      Script: {instanceID: 9698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -137,15 +140,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 654}
+      Script: {instanceID: 656}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2526}
     - Class: 114
-      Script: {instanceID: 8930}
+      Script: {instanceID: 9058}
     - Class: 114
-      Script: {instanceID: 9306}
+      Script: {instanceID: 9440}
     - Class: 114
-      Script: {instanceID: 9558}
+      Script: {instanceID: 9698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -188,13 +191,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 654}
+      Script: {instanceID: 656}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2526}
     - Class: 114
-      Script: {instanceID: 8930}
+      Script: {instanceID: 9058}
     - Class: 114
-      Script: {instanceID: 9306}
+      Script: {instanceID: 9440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -472,6 +475,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 1aa53b8f093f4aeee67b50a3439f8e1e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BulletManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
