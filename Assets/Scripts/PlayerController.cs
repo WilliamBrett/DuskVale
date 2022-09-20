@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public Transform BottomPoint;
     public Transform FirePointRight;
     public Transform FirePointLeft;
+    public Transform FirePointBottomRight;
+    public Transform FirePointBottomLeft;
     public LayerMask Ground;
     public float moveSpeed;
     public float jumpForce;
@@ -20,7 +22,8 @@ public class PlayerController : MonoBehaviour
 
     public bool DJReady;
     private bool onGround;
-    private bool jumping;
+    public bool Crouching;
+    public int afterShotDelay;
 
     public bool testbool;
 
@@ -46,11 +49,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        thisRB2D.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), thisRB2D.velocity.y);
+        if (!Crouching && afterShotDelay == 0) {
+            thisRB2D.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), thisRB2D.velocity.y);
+        }
         onGround = Physics2D.OverlapCircle(BottomPoint.position, 0.2f, Ground);
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && afterShotDelay == 0)
         {
-
+            Crouching = false;
             if (onGround)
             {
                 thisRB2D.velocity = new Vector2(thisRB2D.velocity.x, jumpForce);
@@ -71,10 +76,26 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && afterShotDelay == 0 && (thisRB2D.velocity.x == 0 || Crouching))
         {
             FireBullet();
         }
+        else if (afterShotDelay > 0)
+        {
+            afterShotDelay--;
+        }
+
+        if (Input.GetAxis("Vertical") >= 0)
+        {
+            Crouching = false;
+        }
+        
+        if (Input.GetAxis("Vertical") < 0 && onGround)
+        {
+            thisRB2D.velocity = new Vector2(0, 0);
+            Crouching = true;
+        }
+        
 
         if (thisRB2D.velocity.x > 0.1)
         {
@@ -88,7 +109,8 @@ public class PlayerController : MonoBehaviour
         thisAnim.SetFloat("moveSpeedY", thisRB2D.velocity.y);
         thisAnim.SetBool("onGround", onGround);
         thisAnim.SetFloat("moveSpeedX", Math.Abs(thisRB2D.velocity.x));
-
+        thisAnim.SetFloat("afterShotDelay", afterShotDelay);
+        thisAnim.SetBool("Crouching", Crouching);
     }
 
     public void ZoneIn()
@@ -102,19 +124,34 @@ public class PlayerController : MonoBehaviour
         {
             thistf.position = new Vector3(0, 0, 0);
         }
+        afterShotDelay = 0;
     }
 
     public void FireBullet()
     {
         if (thisSR.flipX)
         {
-            Instantiate(Bullet, FirePointLeft.position, FirePointLeft.rotation);
+            if (!Crouching){
+                Instantiate(Bullet, FirePointLeft.position, FirePointLeft.rotation);
+            }
+            else
+            {
+                Instantiate(Bullet, FirePointBottomLeft.position, FirePointBottomLeft.rotation);
+            }
 
         }
         else
         {
-            Instantiate(Bullet, FirePointRight.position, FirePointRight.rotation);
+            if (!Crouching)
+            {
+                Instantiate(Bullet, FirePointRight.position, FirePointRight.rotation);
+            }
+            else
+            {
+                Instantiate(Bullet, FirePointBottomRight.position, FirePointBottomRight.rotation);
+            }
+
         }
-            
+        afterShotDelay = 10;
     }
 }
