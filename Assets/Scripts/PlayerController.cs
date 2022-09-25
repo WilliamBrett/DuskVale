@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public string SpawnID;
 
     public bool DJReady;
+    public bool DashReady;
+    private int DashDelay;
     private bool onGround;
     public bool Crouching;
     public int afterShotDelay;
@@ -38,6 +40,7 @@ public class PlayerController : MonoBehaviour
         thisSR = this.GetComponent<SpriteRenderer>();
         thisAnim = this.GetComponent<Animator>();
         thistf = this.GetComponent<Transform>();
+        DashDelay = 0;
         ZoneIn();
     }
 
@@ -49,18 +52,39 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Crouching && afterShotDelay == 0) {
+        if (!Crouching && afterShotDelay == 0 && DashDelay == 0) {
             thisRB2D.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), thisRB2D.velocity.y);
         }
+        else if (DashDelay > 0)
+        {
+            DashDelay--;
+        }
         onGround = Physics2D.OverlapCircle(BottomPoint.position, 0.2f, Ground);
+        if (onGround)
+        {
+            DJReady = true;
+            DashReady = true;
+        }
+        else
+        {
+            if (Input.GetButtonDown("Dash"))
+            {
+                if (thisSR.flipX == true) {
+                    thisRB2D.velocity = new Vector2(moveSpeed * -5, 0);
+                }
+                else
+                {
+                    thisRB2D.velocity = new Vector2(moveSpeed * 5, 0);
+                }
+                DashDelay = 30;
+            }
+        }
         if (Input.GetButtonDown("Jump") && afterShotDelay == 0)
         {
             Crouching = false;
             if (onGround)
             {
                 thisRB2D.velocity = new Vector2(thisRB2D.velocity.x, jumpForce);
-                DJReady = true;
-
             }
             else if (DJReady)
             {
