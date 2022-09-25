@@ -53,6 +53,11 @@ public class BulletManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "Hostile")
+        {
+            collision.GetComponent<HealthManager>().TakeDamage(1);
+        }
+        
         if (collision.tag != "Player")
         {
             Destroy(gameObject);

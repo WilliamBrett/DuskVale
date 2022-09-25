@@ -15,6 +15,8 @@ public class SkeletonController : MonoBehaviour
     private Transform thisTF;
     private SpriteRenderer thisSprite;
     private Rigidbody2D thisRB2D;
+    private HealthManager thisHealth;
+    public int HazardPot;
 
     
     // Start is called before the first frame update
@@ -26,6 +28,7 @@ public class SkeletonController : MonoBehaviour
         thisTF = this.GetComponent<Transform>();
         thisSprite = this.GetComponent<SpriteRenderer>();
         thisRB2D = this.GetComponent<Rigidbody2D>();
+        thisHealth = this.GetComponent<HealthManager>();
         Awake = false;
         Risen = false;
         RiseDelay = -1;
@@ -34,35 +37,41 @@ public class SkeletonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (RiseDelay > -1)
-        {
-            RiseDelay--;
-            if (RiseDelay == 0)
+        if (!thisHealth.dying) {
+            if (RiseDelay > -1)
             {
-                Risen = true;
-                thisAnim.SetBool("Risen", true);
+                RiseDelay--;
+                if (RiseDelay == 0)
+                {
+                    Risen = true;
+                    thisAnim.SetBool("Risen", true);
+                }
             }
-        }
-        if (Risen)
-        {
-            if (PlayerRef != null)
+            if (Risen)
             {
-                if (PlayerRef.GetComponent<Transform>().position.x - this.transform.position.x > 0){
-                    thisSprite.flipX = true;
-                    thisRB2D.velocity = new Vector2(2, thisRB2D.velocity.y);
+                if (PlayerRef != null)
+                {
+                    if (PlayerRef.GetComponent<Transform>().position.x - this.transform.position.x > 0) {
+                        thisSprite.flipX = true;
+                        thisRB2D.velocity = new Vector2(MoveSpeed, thisRB2D.velocity.y);
+                    }
+                    else
+                    {
+                        thisSprite.flipX = false;
+                        thisRB2D.velocity = new Vector2(-MoveSpeed, thisRB2D.velocity.y);
+
+                    }
+
                 }
                 else
                 {
-                    thisSprite.flipX = false;
-                    thisRB2D.velocity = new Vector2(-2, thisRB2D.velocity.y);
-
+                    //death
                 }
-                
             }
-            else
-            {
-                //death
-            }
+        }
+        else
+        {
+            this.HazardPot = 0;
         }
     }
 
@@ -70,7 +79,7 @@ public class SkeletonController : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-
+            collision.GetComponent<HealthManager>().TakeDamage(HazardPot);
         }
     }
 

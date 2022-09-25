@@ -249,7 +249,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currenthealth: 0
-  maxhealth: 0
+  maxhealth: 1
+  deathTime: 25
+  dying: 0
 --- !u!114 &1204929263412305434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,5 +266,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Awake: 0
   Risen: 0
-  MoveSpeed: 0
+  MoveSpeed: 2
   PlayerRef: {fileID: 0}
+  HazardPot: 1
