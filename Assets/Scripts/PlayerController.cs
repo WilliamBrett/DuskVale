@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
                 DashDelay = 30;
             }
         }
-        if (Input.GetButtonDown("Jump") && afterShotDelay == 0)
+        if (Input.GetButtonDown("Jump") && Input.GetAxis("Vertical") >= 0  && afterShotDelay == 0)
         {
             Crouching = false;
             if (onGround)

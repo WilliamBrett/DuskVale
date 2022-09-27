@@ -224,14 +224,18 @@ var assemblies = [
   {
     "name": "Assembly-CSharp",
     "classes": [
-      { "name": "CameraController", "rp": "Assembly_CSharp_CameraController.html", "cl": 43, "ucl": 18, "cal": 61, "tl": 95, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [70.4], "bch": [], "hc": [{ "et": "9/18/2022 - 6:07:16 PM", "cl": 43, "ucl": 18, "cal": 61, "tl": 95, "lcq": 70.4, "cb": 0, "tb": 0, "bcq": 0 }] },
-      { "name": "CellPathway", "rp": "Assembly_CSharp_CellPathway.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 26, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "9/18/2022 - 6:07:16 PM", "cl": 11, "ucl": 0, "cal": 11, "tl": 26, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
-      { "name": "MetadataRecord", "rp": "Assembly_CSharp_MetadataRecord.html", "cl": 9, "ucl": 3, "cal": 12, "tl": 41, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [75], "bch": [], "hc": [{ "et": "9/18/2022 - 6:07:16 PM", "cl": 9, "ucl": 3, "cal": 12, "tl": 41, "lcq": 75, "cb": 0, "tb": 0, "bcq": 0 }] },
-      { "name": "PlayerController", "rp": "Assembly_CSharp_PlayerController.html", "cl": 50, "ucl": 6, "cal": 56, "tl": 97, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [89.2], "bch": [], "hc": [{ "et": "9/18/2022 - 6:07:16 PM", "cl": 50, "ucl": 6, "cal": 56, "tl": 97, "lcq": 89.2, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "BulletManager", "rp": "Assembly_CSharp_BulletManager.html", "cl": 25, "ucl": 0, "cal": 25, "tl": 66, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "9/25/2022 - 2:59:07 PM", "cl": 25, "ucl": 0, "cal": 25, "tl": 66, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "CameraController", "rp": "Assembly_CSharp_CameraController.html", "cl": 43, "ucl": 18, "cal": 61, "tl": 95, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [70.4], "bch": [], "hc": [{ "et": "9/18/2022 - 6:07:16 PM", "cl": 43, "ucl": 18, "cal": 61, "tl": 95, "lcq": 70.4, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "9/25/2022 - 2:59:07 PM", "cl": 43, "ucl": 18, "cal": 61, "tl": 95, "lcq": 70.4, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "CellPathway", "rp": "Assembly_CSharp_CellPathway.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 26, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "9/18/2022 - 6:07:16 PM", "cl": 11, "ucl": 0, "cal": 11, "tl": 26, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "9/25/2022 - 2:59:07 PM", "cl": 11, "ucl": 0, "cal": 11, "tl": 26, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "HealthManager", "rp": "Assembly_CSharp_HealthManager.html", "cl": 39, "ucl": 0, "cal": 39, "tl": 61, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "9/25/2022 - 2:59:07 PM", "cl": 39, "ucl": 0, "cal": 39, "tl": 61, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "MetadataRecord", "rp": "Assembly_CSharp_MetadataRecord.html", "cl": 11, "ucl": 1, "cal": 12, "tl": 41, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [75,91.6], "bch": [], "hc": [{ "et": "9/18/2022 - 6:07:16 PM", "cl": 9, "ucl": 3, "cal": 12, "tl": 41, "lcq": 75, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "9/25/2022 - 2:59:07 PM", "cl": 11, "ucl": 1, "cal": 12, "tl": 41, "lcq": 91.6, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "PlayerController", "rp": "Assembly_CSharp_PlayerController.html", "cl": 118, "ucl": 3, "cal": 121, "tl": 181, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [89.2,97.5], "bch": [], "hc": [{ "et": "9/18/2022 - 6:07:16 PM", "cl": 50, "ucl": 6, "cal": 56, "tl": 97, "lcq": 89.2, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "9/25/2022 - 2:59:07 PM", "cl": 118, "ucl": 3, "cal": 121, "tl": 181, "lcq": 97.5, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "SkeletonAwake", "rp": "Assembly_CSharp_SkeletonAwake.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "9/25/2022 - 2:59:07 PM", "cl": 7, "ucl": 0, "cal": 7, "tl": 16, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "SkeletonController", "rp": "Assembly_CSharp_SkeletonController.html", "cl": 55, "ucl": 5, "cal": 60, "tl": 97, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [91.6], "bch": [], "hc": [{ "et": "9/25/2022 - 2:59:07 PM", "cl": 55, "ucl": 5, "cal": 60, "tl": 97, "lcq": 91.6, "cb": 0, "tb": 0, "bcq": 0 }] },
     ]},
 ];
 
-var historicCoverageExecutionTimes = [];
+var historicCoverageExecutionTimes = ["9/18/2022 - 6:07:16 PM"];
 
 var riskHotspotMetrics = [
 ];
