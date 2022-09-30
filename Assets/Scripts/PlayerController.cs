@@ -31,6 +31,11 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Bullet;
 
+    public bool DJUnlocked;
+    public bool DashUnlocked;
+    public bool WJUnlocked;
+    public int MaxHP;
+
 
     // Start is called before the first frame update
     void Start()
