@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public Transform FirePointLeft;
     public Transform FirePointBottomRight;
     public Transform FirePointBottomLeft;
+    public Transform GripL;
+    public Transform GripR;
     public LayerMask Ground;
     public float moveSpeed;
     public float jumpForce;
@@ -22,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     public bool DJReady;
     public bool DashReady;
-    private int DashDelay;
+    private int AnimLock;
     private bool onGround;
     public bool Crouching;
     public int afterShotDelay;
@@ -45,7 +47,7 @@ public class PlayerController : MonoBehaviour
         thisSR = this.GetComponent<SpriteRenderer>();
         thisAnim = this.GetComponent<Animator>();
         thistf = this.GetComponent<Transform>();
-        DashDelay = 0;
+        AnimLock = 0;
         ZoneIn();
     }
 
@@ -57,12 +59,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Crouching && afterShotDelay == 0 && DashDelay == 0) {
+        if (!Crouching && afterShotDelay == 0 && AnimLock == 0) {
             thisRB2D.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), thisRB2D.velocity.y);
         }
-        else if (DashDelay > 0)
+        else if (AnimLock > 0)
         {
-            DashDelay--;
+            AnimLock--;
         }
         onGround = Physics2D.OverlapCircle(BottomPoint.position, 0.2f, Ground);
         if (onGround)
@@ -81,7 +83,7 @@ public class PlayerController : MonoBehaviour
                 {
                     thisRB2D.velocity = new Vector2(moveSpeed * 5, 0);
                 }
-                DashDelay = 30;
+                AnimLock = 30;
             }
         }
         if (Input.GetButtonDown("Jump") && Input.GetAxis("Vertical") >= 0  && afterShotDelay == 0)
@@ -91,7 +93,19 @@ public class PlayerController : MonoBehaviour
             {
                 thisRB2D.velocity = new Vector2(thisRB2D.velocity.x, jumpForce);
             }
-            else if (DJReady)
+            else if (Physics2D.OverlapCircle(GripR.position, 0.2f, Ground))
+            {
+                thisRB2D.velocity = new Vector2(-moveSpeed * 2, jumpForce);
+                DJReady = true;
+                AnimLock = 15;
+            }
+            else if (Physics2D.OverlapCircle(GripL.position, 0.2f, Ground))
+            {
+                thisRB2D.velocity = new Vector2(moveSpeed * 2, jumpForce);
+                AnimLock = 15;
+                DJReady = true;
+            }
+            else if (DJReady && AnimLock == 0)
             {
                 thisRB2D.velocity = new Vector2(thisRB2D.velocity.x, jumpForce);
                 DJReady = false;
