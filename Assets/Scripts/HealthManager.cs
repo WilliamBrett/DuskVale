@@ -8,7 +8,7 @@ public class HealthManager : MonoBehaviour
     private int deathDelay;
     private Animator thisAnim;
     public bool dying;
-    private int iframe;
+    public int iframe;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +41,7 @@ public class HealthManager : MonoBehaviour
         if (iframe == 0)
         {
             currenthealth -= i;
-            iframe = (i * 10);
+            iframe = (i * 100);
             //knockback?
             if (currenthealth <= 0)
             {

@@ -58,7 +58,7 @@ public class BulletManager : MonoBehaviour
             collision.GetComponent<HealthManager>().TakeDamage(1);
         }
         
-        if (collision.tag != "Player")
+        if (collision.tag != "Player" && collision.tag != "Intangible")
         {
             Destroy(gameObject);
         }

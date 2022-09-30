@@ -17,6 +17,7 @@ public class SkeletonController : MonoBehaviour
     private Rigidbody2D thisRB2D;
     private HealthManager thisHealth;
     public int HazardPot;
+    public int curHazardPot;
 
     
     // Start is called before the first frame update
@@ -31,6 +32,8 @@ public class SkeletonController : MonoBehaviour
         thisHealth = this.GetComponent<HealthManager>();
         Awake = false;
         Risen = false;
+        thisHealth.iframe = 999;
+        curHazardPot = 0;
         RiseDelay = -1;
     }
 
@@ -45,6 +48,8 @@ public class SkeletonController : MonoBehaviour
                 {
                     Risen = true;
                     thisAnim.SetBool("Risen", true);
+                    curHazardPot = HazardPot;
+                    thisHealth.iframe = 1;
                 }
             }
             if (Risen)
@@ -65,13 +70,18 @@ public class SkeletonController : MonoBehaviour
                 }
                 else
                 {
-                    //death
+                    thisHealth.iframe = 0;
+                    thisHealth.TakeDamage(999);
                 }
+            }
+            else
+            {
+                thisHealth.iframe = 999;
             }
         }
         else
         {
-            this.HazardPot = 0;
+            curHazardPot = 0;
         }
     }
 
@@ -79,7 +89,7 @@ public class SkeletonController : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            collision.GetComponent<HealthManager>().TakeDamage(HazardPot);
+            collision.GetComponent<HealthManager>().TakeDamage(curHazardPot);
         }
     }
 

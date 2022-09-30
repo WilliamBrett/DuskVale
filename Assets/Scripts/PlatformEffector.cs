@@ -28,24 +28,13 @@ public class PlatformEffector : MonoBehaviour
     {
         if (Input.GetAxis("Vertical") < 0)
         {
-            //Physics.IgnoreCollision(thisCollider, PlayerRef);
-            thisEffect.colliderMask &= ~(1 << 9);
-        }
-        else
-        {
-            //Physics.IgnoreCollision(PlayerRef, thisCol, false);
-            thisEffect.colliderMask |= (1 << 9);
-
-        }
-        /*if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.W))
-        {
             thisEffect.colliderMask &= ~(1 << 9);
         }
         else
         {
             thisEffect.colliderMask |= (1 << 9);
 
-        }*/
+        }
     }
 }
 

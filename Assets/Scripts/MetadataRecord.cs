@@ -32,10 +32,25 @@ public class MetadataRecord : MonoBehaviour
                 return SpawnC != null ? SpawnC : SpawnDefault;
             case "D":
                 return SpawnD != null ? SpawnD : SpawnDefault;
+            case "S":
+                return LoadSavePointTF();
             case null://error handling
                 return SpawnDefault;
             default://error handling
                 return SpawnDefault;
         }       
+    }
+
+    private Vector3 LoadSavePointTF()
+    {
+        GameObject[] SPs = GameObject.FindGameObjectsWithTag("SavePoint");
+        if (SPs.Length != 0)
+        {
+            return SPs[0].GetComponent<Transform>().position;
+        }
+        else //error handling
+        {
+            return SpawnDefault;
+        }
     }
 }
