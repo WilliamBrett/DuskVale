@@ -7,8 +7,12 @@ public class LoadManager : MonoBehaviour
 {
     public GameObject PlayerPresetRef;
     public GameObject SpawnedPlayerRef;
-    public PlayerController ControllerRef;
-    public HealthManager HealthRef;
+    private PlayerController ControllerRef;
+    private int MaxHP;
+    private bool DJUnlocked;
+    private bool DashUnlocked;
+    private bool WJUnlocked;
+    public PlayerRecord RecordRef;
     
     // Start is called before the first frame update
     void Start()
@@ -24,38 +28,40 @@ public class LoadManager : MonoBehaviour
         {
             return;
         }
+        RecordRef = SpawnedPlayerRef.GetComponentInChildren<PlayerRecord>();
         ControllerRef = SpawnedPlayerRef.GetComponent<PlayerController>();
-        HealthRef = SpawnedPlayerRef.GetComponent<HealthManager>();
         ControllerRef.SpawnID = "S";
         if (PlayerPrefs.HasKey("PlayerMaxHealth"))
         {
-            HealthRef.maxhealth = PlayerPrefs.GetInt("PlayerMaxHealth");
+            MaxHP = PlayerPrefs.GetInt("PlayerMaxHealth");
+
         }
-        else HealthRef.maxhealth = 5;
+        else MaxHP = 5;
         if (PlayerPrefs.HasKey("PlayerDJUnlocked"))
         {
-            ControllerRef.DJUnlocked = TranslateBool(PlayerPrefs.GetInt("PlayerDJUnlocked"));
+            DJUnlocked = TranslateBool(PlayerPrefs.GetInt("PlayerDJUnlocked"));
         }
         else
         {
-            ControllerRef.DJUnlocked = false;
+            DJUnlocked = false;
         }
         if (PlayerPrefs.HasKey("PlayerDashUnlocked"))
         {
-            ControllerRef.DashUnlocked = TranslateBool(PlayerPrefs.GetInt("PlayerDashUnlocked"));
+            DashUnlocked = TranslateBool(PlayerPrefs.GetInt("PlayerDashUnlocked"));
         }
         else
         {
-            ControllerRef.DashUnlocked = false;
+            DashUnlocked = false;
         }
         if (PlayerPrefs.HasKey("PlayerWJUnlocked"))
         {
-            ControllerRef.WJUnlocked = TranslateBool(PlayerPrefs.GetInt("PlayerWJUnlocked"));
+            WJUnlocked = TranslateBool(PlayerPrefs.GetInt("PlayerWJUnlocked"));
         }
         else
         {
-            ControllerRef.WJUnlocked = false;
+            WJUnlocked = false;
         }
+        RecordRef.SetupRecord(DJUnlocked, DashUnlocked, WJUnlocked, MaxHP);
         if (PlayerPrefs.HasKey("SceneName"))
         {
             SceneManager.LoadScene(PlayerPrefs.GetString("SceneName"));
