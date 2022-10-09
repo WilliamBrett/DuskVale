@@ -15,19 +15,16 @@ public class LoadManager : MonoBehaviour
     public PlayerRecord RecordRef;
     
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
         LoadGame();
-    }
+    }*/
 
 
     public void LoadGame()
     {
+        PlayerPresetRef = Resources.Load("Player", typeof(GameObject)) as GameObject;
         SpawnPlayer();
-        if (SpawnedPlayerRef.Equals(null))
-        {
-            return;
-        }
         RecordRef = SpawnedPlayerRef.GetComponentInChildren<PlayerRecord>();
         ControllerRef = SpawnedPlayerRef.GetComponent<PlayerController>();
         ControllerRef.SpawnID = "S";
@@ -70,6 +67,24 @@ public class LoadManager : MonoBehaviour
         {
             SceneManager.LoadScene("FortCell1");
         }
+    }
+
+    public void NewGame()
+    {
+        SpawnPlayer();
+        if (SpawnedPlayerRef.Equals(null))
+        {
+            return;
+        }
+        RecordRef = SpawnedPlayerRef.GetComponentInChildren<PlayerRecord>();
+        ControllerRef = SpawnedPlayerRef.GetComponent<PlayerController>();
+        ControllerRef.SpawnID = "S";
+        MaxHP = 5;
+        DJUnlocked = false;
+        DashUnlocked = false;
+        WJUnlocked = false;
+        SceneManager.LoadScene("FortCell2");
+        
     }
 
     public bool TranslateBool(int inInt)
