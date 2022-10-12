@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1204929262451409924}
   m_Layer: 9
   m_Name: AwakeTrigger
-  m_TagString: Intangible
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -252,6 +252,7 @@ MonoBehaviour:
   maxhealth: 1
   deathTime: 25
   dying: 0
+  iframe: 0
 --- !u!114 &1204929263412305434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,3 +270,4 @@ MonoBehaviour:
   MoveSpeed: 2
   PlayerRef: {fileID: 0}
   HazardPot: 1
+  curHazardPot: 0

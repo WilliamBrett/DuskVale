@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     GameAssembly.dll:
-    - BulletManager
     - CameraController
     - CellPathway
     - ExitButton
@@ -14,14 +13,15 @@ ScriptsOnlyBuild:
     - PlatformEffector
     - PlayerController
     - PlayerRecord
+    - ProjectileManager
     - SaveManager
     - SkeletonAwake
     - SkeletonController
+    - TestReferenceLedger
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
@@ -46,7 +46,9 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    - Packages.Rider.Editor.UnitTesting.SyncTestRunEventsHandler
     Unity.TestTools.CodeCoverage.Editor.dll:
+    - UnityEditor.TestTools.CodeCoverage.Analytics.CoverageAnalytics
     - UnityEditor.TestTools.CodeCoverage.CodeCoverageWindow
     - UnityEditor.TestTools.CodeCoverage.CoverageRunData
     Unity.TextMeshPro.dll:
@@ -64,9 +66,14 @@ ScriptsOnlyBuild:
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
+    - UnityEditor.TestTools.TestRunner.RerunCallbackData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
+    UnityEngine.TestRunner.dll:
+    - UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
+    - UnityEngine.TestTools.TestRunner.PlaymodeTestsController
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -75,9 +82,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
   serializedClasses:
-    Unity.InputSystem:
-    - UnityEngine.InputSystem.InputSettings/iOSSettings
-    - UnityEngine.InputSystem.iOS.PrivacyDataUsage
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -155,19 +159,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 684}
+      Script: {instanceID: 688}
     - Class: 114
-      Script: {instanceID: 2550}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 2630}
+      Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 7324}
+      Script: {instanceID: 7330}
     - Class: 114
-      Script: {instanceID: 9722}
+      Script: {instanceID: 9728}
     - Class: 114
-      Script: {instanceID: 10148}
+      Script: {instanceID: 10156}
     - Class: 114
-      Script: {instanceID: 10516}
+      Script: {instanceID: 10524}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -222,25 +226,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 684}
+      Script: {instanceID: 688}
     - Class: 114
-      Script: {instanceID: 2550}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 2630}
+      Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 3718}
+      Script: {instanceID: 3722}
     - Class: 114
-      Script: {instanceID: 6508}
+      Script: {instanceID: 6514}
     - Class: 114
-      Script: {instanceID: 6530}
+      Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 9722}
+      Script: {instanceID: 9728}
     - Class: 114
-      Script: {instanceID: 10066}
+      Script: {instanceID: 10072}
     - Class: 114
-      Script: {instanceID: 10148}
+      Script: {instanceID: 10156}
     - Class: 114
-      Script: {instanceID: 10426}
+      Script: {instanceID: 10434}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -293,19 +297,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 684}
+      Script: {instanceID: 688}
     - Class: 114
-      Script: {instanceID: 2550}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 2630}
+      Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 7324}
+      Script: {instanceID: 7330}
     - Class: 114
-      Script: {instanceID: 9722}
+      Script: {instanceID: 9728}
     - Class: 114
-      Script: {instanceID: 10148}
+      Script: {instanceID: 10156}
     - Class: 114
-      Script: {instanceID: 10516}
+      Script: {instanceID: 10524}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -358,53 +362,55 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 1630}
     - Class: 114
-      Script: {instanceID: 2418}
+      Script: {instanceID: 2422}
     - Class: 114
-      Script: {instanceID: 2550}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 2630}
+      Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 2992}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3268}
+      Script: {instanceID: 3272}
     - Class: 114
-      Script: {instanceID: 3662}
+      Script: {instanceID: 3666}
     - Class: 114
-      Script: {instanceID: 3718}
+      Script: {instanceID: 3722}
     - Class: 114
-      Script: {instanceID: 5090}
+      Script: {instanceID: 5094}
     - Class: 114
-      Script: {instanceID: 5452}
+      Script: {instanceID: 5456}
     - Class: 114
-      Script: {instanceID: 6464}
+      Script: {instanceID: 5666}
     - Class: 114
-      Script: {instanceID: 6530}
+      Script: {instanceID: 6470}
     - Class: 114
-      Script: {instanceID: 7276}
+      Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 7324}
+      Script: {instanceID: 7282}
     - Class: 114
-      Script: {instanceID: 7498}
+      Script: {instanceID: 7330}
     - Class: 114
-      Script: {instanceID: 7960}
+      Script: {instanceID: 7504}
     - Class: 114
-      Script: {instanceID: 9410}
+      Script: {instanceID: 7966}
     - Class: 114
-      Script: {instanceID: 9534}
+      Script: {instanceID: 9416}
     - Class: 114
-      Script: {instanceID: 9850}
+      Script: {instanceID: 9540}
     - Class: 114
-      Script: {instanceID: 10066}
+      Script: {instanceID: 9856}
     - Class: 114
-      Script: {instanceID: 10244}
+      Script: {instanceID: 10072}
     - Class: 114
-      Script: {instanceID: 10426}
+      Script: {instanceID: 10110}
     - Class: 114
-      Script: {instanceID: 10516}
+      Script: {instanceID: 10252}
     - Class: 114
-      Script: {instanceID: 36626}
+      Script: {instanceID: 10434}
+    - Class: 114
+      Script: {instanceID: 10524}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -723,7 +729,7 @@ ScriptsOnlyBuild:
       Hash: 2d38b5ff5e92893f27f05de0ae4e9f3c
     assemblyName: GameAssembly.dll
     namespaceName: 
-    className: BulletManager
+    className: ProjectileManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -982,6 +988,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: InputSystemObject
+  - hash:
+      serializedVersion: 2
+      Hash: 48f49ff7adb5950628b93f785d726295
+    assemblyName: GameAssembly.dll
+    namespaceName: 
+    className: TestReferenceLedger
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1548,6 +1560,12 @@ ScriptsOnlyBuild:
     className: PlayerRecord
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GameAssembly.dll
+    namespaceName: 
+    className: LoadChecker
+  - hash:
+      serializedVersion: 2
       Hash: 88cc072e5c9fa7ad89bfc774b27b56e0
     assemblyName: GameAssembly.dll
     namespaceName: 
@@ -1578,7 +1596,7 @@ ScriptsOnlyBuild:
     className: UnityOnToggleValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: f2d497f7ac66c393e3b46e86333a8300
+      Hash: f16e46de6a711af8db562529bb331c8c
     assemblyName: GameAssembly.dll
     namespaceName: 
     className: PlayerController
@@ -1612,12 +1630,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: GameAssembly.dll
-    namespaceName: 
-    className: LoadChecker
   platform: 19
   scenePathNames:
   - Assets/Scenes/TitleMenu.unity

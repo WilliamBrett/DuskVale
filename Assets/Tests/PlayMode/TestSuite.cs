@@ -11,7 +11,7 @@ using System.Threading;
 using System;
 using System.Threading.Tasks;
 
-public class TestSuite : InputTestFixture 
+public class TestSuite : InputTestFixture
 {
     public string TestCellName = "DevCell";
     private GameObject PlayerRef;
@@ -24,97 +24,133 @@ public class TestSuite : InputTestFixture
     private Mouse MouseRef;
     private PlayerController PCRef;
     private TestReferenceLedger TestRefs;
+    private int TestsCompleted;
 
-    public void GetTestRefs()
+    private static readonly int TestingTestID = 1;
+    private static readonly int LoadStartScreenTestID = 2;
+    private static readonly int StartMenuTestID = 3;
+    private static readonly int NewGameTestID = 4;
+    private static readonly int PlayerVerifyTestID = 5;
+    private static readonly int CellPathTestID = 6;
+    private static readonly int LoadTestCellID = 7;
+    private static readonly int HorizontalMovementTestID = 8;
+    private static readonly int JumpTestID = 9;
+    private static readonly int DashTestID = 10;
+    private static readonly int CombatTestID = 11;
+    private static readonly int CameraLimitTestID = 12;
+
+    public void GetTestRefs() => TestRefs = GameObject.FindGameObjectWithTag("TestData").GetComponent<TestReferenceLedger>();
+
+    public async Task TimeDelay(int frames)
     {
-        TestRefs = GameObject.FindGameObjectWithTag("TestData").GetComponent<TestReferenceLedger>();
+        for (int i = 0; i < frames; i++)
+        {
+            _ = EverythingUpdate();
+        }
     }
 
-    public IEnumerator  MoveRight(int frameCount)
+    public async Task EverythingUpdate()
+    {
+
+        if (PlayerRef) await PlayerUpdate();
+        await EnemyUpdate();
+        await ProjectileUpdate();
+    }
+
+    public async Task PlayerUpdate()
+    {
+        PlayerRef.GetComponent<PlayerController>().Update();
+        PlayerRef.GetComponent<HealthManager>().Update();
+    }
+
+    public async Task EnemyUpdate()
+    {
+        GameObject[] Hostiles = GameObject.FindGameObjectsWithTag("Hostile");
+        if (Hostiles.Length != 0)
+        {
+            for (int i = 0; i < Hostiles.Length; i++)
+            {
+                if (Hostiles[i].GetComponent<SkeletonController>())
+                {
+                    Hostiles[i].GetComponent<SkeletonController>().Update();
+                }
+            }
+        }
+    }
+
+    public async Task ProjectileUpdate()
+    {
+        GameObject[] Projectiles = GameObject.FindGameObjectsWithTag("Projectile");
+        if (Projectiles.Length != 0)
+        {
+            for (int i = 0; i < Projectiles.Length; i++)
+            {
+                Projectiles[i].GetComponent<ProjectileManager>().Update();
+            }
+        }
+    }
+
+    public async Task MoveRight(int frameCount)
     {
         for (int i = frameCount; i > 0; i++)
         {
             PCRef.HorizontalMove(1);
-            yield return new WaitForSeconds(FrameConversion(1)); //TimeDelay(1);
+            await EverythingUpdate();
         }
     }
 
-    public IEnumerator MoveLeft(int frameCount)
+    public async Task MoveLeft(int frameCount)
     {
         for (int i = frameCount; i > 0; i++)
         {
             PCRef.HorizontalMove(-1);
-            yield return new WaitForSeconds(FrameConversion(1));//TimeDelay(1);
+            await EverythingUpdate();
         }
     }
 
-    public IEnumerator Dash()
+    public async Task Dash()
     {
         PCRef.Dash();
-        yield return new WaitForSeconds(FrameConversion(30)); //TimeDelay(30);
+        await TimeDelay(30);
     }
 
-    public IEnumerator Jump()
+    public async Task Jump()
     {
         PCRef.Jump(1);
-        yield return new WaitForSeconds(FrameConversion(15)); //TimeDelay(15);
+        await TimeDelay(15);
     }
 
-    public IEnumerator Fire()
+    public async Task Fire()
     {
         if (PCRef.afterShotDelay == 0 && (PCRef.thisRB2D.velocity.x == 0 || PCRef.Crouching))
         {
             PCRef.FireBullet();
         }
-        yield return new WaitForSeconds(FrameConversion(1));//TimeDelay(1);
+        await EverythingUpdate();
     }
 
 
-    public IEnumerator TimeDelay(int FrameNum)
-    {
-        //Thread.Sleep(50 * FrameNum);
-        yield return new WaitForSeconds(((float)0.02) * ((float)FrameNum));
-        //await Time.Delay()
-        //int i = 0;
-        //while (i < FrameNum)
-        //{
-        //    yield return new WaitForEndOfFrame();
-        ///    i++;
-        //}yield return new WaitForSeconds(FrameConversion());
-    }
-    
-    /*private static async Task<DelayStruct> TimeDelay(int FrameNum)
-    { //To use: var DelayStruct = await TimeDelay(number);
-        await Task.Delay(FrameNum);
-        return new DelayStruct();
-    }*/
-
-    public struct DelayStruct
-    {
-
-    }
-
-    public float FrameConversion(int FrameNum)
+    /*public float FrameConversion(int FrameNum)
     {
         return ((float)0.02) * ((float)FrameNum);
-    }
+    }*/
 
 
 
 
-    [OneTimeSetUp]
+    /*[OneTimeSetUp]
     public void OneTimeSetUp()
     {
         //KeyboardRef = InputSystem.AddDevice<Keyboard>();
         //MouseRef = InputSystem.AddDevice<Mouse>();
         //EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
-    }
+    }*/
 
-    [UnityTest, Order(1)]
-    public IEnumerator TestingTest()
+    [Test, Order(1)]
+    public void TestingTest()
     {
         Assert.IsTrue(true);
-        yield return null;
+        TestsCompleted = TestingTestID;
     }
 
 
@@ -142,128 +178,168 @@ public class TestSuite : InputTestFixture
     }*/
 
     [UnityTest, Order(2)]
-    public IEnumerator StartMenuTest()
+    public IEnumerator LoadStartScreenTest()
     {
+        while (TestsCompleted != (LoadStartScreenTestID - 1)) { yield return null; }
+        //string curScene = SceneManager.GetActiveScene().name;
         EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/TitleMenu.unity", new LoadSceneParameters(LoadSceneMode.Single));
-        //StartCoroutine(DelayAction(delayTime));
-        yield return new WaitForSeconds(FrameConversion(50));
-        GetTestRefs();
-        GameObject StartButton = TestRefs.StartButton;
-        Assert.True(StartButton.gameObject.activeSelf);
-        yield return new WaitForSeconds(FrameConversion(15));//TimeDelay(15);
-        StartButton.GetComponent<Button>().onClick.Invoke();
-        Assert.False(StartButton.gameObject.activeSelf);
+        yield return new WaitForSeconds(3f);
+        //while (curScene == SceneManager.GetActiveScene().name) { yield return null; }
+        Assert.AreEqual(SceneManager.GetActiveScene().name, "TitleMenu");
+        TestsCompleted = LoadStartScreenTestID;
         yield return null;
     }
 
+
     [UnityTest, Order(3)]
-    public IEnumerator NewGameTest()
+    public IEnumerator StartMenuTest()
     {
-        GameObject NGButton = TestRefs.NewGameButton;
-        NGButton.GetComponent<Button>().onClick.Invoke();
-        yield return new WaitForSeconds(FrameConversion(50));//TimeDelay(50);
-        Assert.AreEqual(SceneManager.GetActiveScene().name, "FortCell2");
+        while (TestsCompleted != (StartMenuTestID - 1)) { yield return null; }
+        //Task.WaitAll(TestingTest());
+        //StartCoroutine(DelayAction(delayTime));
+        Task.Run(async () => { await TimeDelay(200); }).Wait();
+        GetTestRefs();
+        GameObject StartButton = TestRefs.StartButton;
+        Assert.True(StartButton.gameObject.activeSelf);
+        Task.Run(async () => { await TimeDelay(15); ; }).Wait();
+        StartButton.GetComponent<Button>().onClick.Invoke();
+        Assert.False(StartButton.gameObject.activeSelf);
+        TestsCompleted = StartMenuTestID;
         yield return null;
     }
 
     [UnityTest, Order(4)]
+    public IEnumerator NewGameTest()
+    {
+        while (TestsCompleted != NewGameTestID - 1) { yield return null; }
+        GameObject NGButton = TestRefs.NewGameButton;
+        //string curScene = SceneManager.GetActiveScene().name;
+        
+        NGButton.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(3f);
+        //while (curScene == SceneManager.GetActiveScene().name) { yield return null; }
+        Assert.AreEqual(SceneManager.GetActiveScene().name, "FortCell2");
+        TestsCompleted = NewGameTestID;
+        yield return null;
+    }
+
+    [UnityTest, Order(5)]
     public IEnumerator PlayerVerifyTest()
     {
+        while (TestsCompleted != PlayerVerifyTestID - 1) { yield return null; }
         GameObject[] PCs = GameObject.FindGameObjectsWithTag("Player");
         if (PCs.Length != 0)
         {
             PlayerRef = PCs[0];
+            PCRef = PlayerRef.GetComponent<PlayerController>();
             Assert.NotNull(PlayerRef);
         }
         else
         {
             Assert.Fail();
         }
-        yield return null;
-    }
-
-    [UnityTest, Order(5)]
-    public IEnumerator CellPathTest()
-    {
-        //PlayerRef.transform.position.Set(-16, -2, 0);
-        //MoveLeft(10);
-        for (int i = 100; i > 0; i--)
-        {
-            PCRef.HorizontalMove(-1);
-            yield return new WaitForSeconds(FrameConversion(1));//TimeDelay(1);
-        }
-        //yield return new WaitForSeconds(0.100f);
-        Assert.AreEqual(SceneManager.GetActiveScene().name, "FortCell1");
+        TestsCompleted = PlayerVerifyTestID;
         yield return null;
     }
 
     [UnityTest, Order(6)]
-    public IEnumerator LoadTestCell()
+    public IEnumerator CellPathTest()
     {
-        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
-        Assert.AreEqual(SceneManager.GetActiveScene().name, "DevCell");
+
+        while (TestsCompleted != CellPathTestID - 1) { yield return null; }
+        PlayerRef = GameObject.FindGameObjectWithTag("Player");
+        PCRef.thistf.position.Set(-16, -2, 0);
+        PlayerRef.GetComponent<Transform>().position.Set(-16, -2, 0);
+        Task.Run(async () => { await MoveLeft(20); }).Wait();
+        //yield return new WaitForSeconds(0.100f);
+        yield return new WaitForSeconds(3f);
+        //string curScene = SceneManager.GetActiveScene().name;
+        Assert.AreEqual(SceneManager.GetActiveScene().name, "FortCell1");
+        //while (curScene == SceneManager.GetActiveScene().name) { yield return null; }
+        TestsCompleted = CellPathTestID;
         yield return null;
     }
 
     [UnityTest, Order(7)]
-    public IEnumerator HorizontalMovementTest()
+    public IEnumerator LoadTestCell()
     {
-        MoveRight(5);
-        MoveLeft(5);
-        Assert.IsTrue(true);
+        while (TestsCompleted != LoadTestCellID - 1) { yield return null; }
+        //string curScene = SceneManager.GetActiveScene().name;
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        //while (curScene == SceneManager.GetActiveScene().name) { yield return null; }
+        Assert.AreEqual(SceneManager.GetActiveScene().name, "DevCell");
+        TestsCompleted = LoadTestCellID;
         yield return null;
     }
 
     [UnityTest, Order(8)]
-    public IEnumerator JumpTest()
+    public IEnumerator HorizontalMovementTest()
     {
-        Jump();
-        yield return new WaitForSeconds(FrameConversion(15));
-        Jump();
-        yield return new WaitForSeconds(FrameConversion(15));
-        Jump();
-        yield return new WaitForSeconds(FrameConversion(300));
+        while (TestsCompleted != HorizontalMovementTestID - 1) { yield return null; }
+        Task.Run(async () => { await MoveRight(5); }).Wait();
+        Task.Run(async () => { await MoveLeft(5); }).Wait();
         Assert.IsTrue(true);
+        TestsCompleted = HorizontalMovementTestID;
         yield return null;
     }
 
     [UnityTest, Order(9)]
-    public IEnumerator DashTest()
+    public IEnumerator JumpTest()
     {
-        MoveRight(1);
-        Jump();
-        yield return new WaitForSeconds(FrameConversion(2));
-        MoveLeft(1);
-        Jump();
-        yield return new WaitForSeconds(FrameConversion(2));
+        while (TestsCompleted != JumpTestID - 1) { yield return null; }
+        Task.Run(async () => { await Jump(); }).Wait();
+        Task.Run(async () => { await Jump(); }).Wait();
+        Task.Run(async () => { await Jump(); }).Wait();
+        Task.Run(async () => { await TimeDelay(100); }).Wait();
         Assert.IsTrue(true);
+        TestsCompleted = JumpTestID;
         yield return null;
     }
 
     [UnityTest, Order(10)]
-    public IEnumerator CombatTest()
+    public IEnumerator DashTest()
     {
-        PlayerRef.transform.position.Set(24, 3, 0);
-        Fire();
-        Fire();
-        yield return new WaitForSeconds(FrameConversion(10));
-        Fire();
+        while (TestsCompleted != DashTestID - 1) { yield return null; }
+        Task.Run(async () => { await MoveRight(1); }).Wait();
+        Task.Run(async () => { await Jump(); }).Wait();
+        Task.Run(async () => { await TimeDelay(2); }).Wait();
+        Task.Run(async () => { await MoveLeft(1); }).Wait();
+        Task.Run(async () => { await Jump(); }).Wait();
+        Task.Run(async () => { await TimeDelay(2); }).Wait();
         Assert.IsTrue(true);
+        TestsCompleted = DashTestID;
         yield return null;
     }
 
     [UnityTest, Order(11)]
+    public IEnumerator CombatTest()
+    {
+        while (TestsCompleted != CombatTestID - 1) { yield return null; }
+        PlayerRef.transform.position.Set(24, 3, 0);
+        Task.Run(async () => { await Fire(); }).Wait();
+        Task.Run(async () => { await Fire(); }).Wait();
+        Task.Run(async () => { await TimeDelay(15); }).Wait();
+        Task.Run(async () => { await Fire(); }).Wait();
+        Assert.IsTrue(true);
+        TestsCompleted = CombatTestID;
+        yield return null;
+    }
+
+    [UnityTest, Order(12)]
     public IEnumerator CameraLimitTest()
     {
+
+        while (TestsCompleted != CameraLimitTestID - 1) { yield return null; }
         PlayerRef.transform.position.Set(55, 0, 0);
-        yield return new WaitForSeconds(FrameConversion(5));
+        Task.Run(async () => { await TimeDelay(5); }).Wait();
         PlayerRef.transform.position.Set(-55, 0, 0);
-        yield return new WaitForSeconds(FrameConversion(5));
+        Task.Run(async () => { await TimeDelay(5); }).Wait();
         PlayerRef.transform.position.Set(0, 55, 0);
-        yield return new WaitForSeconds(FrameConversion(5));
+        Task.Run(async () => { await TimeDelay(5); }).Wait();
         PlayerRef.transform.position.Set(0, -55, 0);
-        yield return new WaitForSeconds(FrameConversion(5));
-        Assert.IsTrue(true);
+        Task.Run(async () => { await TimeDelay(5); }).Wait();
+        TestsCompleted = CameraLimitTestID;
         yield return null;
     }
 

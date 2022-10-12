@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (!(Crouching || afterShotDelay != 0 || AnimLock != 0)) {
             HorizontalMove(Input.GetAxis("Horizontal"));

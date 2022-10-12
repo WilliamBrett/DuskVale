@@ -38,7 +38,7 @@ public class SkeletonController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (!thisHealth.dying) {
             if (RiseDelay > -1)
