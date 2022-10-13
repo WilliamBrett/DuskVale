@@ -41,100 +41,6 @@ public class TestSuite : InputTestFixture
 
     public void GetTestRefs() => TestRefs = GameObject.FindGameObjectWithTag("TestData").GetComponent<TestReferenceLedger>();
 
-    public async Task TimeDelay(int frames)
-    {
-        for (int i = 0; i < frames; i++)
-        {
-            _ = EverythingUpdate();
-        }
-    }
-
-    public async Task EverythingUpdate()
-    {
-
-        if (PlayerRef) await PlayerUpdate();
-        await EnemyUpdate();
-        await ProjectileUpdate();
-    }
-
-    public async Task PlayerUpdate()
-    {
-        PlayerRef.GetComponent<PlayerController>().Update();
-        PlayerRef.GetComponent<HealthManager>().Update();
-    }
-
-    public async Task EnemyUpdate()
-    {
-        GameObject[] Hostiles = GameObject.FindGameObjectsWithTag("Hostile");
-        if (Hostiles.Length != 0)
-        {
-            for (int i = 0; i < Hostiles.Length; i++)
-            {
-                if (Hostiles[i].GetComponent<SkeletonController>())
-                {
-                    Hostiles[i].GetComponent<SkeletonController>().Update();
-                }
-            }
-        }
-    }
-
-    public async Task ProjectileUpdate()
-    {
-        GameObject[] Projectiles = GameObject.FindGameObjectsWithTag("Projectile");
-        if (Projectiles.Length != 0)
-        {
-            for (int i = 0; i < Projectiles.Length; i++)
-            {
-                Projectiles[i].GetComponent<ProjectileManager>().Update();
-            }
-        }
-    }
-
-    public async Task MoveRight(int frameCount)
-    {
-        for (int i = frameCount; i > 0; i++)
-        {
-            PCRef.HorizontalMove(1);
-            await EverythingUpdate();
-        }
-    }
-
-    public async Task MoveLeft(int frameCount)
-    {
-        for (int i = frameCount; i > 0; i++)
-        {
-            PCRef.HorizontalMove(-1);
-            await EverythingUpdate();
-        }
-    }
-
-    public async Task Dash()
-    {
-        PCRef.Dash();
-        await TimeDelay(30);
-    }
-
-    public async Task Jump()
-    {
-        PCRef.Jump(1);
-        await TimeDelay(15);
-    }
-
-    public async Task Fire()
-    {
-        if (PCRef.afterShotDelay == 0 && (PCRef.thisRB2D.velocity.x == 0 || PCRef.Crouching))
-        {
-            PCRef.FireBullet();
-        }
-        await EverythingUpdate();
-    }
-
-
-    /*public float FrameConversion(int FrameNum)
-    {
-        return ((float)0.02) * ((float)FrameNum);
-    }*/
-
 
 
 
@@ -197,11 +103,11 @@ public class TestSuite : InputTestFixture
         while (TestsCompleted != (StartMenuTestID - 1)) { yield return null; }
         //Task.WaitAll(TestingTest());
         //StartCoroutine(DelayAction(delayTime));
-        Task.Run(async () => { await TimeDelay(200); }).Wait();
+        yield return new WaitForSeconds(3f);
         GetTestRefs();
         GameObject StartButton = TestRefs.StartButton;
         Assert.True(StartButton.gameObject.activeSelf);
-        Task.Run(async () => { await TimeDelay(15); ; }).Wait();
+        yield return new WaitForSeconds(1f);
         StartButton.GetComponent<Button>().onClick.Invoke();
         Assert.False(StartButton.gameObject.activeSelf);
         TestsCompleted = StartMenuTestID;
@@ -248,9 +154,10 @@ public class TestSuite : InputTestFixture
 
         while (TestsCompleted != CellPathTestID - 1) { yield return null; }
         PlayerRef = GameObject.FindGameObjectWithTag("Player");
-        PCRef.thistf.position.Set(-16, -2, 0);
-        PlayerRef.GetComponent<Transform>().position.Set(-16, -2, 0);
-        Task.Run(async () => { await MoveLeft(20); }).Wait();
+        PCRef.thistf.position = new Vector3(-16, -2, 0);//.position.Set(-16, -2, 0);
+        //PlayerRef.GetComponent<Transform>().position.Set(-16, -2, 0);
+        //thistf.position = new Vector3(0, 0, 0);
+        //Task.Run(async () => { await MoveLeft(20); }).Wait();
         //yield return new WaitForSeconds(0.100f);
         yield return new WaitForSeconds(3f);
         //string curScene = SceneManager.GetActiveScene().name;
@@ -277,9 +184,20 @@ public class TestSuite : InputTestFixture
     public IEnumerator HorizontalMovementTest()
     {
         while (TestsCompleted != HorizontalMovementTestID - 1) { yield return null; }
-        Task.Run(async () => { await MoveRight(5); }).Wait();
-        Task.Run(async () => { await MoveLeft(5); }).Wait();
-        Assert.IsTrue(true);
+        Vector3 pos1 = PCRef.thistf.localPosition;
+        PCRef.DebugCommand = "MoveRight";
+        yield return new WaitForSeconds(1f);
+        Vector3 pos2 = PCRef.thistf.localPosition;
+        PCRef.DebugCommand = "MoveLeft";
+        yield return new WaitForSeconds(2f);
+        Vector3 pos3 = PCRef.thistf.localPosition;
+        PCRef.DebugCommand = null;
+        bool posCheck = false;
+        if (pos1 != pos2 || pos1 != pos3 || pos2 != pos3)
+        {
+            posCheck = true;
+        }
+        Assert.IsTrue(posCheck);
         TestsCompleted = HorizontalMovementTestID;
         yield return null;
     }
@@ -288,11 +206,13 @@ public class TestSuite : InputTestFixture
     public IEnumerator JumpTest()
     {
         while (TestsCompleted != JumpTestID - 1) { yield return null; }
-        Task.Run(async () => { await Jump(); }).Wait();
-        Task.Run(async () => { await Jump(); }).Wait();
-        Task.Run(async () => { await Jump(); }).Wait();
-        Task.Run(async () => { await TimeDelay(100); }).Wait();
-        Assert.IsTrue(true);
+        Vector3 pos1 = PCRef.thistf.localPosition;
+        PCRef.DebugCommand = "Jump";
+        yield return new WaitForSeconds(1f);
+        Vector3 pos2 = PCRef.thistf.localPosition;
+        PCRef.DebugCommand = null;
+        yield return new WaitForSeconds(3f);
+        Assert.AreNotEqual(pos1, pos2);
         TestsCompleted = JumpTestID;
         yield return null;
     }
@@ -301,13 +221,25 @@ public class TestSuite : InputTestFixture
     public IEnumerator DashTest()
     {
         while (TestsCompleted != DashTestID - 1) { yield return null; }
-        Task.Run(async () => { await MoveRight(1); }).Wait();
-        Task.Run(async () => { await Jump(); }).Wait();
-        Task.Run(async () => { await TimeDelay(2); }).Wait();
-        Task.Run(async () => { await MoveLeft(1); }).Wait();
-        Task.Run(async () => { await Jump(); }).Wait();
-        Task.Run(async () => { await TimeDelay(2); }).Wait();
-        Assert.IsTrue(true);
+        PCRef.DebugCommand = "MoveRight";
+        yield return new WaitForSeconds(0.1f);
+        PCRef.DebugCommand = "Jump";
+        Vector3 pos1 = PCRef.thistf.localPosition;
+        yield return new WaitForSeconds(0.1f);
+        PCRef.DebugCommand = "Dash";
+        yield return new WaitForSeconds(0.1f);
+        PCRef.DebugCommand = "Null";
+        yield return new WaitForSeconds(1f);
+        Vector3 pos2 = PCRef.thistf.localPosition;
+        PCRef.DebugCommand = "MoveLeft";
+        yield return new WaitForSeconds(0.1f);
+        PCRef.DebugCommand = "Jump";
+        yield return new WaitForSeconds(0.1f);
+        PCRef.DebugCommand = "Dash";
+        yield return new WaitForSeconds(0.1f);
+        PCRef.DebugCommand = "Null";
+        yield return new WaitForSeconds(1f);
+        Assert.AreNotEqual(pos1, pos2);
         TestsCompleted = DashTestID;
         yield return null;
     }
@@ -316,12 +248,14 @@ public class TestSuite : InputTestFixture
     public IEnumerator CombatTest()
     {
         while (TestsCompleted != CombatTestID - 1) { yield return null; }
-        PlayerRef.transform.position.Set(24, 3, 0);
-        Task.Run(async () => { await Fire(); }).Wait();
-        Task.Run(async () => { await Fire(); }).Wait();
-        Task.Run(async () => { await TimeDelay(15); }).Wait();
-        Task.Run(async () => { await Fire(); }).Wait();
-        Assert.IsTrue(true);
+        PCRef.thistf.position = new Vector3(24, 3, 0); //PlayerRef.transform.position.Set(24, 3, 0);
+        PCRef.DebugCommand = "MoveRight";
+        yield return new WaitForSeconds(0.1f);
+        PCRef.DebugCommand = "Fire";
+        yield return new WaitForSeconds(3f);
+        PCRef.DebugCommand = null;
+        GameObject[] BulletRefs = GameObject.FindGameObjectsWithTag("Projectile");
+        Assert.NotZero(BulletRefs.Length); 
         TestsCompleted = CombatTestID;
         yield return null;
     }
@@ -331,14 +265,24 @@ public class TestSuite : InputTestFixture
     {
 
         while (TestsCompleted != CameraLimitTestID - 1) { yield return null; }
-        PlayerRef.transform.position.Set(55, 0, 0);
-        Task.Run(async () => { await TimeDelay(5); }).Wait();
-        PlayerRef.transform.position.Set(-55, 0, 0);
-        Task.Run(async () => { await TimeDelay(5); }).Wait();
-        PlayerRef.transform.position.Set(0, 55, 0);
-        Task.Run(async () => { await TimeDelay(5); }).Wait();
-        PlayerRef.transform.position.Set(0, -55, 0);
-        Task.Run(async () => { await TimeDelay(5); }).Wait();
+        PCRef.thistf.position = new Vector3(55, 0, 0); //PlayerRef.transform.position.Set(55, 0, 0);
+        Vector3 pos1 = PCRef.thistf.localPosition;
+        yield return new WaitForSeconds(1f);
+        PCRef.thistf.position = new Vector3(-55, 0, 0); ///PlayerRef.transform.position.Set(-55, 0, 0);
+        Vector3 pos2 = PCRef.thistf.localPosition;
+        yield return new WaitForSeconds(1f);
+        PCRef.thistf.position = new Vector3(0, 55, 0); //PlayerRef.transform.position.Set(0, 55, 0);
+        Vector3 pos3 = PCRef.thistf.localPosition;
+        yield return new WaitForSeconds(1f);
+        PCRef.thistf.position = new Vector3(0, -55, 0); //PlayerRef.transform.position.Set(0, -55, 0);
+        Vector3 pos4 = PCRef.thistf.localPosition;
+        yield return new WaitForSeconds(1f);
+        bool TestCond = false;
+        if (pos1 != pos2 && pos1 != pos3 && pos1 != pos4 && pos2 != pos3 && pos2 != pos4 && pos3 != pos4)
+        {
+            TestCond = true;
+        }
+        Assert.IsTrue(TestCond);
         TestsCompleted = CameraLimitTestID;
         yield return null;
     }

@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
     public bool WJUnlocked;
     public int MaxHP;
 
+    public string DebugCommand;
+
 
     // Start is called before the first frame update
     void Start()
@@ -74,12 +76,12 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (Input.GetButtonDown("Dash"))
+            if (Input.GetButtonDown("Dash") || DebugCommand == "Dash")
             {
                 Dash();
             }
         }
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") || DebugCommand == "Jump")
         {
             Jump(Input.GetAxis("Vertical"));
         }
@@ -88,7 +90,7 @@ public class PlayerController : MonoBehaviour
             thisRB2D.velocity = new Vector2(thisRB2D.velocity.y, (thisRB2D.velocity.y / 2));
         }
 
-        if (Input.GetButtonDown("Fire1") && afterShotDelay == 0 && (thisRB2D.velocity.x == 0 || Crouching))
+        if ((Input.GetButtonDown("Fire1") || DebugCommand == "Fire") && afterShotDelay == 0 && (thisRB2D.velocity.x == 0 || Crouching))
         {
             FireBullet();
         }
@@ -129,6 +131,18 @@ public class PlayerController : MonoBehaviour
     public void HorizontalMove(float HAxis)
     {
             thisRB2D.velocity = new Vector2(moveSpeed * HAxis, thisRB2D.velocity.y);
+        if (DebugCommand != null)
+        {
+            if (DebugCommand == "MoveLeft")
+            {
+                thisRB2D.velocity = new Vector2(moveSpeed * -1, thisRB2D.velocity.y);
+            }
+            else if (DebugCommand == "MoveRight")
+            {
+                thisRB2D.velocity = new Vector2(moveSpeed * 1, thisRB2D.velocity.y);
+            }
+            
+        }
     }
 
     public void Jump(float VAxis)
@@ -203,7 +217,7 @@ public class PlayerController : MonoBehaviour
 
     public void VerticalMove(float VAxis)
     {
-        if (VAxis >= 0)
+        if (VAxis >= 0 || DebugCommand == "Crouch")
         {
             Crouching = false;
         }
