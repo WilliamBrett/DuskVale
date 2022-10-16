@@ -12,6 +12,7 @@ public class ProjectileManager : MonoBehaviour
     public Vector3 thisVel;
     public bool testbool;
     public float testrot;
+    public bool isHostile;
     
     // Start is called before the first frame update
     void Start()
@@ -53,14 +54,28 @@ public class ProjectileManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Hostile")
+        if (isHostile)
         {
-            collision.GetComponent<HealthManager>().TakeDamage(1);
+            if (collision.tag == "Player")
+            {
+                collision.GetComponent<HealthManager>().TakeDamage(1);
+            }
+            if (collision.tag != "Hostile" && collision.tag != "Intangible" && collision.tag != "Trigger")
+            {
+                Destroy(gameObject);
+            }
         }
-        
-        if (collision.tag != "Player" && collision.tag != "Intangible" && collision.tag != "Trigger")
+        else
         {
-            Destroy(gameObject);
+         if (collision.tag == "Hostile")
+            {
+                collision.GetComponent<HealthManager>().TakeDamage(1);
+            }
+            
+            if (collision.tag != "Player" && collision.tag != "Intangible" && collision.tag != "Trigger")
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
