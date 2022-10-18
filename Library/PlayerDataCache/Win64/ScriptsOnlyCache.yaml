@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     GameAssembly.dll:
     - CameraController
     - CellPathway
+    - DarkWizardController
+    - DarkWizardTrigger
     - ExitButton
     - HealthManager
     - LoadChecker
@@ -64,7 +66,6 @@ ScriptsOnlyBuild:
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
@@ -139,6 +140,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 66
@@ -162,13 +165,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 7330}
+      Script: {instanceID: 3722}
     - Class: 114
-      Script: {instanceID: 9728}
+      Script: {instanceID: 6918}
     - Class: 114
-      Script: {instanceID: 10156}
+      Script: {instanceID: 8680}
     - Class: 114
-      Script: {instanceID: 10524}
+      Script: {instanceID: 9732}
+    - Class: 114
+      Script: {instanceID: 10160}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -235,13 +240,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 9728}
+      Script: {instanceID: 9732}
     - Class: 114
-      Script: {instanceID: 10072}
+      Script: {instanceID: 10076}
     - Class: 114
-      Script: {instanceID: 10156}
+      Script: {instanceID: 10160}
     - Class: 114
-      Script: {instanceID: 10434}
+      Script: {instanceID: 10438}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -300,13 +305,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 7330}
+      Script: {instanceID: 7332}
     - Class: 114
-      Script: {instanceID: 9728}
+      Script: {instanceID: 9732}
     - Class: 114
-      Script: {instanceID: 10156}
+      Script: {instanceID: 10160}
     - Class: 114
-      Script: {instanceID: 10524}
+      Script: {instanceID: 10528}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -341,6 +346,8 @@ ScriptsOnlyBuild:
     - Class: 49
       Script: {instanceID: 0}
     - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
@@ -385,29 +392,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 7282}
+      Script: {instanceID: 6918}
     - Class: 114
-      Script: {instanceID: 7330}
+      Script: {instanceID: 7284}
     - Class: 114
-      Script: {instanceID: 7504}
+      Script: {instanceID: 7332}
     - Class: 114
-      Script: {instanceID: 7966}
+      Script: {instanceID: 7506}
     - Class: 114
-      Script: {instanceID: 9416}
+      Script: {instanceID: 7968}
     - Class: 114
-      Script: {instanceID: 9540}
+      Script: {instanceID: 8680}
     - Class: 114
-      Script: {instanceID: 9856}
+      Script: {instanceID: 9420}
     - Class: 114
-      Script: {instanceID: 10072}
+      Script: {instanceID: 9544}
     - Class: 114
-      Script: {instanceID: 10110}
+      Script: {instanceID: 9860}
     - Class: 114
-      Script: {instanceID: 10252}
+      Script: {instanceID: 10076}
     - Class: 114
-      Script: {instanceID: 10434}
+      Script: {instanceID: 10114}
     - Class: 114
-      Script: {instanceID: 10524}
+      Script: {instanceID: 10256}
+    - Class: 114
+      Script: {instanceID: 10438}
+    - Class: 114
+      Script: {instanceID: 10528}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -723,7 +734,7 @@ ScriptsOnlyBuild:
     className: Bone
   - hash:
       serializedVersion: 2
-      Hash: 2d38b5ff5e92893f27f05de0ae4e9f3c
+      Hash: b8138217fe59ee49da5ecde4866ed776
     assemblyName: GameAssembly.dll
     namespaceName: 
     className: ProjectileManager
@@ -1161,6 +1172,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 3976df268b17c8a33a602a6579b74a3b
+    assemblyName: GameAssembly.dll
+    namespaceName: 
+    className: DarkWizardController
+  - hash:
+      serializedVersion: 2
       Hash: d85b490177c3124d2335460060a2b807
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -1345,6 +1362,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Tilemap.Extras.dll
     namespaceName: UnityEngine
     className: RuleTile
+  - hash:
+      serializedVersion: 2
+      Hash: d9e4b84b5a8d36eb8be5a2bbf84a6f07
+    assemblyName: GameAssembly.dll
+    namespaceName: 
+    className: DarkWizardTrigger
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca

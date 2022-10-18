@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1264
     height: 613.3334
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 60
+  controlID: 27
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 65
+  controlID: 32
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 66
+  controlID: 33
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -218,14 +218,14 @@ MonoBehaviour:
     height: 306.66666
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 16}
   - {fileID: 13}
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,15 +272,15 @@ MonoBehaviour:
     y: 0
     width: 388.6667
     height: 563.3333
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
   - {fileID: 12}
   - {fileID: 22}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,7 +310,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 126
+    ID: 144
     splitterInitialOffset: 425.33334
     currentActiveSplitter: -1
     realSizes:
@@ -342,7 +342,7 @@ MonoBehaviour:
       name: DuskVale
       fullName: DuskVale
       resultStatus: 4
-      duration: 34.598885
+      duration: 34.163155
       messages: One or more child tests were ignored
       output: 
       stacktrace: 
@@ -358,7 +358,7 @@ MonoBehaviour:
       name: PlayMode.dll
       fullName: C:/Users/William Brett/Documents/GitHub/DuskVale/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 1
-      duration: 33.678406
+      duration: 33.634377
       messages: 
       output: 
       stacktrace: 
@@ -374,7 +374,7 @@ MonoBehaviour:
       name: TestSuite
       fullName: TestSuite
       resultStatus: 1
-      duration: 33.65936
+      duration: 33.62461
       messages: 
       output: 
       stacktrace: 
@@ -390,7 +390,7 @@ MonoBehaviour:
       name: CameraLimitTest
       fullName: TestSuite.CameraLimitTest
       resultStatus: 1
-      duration: 4.038039
+      duration: 4.037596
       messages: 
       output: 
       stacktrace: 
@@ -407,7 +407,7 @@ MonoBehaviour:
       name: CellPathTest
       fullName: TestSuite.CellPathTest
       resultStatus: 1
-      duration: 3.0608807
+      duration: 3.0772915
       messages: 
       output: 
       stacktrace: 
@@ -424,7 +424,7 @@ MonoBehaviour:
       name: CombatTest
       fullName: TestSuite.CombatTest
       resultStatus: 1
-      duration: 3.1344876
+      duration: 3.1362412
       messages: 
       output: 
       stacktrace: 
@@ -441,7 +441,7 @@ MonoBehaviour:
       name: DashTest
       fullName: TestSuite.DashTest
       resultStatus: 1
-      duration: 2.6438215
+      duration: 2.6400347
       messages: 
       output: 
       stacktrace: 
@@ -458,7 +458,7 @@ MonoBehaviour:
       name: HorizontalMovementTest
       fullName: TestSuite.HorizontalMovementTest
       resultStatus: 1
-      duration: 3.0336447
+      duration: 3.035427
       messages: 
       output: 
       stacktrace: 
@@ -475,7 +475,7 @@ MonoBehaviour:
       name: JumpTest
       fullName: TestSuite.JumpTest
       resultStatus: 1
-      duration: 4.035577
+      duration: 4.0355697
       messages: 
       output: 
       stacktrace: 
@@ -492,7 +492,7 @@ MonoBehaviour:
       name: LoadStartScreenTest
       fullName: TestSuite.LoadStartScreenTest
       resultStatus: 1
-      duration: 3.3433712
+      duration: 3.2944818
       messages: 
       output: 
       stacktrace: 
@@ -509,7 +509,7 @@ MonoBehaviour:
       name: LoadTestCell
       fullName: TestSuite.LoadTestCell
       resultStatus: 1
-      duration: 3.0603025
+      duration: 3.0743916
       messages: 
       output: 
       stacktrace: 
@@ -526,7 +526,7 @@ MonoBehaviour:
       name: NewGameTest
       fullName: TestSuite.NewGameTest
       resultStatus: 1
-      duration: 3.0903115
+      duration: 3.1019392
       messages: 
       output: 
       stacktrace: 
@@ -543,7 +543,7 @@ MonoBehaviour:
       name: PlayerVerifyTest
       fullName: TestSuite.PlayerVerifyTest
       resultStatus: 1
-      duration: 0.029033
+      duration: 0.0372409
       messages: 
       output: 
       stacktrace: 
@@ -560,7 +560,7 @@ MonoBehaviour:
       name: StartMenuTest
       fullName: TestSuite.StartMenuTest
       resultStatus: 1
-      duration: 4.054418
+      duration: 4.0528054
       messages: 
       output: 
       stacktrace: 
@@ -577,7 +577,7 @@ MonoBehaviour:
       name: TestingTest
       fullName: TestSuite.TestingTest
       resultStatus: 1
-      duration: 0.0750032
+      duration: 0.0595014
       messages: 
       output: 
       stacktrace: 
@@ -594,7 +594,7 @@ MonoBehaviour:
       name: Unity.InputSystem.IntegrationTests.dll
       fullName: C:/Users/William Brett/Documents/GitHub/DuskVale/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
       resultStatus: 4
-      duration: 0.0399878
+      duration: 0.0296375
       messages: One or more child tests were ignored
       output: 
       stacktrace: 
@@ -610,7 +610,7 @@ MonoBehaviour:
       name: IntegrationTests
       fullName: IntegrationTests
       resultStatus: 4
-      duration: 0.0276598
+      duration: 0.0219998
       messages: One or more child tests were ignored
       output: 
       stacktrace: 
@@ -626,7 +626,7 @@ MonoBehaviour:
       name: Integration_CanChangeInputBackendPlayerSettingInEditor
       fullName: IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor
       resultStatus: 1
-      duration: 0.0064171
+      duration: 0.0059809
       messages: 
       output: 
       stacktrace: 
@@ -643,7 +643,7 @@ MonoBehaviour:
       name: Integration_CanSendAndReceiveEvents
       fullName: IntegrationTests.Integration_CanSendAndReceiveEvents
       resultStatus: 1
-      duration: 0.010966
+      duration: 0.0102634
       messages: 
       output: 
       stacktrace: 
@@ -833,9 +833,9 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -846,18 +846,18 @@ MonoBehaviour:
       y: 21
       width: 632
       height: 264.66666
-    m_Scale: {x: 0.36759257, y: 0.36759257}
-    m_Translation: {x: 316, y: 132.33333}
+    m_Scale: {x: 0.47666055, y: 0.47666058}
+    m_Translation: {x: 316, y: 166.47781}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -859.6474
-      y: -360
-      width: 1719.2948
-      height: 720
+      x: -662.94556
+      y: -349.2586
+      width: 1325.8911
+      height: 555.25183
     m_MinimalGUI: 1
   m_defaultScale: 0.36759257
   m_LastWindowPixelSize: {x: 948, y: 428.5}
@@ -896,10 +896,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 64e1feff
-      m_LastClickedID: -73372
-      m_ExpandedIDs: eee1feff4a5dffff7873ffff8e83ffff448dffff509affff5c9affff8a9fffff969fffff5aa7ffffeeb0ffff68b3ffff50baffffccc2ffff8edeffffbcdfffff68e1ffffb8e1ffff1ef2ffffc2f8fffff2faffff0afbffff0cfbfffff4ffffff40630000546300004e680000d46c0000e46d0000fa6d0000
+      scrollPos: {x: 0, y: 7.3333435}
+      m_SelectedIDs: 9c630000
+      m_LastClickedID: 25500
+      m_ExpandedIDs: 0cfbffff486300005a6300006a6300009c630000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1013,7 +1013,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.666666}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -1046,7 +1046,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.666666}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Tilemap Focus
@@ -1057,7 +1057,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.666666}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -1205,9 +1205,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -11.758014, y: 0.3040526, z: 0.03824072}
+    m_Target: {x: 110.91177, y: 1030.9911, z: 1.1769133}
     speed: 2
-    m_Value: {x: -11.758014, y: 0.3040526, z: 0.03824072}
+    m_Value: {x: 110.91177, y: 1030.9911, z: 1.1769133}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1258,9 +1258,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.7317767
+    m_Target: 153.29515
     speed: 2
-    m_Value: 5.7317767
+    m_Value: 153.29515
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1315,7 +1315,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -41666
+  m_LastSelectedObjectID: 25500
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1557,22 +1557,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\William Brett\Documents\GitHub\DuskVale
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 456.33334}
-    m_SelectedIDs: be660000
-    m_LastClickedID: 26302
-    m_ExpandedIDs: 00000000706600007266000074660000ba660000bc660000b8670000ba670000a0680000c0690000c4690000c669000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 159}
+    m_SelectedIDs: a6670000
+    m_LastClickedID: 26534
+    m_ExpandedIDs: 000000008e670000906700009267000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1600,7 +1600,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000706600007266000074660000
+    m_ExpandedIDs: 000000008e6700009067000092670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1628,7 +1628,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000ae6d00009a6d000038600000d2600000da600000f2600000ee6000009a5f000008600000c86000004e64000044630000d0690000d4690000a46e0000
+    m_ExpandedInstanceIDs: c6230000ae6d00009a6d000038600000d2600000da600000f2600000ee6000009a5f000008600000c86000004e64000044630000d0690000d4690000a46e0000b4680000ac680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1719,7 +1719,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 379.33334
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
