@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - CellPathway
     - DarkWizardController
     - DarkWizardTrigger
+    - EventSystemPersistence
     - ExitButton
     - HealthBarController
     - HealthManager
@@ -26,6 +27,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
@@ -50,7 +52,9 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    - Packages.Rider.Editor.UnitTesting.SyncTestRunEventsHandler
     Unity.TestTools.CodeCoverage.Editor.dll:
+    - UnityEditor.TestTools.CodeCoverage.Analytics.CoverageAnalytics
     - UnityEditor.TestTools.CodeCoverage.CodeCoverageWindow
     - UnityEditor.TestTools.CodeCoverage.CoverageRunData
     Unity.TextMeshPro.dll:
@@ -62,13 +66,16 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
+    - UnityEditor.TestTools.TestRunner.RerunCallbackData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
@@ -118,18 +125,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: GameAssembly
-    fullTypeName: MainMenuStart
-    methodName: SetStartMenu
-  - assembly: GameAssembly
-    fullTypeName: LoadManager
-    methodName: LoadGame
-  - assembly: GameAssembly
-    fullTypeName: ExitButton
-    methodName: ExitGame
-  - assembly: GameAssembly
-    fullTypeName: LoadManager
-    methodName: NewGame
-  - assembly: GameAssembly
     fullTypeName: PauseMenuController
     methodName: OptionsButton
   - assembly: GameAssembly
@@ -141,6 +136,18 @@ ScriptsOnlyBuild:
   - assembly: GameAssembly
     fullTypeName: PauseMenuController
     methodName: TogglePause
+  - assembly: GameAssembly
+    fullTypeName: MainMenuStart
+    methodName: SetStartMenu
+  - assembly: GameAssembly
+    fullTypeName: LoadManager
+    methodName: LoadGame
+  - assembly: GameAssembly
+    fullTypeName: ExitButton
+    methodName: ExitGame
+  - assembly: GameAssembly
+    fullTypeName: LoadManager
+    methodName: NewGame
   - assembly: GameAssembly
     fullTypeName: PauseMenuController
     methodName: OptionsButton
@@ -454,6 +461,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10530}
     - Class: 114
       Script: {instanceID: 10582}
+    - Class: 114
+      Script: {instanceID: 40822}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1231,7 +1240,7 @@ ScriptsOnlyBuild:
     className: PlayerInputManagerEditor
   - hash:
       serializedVersion: 2
-      Hash: ffd1b1428863408154ffc1edceb37d74
+      Hash: 888cf9e8d93c5ffe362c636e3a4c6145
     assemblyName: GameAssembly.dll
     namespaceName: 
     className: PauseMenuController
@@ -1687,7 +1696,7 @@ ScriptsOnlyBuild:
     className: SkeletonController
   - hash:
       serializedVersion: 2
-      Hash: f02136040bea3189e8dd1641b521b98f
+      Hash: c9def15ce14e8a23446975764f3483de
     assemblyName: GameAssembly.dll
     namespaceName: 
     className: HealthBarController
@@ -1697,6 +1706,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GameAssembly.dll
+    namespaceName: 
+    className: EventSystemPersistence
   platform: 19
   scenePathNames:
   - Assets/Scenes/TitleMenu.unity

@@ -354,12 +354,13 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(17)]
+    /*[UnityTest, Order(17)]
     public IEnumerator PauseTitleTest()
     {
         while (TestsCompleted != PauseTitleTestID - 1) { yield return null; }
         GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().TogglePause();
         GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().TitleButton();
+        if (Time.timeScale != 0) { Assert.Fail(); }
         bool SceneTestPassed = false;
         bool PlayerTestPassed = false;
         bool CanvasTestPassed = false;
@@ -400,6 +401,6 @@ public class TestSuite : InputTestFixture
         Assert.AreNotEqual(curSceneName, SceneManager.GetActiveScene().name);
         TestsCompleted = LoadGameTestID;
         yield return null;
-    }
+    }*/
 
 }

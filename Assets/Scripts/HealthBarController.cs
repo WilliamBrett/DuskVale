@@ -8,13 +8,14 @@ public class HealthBarController : MonoBehaviour
 {
     private HealthManager PCHM;
     public Slider thisSlider;
+    public RectTransform thisSliderTF;
     public TextMeshProUGUI thisText;
     //private text
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
-        
-    }
+        thisSlider.fillRect = thisSliderTF;
+    }*/
 
     // Update is called once per frame
     void Update()

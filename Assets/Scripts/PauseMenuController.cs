@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuController : MonoBehaviour
 {
-    private GameObject PlayerRef;
+    public GameObject PlayerRef;
+    //private GameObject EventSystemRef;
     public bool isPaused;
     public GameObject PauseMenu;
     
@@ -33,6 +34,7 @@ public class PauseMenuController : MonoBehaviour
             if (PCs.Length != 0)
             {
                 PlayerRef = PCs[0];
+                //EventSystemRef = GameObject.FindGameObjectWithTag("EventSystem");
             }
         } 
     }
@@ -62,6 +64,7 @@ public class PauseMenuController : MonoBehaviour
     { 
         //destroy all persistent objects
         Destroy(PlayerRef);
+        //Destroy(EventSystemRef);
         SceneManager.LoadScene("TitleMenu");
         Destroy(gameObject);
     }

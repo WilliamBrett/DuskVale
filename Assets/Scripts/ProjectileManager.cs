@@ -34,6 +34,7 @@ public class ProjectileManager : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        if (Time.timeScale == 0) { return; }
         thisTF.position += thisVel;
     }
 
