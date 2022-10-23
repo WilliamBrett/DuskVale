@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadManager : MonoBehaviour
 {
     public GameObject PlayerPresetRef;
+    public GameObject CanvasPresetRef;
     public GameObject SpawnedPlayerRef;
     private PlayerController ControllerRef;
     private int MaxHP;
@@ -103,5 +104,6 @@ public class LoadManager : MonoBehaviour
     private void SpawnPlayer()
     {
         SpawnedPlayerRef = Instantiate(PlayerPresetRef, new Vector3(0, 0, 0), new Quaternion());
+        Instantiate(CanvasPresetRef, new Vector3(0, 0, 0), new Quaternion()); //test
     }
 }
