@@ -81,9 +81,10 @@ public class LoadManager : MonoBehaviour
         ControllerRef = SpawnedPlayerRef.GetComponent<PlayerController>();
         ControllerRef.SpawnID = "S";
         MaxHP = 5;
-        DJUnlocked = false;
-        DashUnlocked = false;
-        WJUnlocked = false;
+        DJUnlocked = TranslateBool(0);
+        DashUnlocked = TranslateBool(0);
+        WJUnlocked = TranslateBool(0);
+        RecordRef.SetupRecord(DJUnlocked, DashUnlocked, WJUnlocked, MaxHP);
         SceneManager.LoadScene("FortCell2");
         
     }

@@ -8,6 +8,7 @@ public class PlatformEffector : MonoBehaviour
     private CompositeCollider2D thisCollider;
     private GameObject[] PlayerReg;
     private CapsuleCollider2D PlayerRef;
+    private PlayerController PCRef;
     //private int playerLayer
 
     // Start is called before the first frame update
@@ -21,12 +22,13 @@ public class PlatformEffector : MonoBehaviour
             PlayerRef = PlayerReg[0].GetComponent<CapsuleCollider2D>();
         }
         thisCollider = this.GetComponent<CompositeCollider2D>();
+        PCRef = PlayerRef.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("Vertical") < 0)
+        if (Input.GetAxis("Vertical") < 0 || PCRef.DebugCommand == "Crouch")
         {
             thisEffect.colliderMask &= ~(1 << 9);
         }

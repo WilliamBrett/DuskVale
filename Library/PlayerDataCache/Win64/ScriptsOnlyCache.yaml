@@ -6,12 +6,14 @@ ScriptsOnlyBuild:
     - DarkWizardController
     - DarkWizardTrigger
     - ExitButton
+    - HealthBarController
     - HealthManager
     - LoadChecker
     - LoadManager
     - MainMenuParallax
     - MainMenuStart
     - MetadataRecord
+    - PauseMenuController
     - PlatformEffector
     - PlayerController
     - PlayerRecord
@@ -66,6 +68,7 @@ ScriptsOnlyBuild:
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
@@ -76,6 +79,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
   serializedClasses:
     Unity.InputSystem:
     - UnityEngine.InputSystem.InputSettings/iOSSettings
@@ -110,6 +114,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: GameAssembly
@@ -124,6 +129,30 @@ ScriptsOnlyBuild:
   - assembly: GameAssembly
     fullTypeName: LoadManager
     methodName: NewGame
+  - assembly: GameAssembly
+    fullTypeName: PauseMenuController
+    methodName: OptionsButton
+  - assembly: GameAssembly
+    fullTypeName: PauseMenuController
+    methodName: TitleButton
+  - assembly: GameAssembly
+    fullTypeName: PauseMenuController
+    methodName: ExitButton
+  - assembly: GameAssembly
+    fullTypeName: PauseMenuController
+    methodName: TogglePause
+  - assembly: GameAssembly
+    fullTypeName: PauseMenuController
+    methodName: OptionsButton
+  - assembly: GameAssembly
+    fullTypeName: PauseMenuController
+    methodName: TitleButton
+  - assembly: GameAssembly
+    fullTypeName: PauseMenuController
+    methodName: ExitButton
+  - assembly: GameAssembly
+    fullTypeName: PauseMenuController
+    methodName: TogglePause
   sceneClasses:
     Assets/Scenes/FortCell1.unity:
     - Class: 1
@@ -169,11 +198,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6918}
     - Class: 114
-      Script: {instanceID: 8680}
+      Script: {instanceID: 8682}
     - Class: 114
-      Script: {instanceID: 9732}
+      Script: {instanceID: 9734}
     - Class: 114
-      Script: {instanceID: 10160}
+      Script: {instanceID: 10162}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -240,13 +269,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 9732}
+      Script: {instanceID: 9734}
     - Class: 114
-      Script: {instanceID: 10076}
+      Script: {instanceID: 10078}
     - Class: 114
-      Script: {instanceID: 10160}
+      Script: {instanceID: 10162}
     - Class: 114
-      Script: {instanceID: 10438}
+      Script: {instanceID: 10440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -305,13 +334,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 7332}
+      Script: {instanceID: 7334}
     - Class: 114
-      Script: {instanceID: 9732}
+      Script: {instanceID: 9734}
     - Class: 114
-      Script: {instanceID: 10160}
+      Script: {instanceID: 10162}
     - Class: 114
-      Script: {instanceID: 10528}
+      Script: {instanceID: 10530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -388,37 +417,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5666}
     - Class: 114
+      Script: {instanceID: 6354}
+    - Class: 114
       Script: {instanceID: 6470}
     - Class: 114
       Script: {instanceID: 6536}
     - Class: 114
       Script: {instanceID: 6918}
     - Class: 114
-      Script: {instanceID: 7284}
+      Script: {instanceID: 7132}
     - Class: 114
-      Script: {instanceID: 7332}
+      Script: {instanceID: 7286}
     - Class: 114
-      Script: {instanceID: 7506}
+      Script: {instanceID: 7334}
     - Class: 114
-      Script: {instanceID: 7968}
+      Script: {instanceID: 7508}
     - Class: 114
-      Script: {instanceID: 8680}
+      Script: {instanceID: 7970}
     - Class: 114
-      Script: {instanceID: 9420}
+      Script: {instanceID: 8682}
     - Class: 114
-      Script: {instanceID: 9544}
+      Script: {instanceID: 9422}
     - Class: 114
-      Script: {instanceID: 9860}
+      Script: {instanceID: 9546}
     - Class: 114
-      Script: {instanceID: 10076}
+      Script: {instanceID: 9862}
     - Class: 114
-      Script: {instanceID: 10114}
+      Script: {instanceID: 10078}
     - Class: 114
-      Script: {instanceID: 10256}
+      Script: {instanceID: 10116}
     - Class: 114
-      Script: {instanceID: 10438}
+      Script: {instanceID: 10258}
     - Class: 114
-      Script: {instanceID: 10528}
+      Script: {instanceID: 10440}
+    - Class: 114
+      Script: {instanceID: 10530}
+    - Class: 114
+      Script: {instanceID: 10582}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -998,7 +1033,7 @@ ScriptsOnlyBuild:
     className: InputSystemObject
   - hash:
       serializedVersion: 2
-      Hash: 48f49ff7adb5950628b93f785d726295
+      Hash: 05b09a5561e39de52cfd50502f06a5cd
     assemblyName: GameAssembly.dll
     namespaceName: 
     className: TestReferenceLedger
@@ -1194,6 +1229,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: PlayerInputManagerEditor
+  - hash:
+      serializedVersion: 2
+      Hash: ffd1b1428863408154ffc1edceb37d74
+    assemblyName: GameAssembly.dll
+    namespaceName: 
+    className: PauseMenuController
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -1490,7 +1531,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 383496af1be0598a9258275d6a9d4db2
+      Hash: bc001cc94818cc83c07bb129fc03c27e
     assemblyName: GameAssembly.dll
     namespaceName: 
     className: LoadManager
@@ -1644,6 +1685,12 @@ ScriptsOnlyBuild:
     assemblyName: GameAssembly.dll
     namespaceName: 
     className: SkeletonController
+  - hash:
+      serializedVersion: 2
+      Hash: f02136040bea3189e8dd1641b521b98f
+    assemblyName: GameAssembly.dll
+    namespaceName: 
+    className: HealthBarController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class HeatlhBarController : MonoBehaviour
+public class HealthBarController : MonoBehaviour
 {
     private HealthManager PCHM;
     public Slider thisSlider;

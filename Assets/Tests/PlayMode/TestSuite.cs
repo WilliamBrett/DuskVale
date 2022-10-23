@@ -23,6 +23,7 @@ public class TestSuite : InputTestFixture
     private Keyboard KeyboardRef;
     private Mouse MouseRef;
     private PlayerController PCRef;
+    private HealthManager PCHP;
     private TestReferenceLedger TestRefs;
     private int TestsCompleted;
 
@@ -38,6 +39,12 @@ public class TestSuite : InputTestFixture
     private static readonly int DashTestID = 10;
     private static readonly int CombatTestID = 11;
     private static readonly int CameraLimitTestID = 12;
+    private static readonly int PlatformEffectorTestID = 13;
+    private static readonly int HPBarTestID = 14;
+    private static readonly int PauseMenuTestID = 15;
+    private static readonly int SaveGameTestID = 16;
+    private static readonly int PauseTitleTestID = 17;
+    private static readonly int LoadGameTestID = 18;
 
     public void GetTestRefs() => TestRefs = GameObject.FindGameObjectWithTag("TestData").GetComponent<TestReferenceLedger>();
 
@@ -138,6 +145,7 @@ public class TestSuite : InputTestFixture
         {
             PlayerRef = PCs[0];
             PCRef = PlayerRef.GetComponent<PlayerController>();
+            PCHP = PlayerRef.GetComponent<HealthManager>();
             Assert.NotNull(PlayerRef);
         }
         else
@@ -254,6 +262,12 @@ public class TestSuite : InputTestFixture
         PCRef.DebugCommand = "Fire";
         yield return new WaitForSeconds(3f);
         PCRef.DebugCommand = null;
+        PCRef.thistf.position = new Vector3(40, 3, 0);
+        PCRef.DebugCommand = "MoveLeft";
+        yield return new WaitForSeconds(0.1f);
+        PCRef.DebugCommand = "Fire";
+        yield return new WaitForSeconds(3f);
+        PCRef.DebugCommand = null;
         GameObject[] BulletRefs = GameObject.FindGameObjectsWithTag("Projectile");
         Assert.NotZero(BulletRefs.Length); 
         TestsCompleted = CombatTestID;
@@ -287,5 +301,105 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
+    [UnityTest, Order(13)]
+    public IEnumerator PlatformEffectorTest()
+    {
+        while (TestsCompleted != PlatformEffectorTestID - 1) { yield return null; }
+        PCRef.thistf.position = new Vector3(3, 22, 0);
+        yield return new WaitForSeconds(3f);
+        Vector3 pos1 = PCRef.thistf.localPosition;
+        PCRef.DebugCommand = "Crouch";
+        yield return new WaitForSeconds(5f);
+        Vector3 pos2 = PCRef.thistf.localPosition;
+        PCRef.DebugCommand = null;
+        Assert.AreNotEqual(pos1, pos2);
+        TestsCompleted = PlatformEffectorTestID;
+        yield return null;
+    }
+
+    [UnityTest, Order(14)]
+    public IEnumerator HPBarTest()
+    {
+        while (TestsCompleted != HPBarTestID - 1) { yield return null; }
+        int curHP = PCHP.currenthealth;
+        PCHP.TakeDamage(1);
+        yield return new WaitForSeconds(1f);
+        float HPBarHP = GameObject.FindGameObjectWithTag("Canvas").GetComponent<HealthBarController>().thisSlider.value;
+        Assert.AreNotEqual(curHP, (int)HPBarHP);
+        TestsCompleted = HPBarTestID;
+        yield return null;
+    }
+    [UnityTest, Order(15)]
+    public IEnumerator PauseMenuTest()
+    {
+        while (TestsCompleted != PauseMenuTestID - 1) { yield return null; }
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().TogglePause();
+        Assert.AreEqual(Time.timeScale, 0f);
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().TogglePause();
+        TestsCompleted = PauseMenuTestID;
+        yield return null;
+    }
+
+    [UnityTest, Order(16)]
+    public IEnumerator SaveGameTest()
+    {
+        while (TestsCompleted != SaveGameTestID - 1) { yield return null; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/FortCell2.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        PCRef.thistf.position = new Vector3(-1, 13, 0);
+        yield return new WaitForSeconds(3f);
+        GameObject.FindGameObjectWithTag("SavePoint").GetComponent<SaveManager>().SaveGame();
+        Assert.Pass(); //If save happens successfully, it won't error out and reach this point. 
+        TestsCompleted = SaveGameTestID;
+        yield return null;
+    }
+
+    [UnityTest, Order(17)]
+    public IEnumerator PauseTitleTest()
+    {
+        while (TestsCompleted != PauseTitleTestID - 1) { yield return null; }
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().TogglePause();
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().TitleButton();
+        bool SceneTestPassed = false;
+        bool PlayerTestPassed = false;
+        bool CanvasTestPassed = false;
+        if (SceneManager.GetActiveScene().name == "TitleMenu"){
+            SceneTestPassed = true;
+        }
+        GameObject[] PCs = GameObject.FindGameObjectsWithTag("Player");
+        if (PCs.Length == 0)
+        {
+            PlayerTestPassed = true;
+        }
+        GameObject[] CVSs = GameObject.FindGameObjectsWithTag("Canvas");
+        if (CVSs.Length == 0)
+        {
+            CanvasTestPassed = true;
+        }
+        if (SceneTestPassed && PlayerTestPassed && CanvasTestPassed)
+        {
+            Assert.Pass();
+        }
+        else
+        {
+            Assert.Fail();
+        }
+        TestsCompleted = PauseTitleTestID;
+        yield return null;
+    }
+
+    [UnityTest, Order(18)]
+    public IEnumerator LoadGameTest()
+    {
+        while (TestsCompleted != LoadGameTestID - 1) { yield return null; }
+        string curSceneName = SceneManager.GetActiveScene().name;
+        GameObject LGButton = TestRefs.LoadGameButton;
+        LGButton.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(3f);
+        //while (curScene == SceneManager.GetActiveScene().name) { yield return null; }
+        Assert.AreNotEqual(curSceneName, SceneManager.GetActiveScene().name);
+        TestsCompleted = LoadGameTestID;
+        yield return null;
+    }
 
 }
