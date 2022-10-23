@@ -349,12 +349,13 @@ public class TestSuite : InputTestFixture
         PCRef.thistf.position = new Vector3(-1, 13, 0);
         yield return new WaitForSeconds(3f);
         GameObject.FindGameObjectWithTag("SavePoint").GetComponent<SaveManager>().SaveGame();
-        Assert.Pass(); //If save happens successfully, it won't error out and reach this point. 
         TestsCompleted = SaveGameTestID;
+        Assert.Pass(); //If save happens successfully, it won't error out and reach this point. 
+        
         yield return null;
     }
 
-    /*[UnityTest, Order(17)]
+    [UnityTest, Order(17)]
     public IEnumerator PauseTitleTest()
     {
         while (TestsCompleted != PauseTitleTestID - 1) { yield return null; }
@@ -363,7 +364,6 @@ public class TestSuite : InputTestFixture
         if (Time.timeScale != 0) { Assert.Fail(); }
         bool SceneTestPassed = false;
         bool PlayerTestPassed = false;
-        bool CanvasTestPassed = false;
         if (SceneManager.GetActiveScene().name == "TitleMenu"){
             SceneTestPassed = true;
         }
@@ -372,12 +372,8 @@ public class TestSuite : InputTestFixture
         {
             PlayerTestPassed = true;
         }
-        GameObject[] CVSs = GameObject.FindGameObjectsWithTag("Canvas");
-        if (CVSs.Length == 0)
-        {
-            CanvasTestPassed = true;
-        }
-        if (SceneTestPassed && PlayerTestPassed && CanvasTestPassed)
+        TestsCompleted = PauseTitleTestID;
+        if (SceneTestPassed && PlayerTestPassed)
         {
             Assert.Pass();
         }
@@ -385,7 +381,6 @@ public class TestSuite : InputTestFixture
         {
             Assert.Fail();
         }
-        TestsCompleted = PauseTitleTestID;
         yield return null;
     }
 
@@ -394,6 +389,7 @@ public class TestSuite : InputTestFixture
     {
         while (TestsCompleted != LoadGameTestID - 1) { yield return null; }
         string curSceneName = SceneManager.GetActiveScene().name;
+        GetTestRefs();
         GameObject LGButton = TestRefs.LoadGameButton;
         LGButton.GetComponent<Button>().onClick.Invoke();
         yield return new WaitForSeconds(3f);
@@ -401,6 +397,6 @@ public class TestSuite : InputTestFixture
         Assert.AreNotEqual(curSceneName, SceneManager.GetActiveScene().name);
         TestsCompleted = LoadGameTestID;
         yield return null;
-    }*/
+    }
 
 }

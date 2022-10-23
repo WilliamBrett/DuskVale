@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1264
     height: 613.3334
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Test Runner
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 108
+  controlID: 25
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 109
+  controlID: 67
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 110
+  controlID: 58
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 241.33333
     height: 306.66666
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -245,14 +245,14 @@ MonoBehaviour:
     y: 306.66666
     width: 875.3333
     height: 256.66666
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 19}
   - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,7 +310,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 161
+    ID: 138
     splitterInitialOffset: 425.33334
     currentActiveSplitter: -1
     realSizes:
@@ -341,9 +341,9 @@ MonoBehaviour:
       uniqueId: '[DuskVale][suite]'
       name: DuskVale
       fullName: DuskVale
-      resultStatus: 4
-      duration: 53.25168
-      messages: One or more child tests were ignored
+      resultStatus: 2
+      duration: 127.11601
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -357,9 +357,9 @@ MonoBehaviour:
       uniqueId: '[PlayMode][C:/Users/William Brett/Documents/GitHub/DuskVale/Library/ScriptAssemblies/PlayMode.dll][suite]'
       name: PlayMode.dll
       fullName: C:/Users/William Brett/Documents/GitHub/DuskVale/Library/ScriptAssemblies/PlayMode.dll
-      resultStatus: 1
-      duration: 52.72699
-      messages: 
+      resultStatus: 2
+      duration: 126.46955
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -373,9 +373,9 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/[PlayMode][TestSuite][suite]
       name: TestSuite
       fullName: TestSuite
-      resultStatus: 1
-      duration: 52.702366
-      messages: 
+      resultStatus: 2
+      duration: 126.4562
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
       name: CameraLimitTest
       fullName: TestSuite.CameraLimitTest
       resultStatus: 1
-      duration: 4.0455647
+      duration: 4.041497
       messages: 
       output: 
       stacktrace: 
@@ -407,7 +407,7 @@ MonoBehaviour:
       name: CellPathTest
       fullName: TestSuite.CellPathTest
       resultStatus: 1
-      duration: 3.1155617
+      duration: 3.0915606
       messages: 
       output: 
       stacktrace: 
@@ -424,7 +424,7 @@ MonoBehaviour:
       name: CombatTest
       fullName: TestSuite.CombatTest
       resultStatus: 1
-      duration: 6.2456646
+      duration: 6.2489934
       messages: 
       output: 
       stacktrace: 
@@ -441,7 +441,7 @@ MonoBehaviour:
       name: DashTest
       fullName: TestSuite.DashTest
       resultStatus: 1
-      duration: 2.6462762
+      duration: 2.6603367
       messages: 
       output: 
       stacktrace: 
@@ -458,7 +458,7 @@ MonoBehaviour:
       name: HorizontalMovementTest
       fullName: TestSuite.HorizontalMovementTest
       resultStatus: 1
-      duration: 3.0397174
+      duration: 3.047174
       messages: 
       output: 
       stacktrace: 
@@ -475,7 +475,7 @@ MonoBehaviour:
       name: HPBarTest
       fullName: TestSuite.HPBarTest
       resultStatus: 1
-      duration: 1.0346348
+      duration: 1.041555
       messages: 
       output: 
       stacktrace: 
@@ -492,7 +492,24 @@ MonoBehaviour:
       name: JumpTest
       fullName: TestSuite.JumpTest
       resultStatus: 1
-      duration: 4.036004
+      duration: 4.0387154
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/[PlayMode][TestSuite][suite]
+    - id: 1019
+      uniqueId: PlayMode.dll/TestSuite/[PlayMode][TestSuite.LoadGameTest]
+      name: LoadGameTest
+      fullName: TestSuite.LoadGameTest
+      resultStatus: 1
+      duration: 74.21873
       messages: 
       output: 
       stacktrace: 
@@ -509,7 +526,7 @@ MonoBehaviour:
       name: LoadStartScreenTest
       fullName: TestSuite.LoadStartScreenTest
       resultStatus: 1
-      duration: 3.6099179
+      duration: 3.3344996
       messages: 
       output: 
       stacktrace: 
@@ -526,7 +543,7 @@ MonoBehaviour:
       name: LoadTestCell
       fullName: TestSuite.LoadTestCell
       resultStatus: 1
-      duration: 3.1051412
+      duration: 3.1471453
       messages: 
       output: 
       stacktrace: 
@@ -543,7 +560,7 @@ MonoBehaviour:
       name: NewGameTest
       fullName: TestSuite.NewGameTest
       resultStatus: 1
-      duration: 3.3138976
+      duration: 3.1375792
       messages: 
       output: 
       stacktrace: 
@@ -560,10 +577,34 @@ MonoBehaviour:
       name: PauseMenuTest
       fullName: TestSuite.PauseMenuTest
       resultStatus: 1
-      duration: 0.0357729
+      duration: 0.046958
       messages: 
       output: 
       stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/[PlayMode][TestSuite][suite]
+    - id: 1018
+      uniqueId: PlayMode.dll/TestSuite/[PlayMode][TestSuite.PauseTitleTest]
+      name: PauseTitleTest
+      fullName: TestSuite.PauseTitleTest
+      resultStatus: 2
+      duration: 0.0305413
+      messages: 
+      output: 
+      stacktrace: 'at TestSuite+<PauseTitleTest>d__48.MoveNext () [0x00133] in C:\Users\William
+        Brett\Documents\GitHub\DuskVale\Assets\Tests\PlayMode\TestSuite.cs:382
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -577,7 +618,7 @@ MonoBehaviour:
       name: PlatformEffectorTest
       fullName: TestSuite.PlatformEffectorTest
       resultStatus: 1
-      duration: 8.031833
+      duration: 8.036268
       messages: 
       output: 
       stacktrace: 
@@ -594,7 +635,7 @@ MonoBehaviour:
       name: PlayerVerifyTest
       fullName: TestSuite.PlayerVerifyTest
       resultStatus: 1
-      duration: 0.0617257
+      duration: 0.0463809
       messages: 
       output: 
       stacktrace: 
@@ -611,11 +652,11 @@ MonoBehaviour:
       name: SaveGameTest
       fullName: TestSuite.SaveGameTest
       resultStatus: 1
-      duration: 6.0668364
+      duration: 6.0969906
       messages: 
       output: 
-      stacktrace: 'at TestSuite+<SaveGameTest>d__47.MoveNext () [0x00103] in C:\Users\William
-        Brett\Documents\GitHub\DuskVale\Assets\Tests\PlayMode\TestSuite.cs:352
+      stacktrace: 'at TestSuite+<SaveGameTest>d__47.MoveNext () [0x00113] in C:\Users\William
+        Brett\Documents\GitHub\DuskVale\Assets\Tests\PlayMode\TestSuite.cs:353
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
@@ -635,7 +676,7 @@ MonoBehaviour:
       name: StartMenuTest
       fullName: TestSuite.StartMenuTest
       resultStatus: 1
-      duration: 4.0882044
+      duration: 4.081499
       messages: 
       output: 
       stacktrace: 
@@ -652,7 +693,7 @@ MonoBehaviour:
       name: TestingTest
       fullName: TestSuite.TestingTest
       resultStatus: 1
-      duration: 0.1496894
+      duration: 0.0572943
       messages: 
       output: 
       stacktrace: 
@@ -669,7 +710,7 @@ MonoBehaviour:
       name: Unity.InputSystem.IntegrationTests.dll
       fullName: C:/Users/William Brett/Documents/GitHub/DuskVale/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
       resultStatus: 4
-      duration: 0.0304011
+      duration: 0.0330274
       messages: One or more child tests were ignored
       output: 
       stacktrace: 
@@ -685,7 +726,7 @@ MonoBehaviour:
       name: IntegrationTests
       fullName: IntegrationTests
       resultStatus: 4
-      duration: 0.0232966
+      duration: 0.024912
       messages: One or more child tests were ignored
       output: 
       stacktrace: 
@@ -701,7 +742,7 @@ MonoBehaviour:
       name: Integration_CanChangeInputBackendPlayerSettingInEditor
       fullName: IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor
       resultStatus: 1
-      duration: 0.006755
+      duration: 0.0069703
       messages: 
       output: 
       stacktrace: 
@@ -718,7 +759,7 @@ MonoBehaviour:
       name: Integration_CanSendAndReceiveEvents
       fullName: IntegrationTests.Integration_CanSendAndReceiveEvents
       resultStatus: 1
-      duration: 0.0095951
+      duration: 0.0101724
       messages: 
       output: 
       stacktrace: 
@@ -730,12 +771,12 @@ MonoBehaviour:
       - Integration
       parentId: 1006
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    - id: 1050
+    - id: 1054
       uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.WindowsInput_MouseMovements_AreDetected]
       name: WindowsInput_MouseMovements_AreDetected
       fullName: IntegrationTests.WindowsInput_MouseMovements_AreDetected
       resultStatus: 4
-      duration: 0.0003085
+      duration: 0.0002905
       messages: Unstable due to 1252825
       output: 
       stacktrace: 
@@ -745,14 +786,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Integration
-      parentId: 1046
+      parentId: 1050
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    - id: 1049
+    - id: 1053
       uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected]
       name: WindowsInput_RemoteDesktopMouseMovements_AreDetected
       fullName: IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected
       resultStatus: 4
-      duration: 0.0000049
+      duration: 0.0000044
       messages: Unstable due to 1252825
       output: 
       stacktrace: 
@@ -762,18 +803,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Integration
-      parentId: 1046
+      parentId: 1050
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    m_ResultText: 'PauseTitleTest (0.000s)
-
-      ---
-
-      Cancelled by user'
+    m_ResultText: LoadGameTest (74.219s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ee776a45
-      m_LastClickedID: 1164605422
+      scrollPos: {x: 0, y: 2}
+      m_SelectedIDs: b847b07f
+      m_LastClickedID: 2142259128
       m_ExpandedIDs: b903d49ed5badee6c5e770f4ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -978,7 +1015,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c237ffff0238fffff841ffff3e44ffff8c44ffffd244fffff244ffff3445ffff4245ffffee47ffff3648ffff9848ffffb848fffffa48ffff0849ffff244fffff6c4fffffce4fffffee4fffff3050ffff3e50ffff2c79ffff3079ffff4079ffffd07bffff1c7cffffe87cffff087dffff4c7dffff5a7dffffba84ffff0285fffff885ffff1886ffff5e86ffff6c86fffff69effff329fffff02a1ffff26a1ffff74a1ffff82a1ffffeea1ffff24a2ffff76acffffb6aeffffe6aeffff6eb9ffff62bcffff3cc0ffffe8c5ffffacc7ffff98c8ffffcac9fffffac9ffffd0d3ffffc0d4ffff70d7ffff80d8ffffd4d9ffff04e4ffff34e4ffff6aeeffffc6effffff6efffff0efaffff0cfbfffff4ffffff4aa100008ea10000b4a10000c0a10000
+      m_ExpandedIDs: 28bdffff68bdffffdac8ffff2ac9ffff6ac9ffff20d5ffffced5ffff98dfffff94e0ffffe0e0ffff20e1ffff46ecffff80edffffc0edffff58f8ffff0cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1092,7 +1129,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 25.333334}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -1125,7 +1162,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 25.333334}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Tilemap Focus
@@ -1169,7 +1206,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 24.666666}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Camera
@@ -1337,9 +1374,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.422267
+    m_Target: 10
     speed: 2
-    m_Value: 13.422267
+    m_Value: 10
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1394,7 +1431,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 55146
+  m_LastSelectedObjectID: 38038
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1649,9 +1686,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 69}
-    m_SelectedIDs: 86670000
-    m_LastClickedID: 26502
-    m_ExpandedIDs: 000000003a6700003c6700003e6700008c67000000ca9a3bffffff7f
+    m_SelectedIDs: 48680000
+    m_LastClickedID: 26696
+    m_ExpandedIDs: 000000003a6800003c6800003e6800004e68000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1679,7 +1716,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003a6700003c6700003e670000
+    m_ExpandedIDs: 000000003a6800003c6800003e680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
