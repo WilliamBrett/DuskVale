@@ -15,7 +15,7 @@ C:/Users/William Brett/Documents/GitHub/DuskVale
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-57398
+53501
 Successfully changed project path to: C:/Users/William Brett/Documents/GitHub/DuskVale
 C:/Users/William Brett/Documents/GitHub/DuskVale
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/William Brett/Documents/GitHub/DuskVale
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 176.99 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 161.90 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.8f1 (b30333d56e81)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -63,7 +63,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
@@ -71,7 +71,7 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.020546 seconds.
+Registered in 0.022394 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
@@ -80,39 +80,39 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 146.73 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 144.16 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.144 seconds
+- Completed reload, in  1.096 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1145ms)
-		BeginReloadAssembly (172ms)
+	ReloadAssembly (1097ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (770ms)
-			LoadAssemblies (171ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (798ms)
+			LoadAssemblies (118ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (163ms)
+			SetupTypeCache (181ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (485ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (488ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (89ms)
+				InitializePlatformSupportModulesInManaged (123ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (147ms)
+				RefreshPlugins (144ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (79ms)
+				ProcessInitializeOnLoadAttributes (156ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.022065 seconds.
+Registered in 0.024759 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -124,48 +124,48 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 134.28 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 206.69 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 [ScriptCompilation] Requested script compilation because: Recompiling scripts with coverage information.
 Code Coverage is enabled. Note that Code Coverage can affect the performance of the Editor.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.968 seconds
+- Completed reload, in  2.443 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1970ms)
-		BeginReloadAssembly (171ms)
+	ReloadAssembly (2445ms)
+		BeginReloadAssembly (175ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (1627ms)
-			LoadAssemblies (146ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1990ms)
+			LoadAssemblies (181ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (416ms)
+			SetupTypeCache (503ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (92ms)
-			SetupLoadedEditorAssemblies (911ms)
+			RebuildScriptCaches (113ms)
+			SetupLoadedEditorAssemblies (1125ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (41ms)
+				InitializePlatformSupportModulesInManaged (48ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (134ms)
-				BeforeProcessingInitializeOnLoad (154ms)
-				ProcessInitializeOnLoadAttributes (515ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
+				RefreshPlugins (207ms)
+				BeforeProcessingInitializeOnLoad (206ms)
+				ProcessInitializeOnLoadAttributes (572ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
 				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 2.80 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4518 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 49 unused Assets / (200.3 KB). Loaded Objects now: 4997.
 Memory consumption went from 190.2 MB to 190.0 MB.
-Total: 5.175100 ms (FindLiveObjects: 0.431700 ms CreateObjectMapping: 0.391200 ms MarkObjects: 4.064600 ms  DeleteObjects: 0.286100 ms)
+Total: 9.911500 ms (FindLiveObjects: 0.547500 ms CreateObjectMapping: 0.491900 ms MarkObjects: 8.544200 ms  DeleteObjects: 0.326100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -180,307 +180,25 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1221759.764837 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_1.asset
-  artifactKey: Guid(bf1bb1558871a604dbab24124c29f25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_1.asset using Guid(bf1bb1558871a604dbab24124c29f25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e29907a0aed8c611a6673c8b5ec4381') in 0.258204 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_11.asset
-  artifactKey: Guid(78bf5dbbb3db7c146a4c5a91033090ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_11.asset using Guid(78bf5dbbb3db7c146a4c5a91033090ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb1d16efae5abc9a5cc9274de2cc73c4') in 0.023738 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_21.asset
-  artifactKey: Guid(7dafaf6ea9f6fa346a9f52db63af3c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_21.asset using Guid(7dafaf6ea9f6fa346a9f52db63af3c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c442d553528e4171a3f3e4803ddacf3') in 0.027231 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_24.asset
-  artifactKey: Guid(f4036dbb883afae498fe0d3890b923f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_24.asset using Guid(f4036dbb883afae498fe0d3890b923f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6659d0263f61cf557d4f69df6f41a2a') in 0.026043 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_3.asset
-  artifactKey: Guid(468294a4b3a736945ad8b6f15c948a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_3.asset using Guid(468294a4b3a736945ad8b6f15c948a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dddc800677ec61ab64b6cc78cf70669d') in 0.043995 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_23.asset
-  artifactKey: Guid(7b71491037ddd5e46923bceb151bc573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_23.asset using Guid(7b71491037ddd5e46923bceb151bc573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ef18f58cf4afa20e7128c37a128f11') in 0.064297 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_20.asset
-  artifactKey: Guid(7a5bbfd755c9555468794560406068e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_20.asset using Guid(7a5bbfd755c9555468794560406068e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbbaaeca4d21de98e13091f96313f09b') in 0.031020 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_25.asset
-  artifactKey: Guid(a1c81ef7b0748f14eb6486029af447cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_25.asset using Guid(a1c81ef7b0748f14eb6486029af447cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529f0f1aa267e7970f50d9c9ad188d55') in 0.032708 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000092 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_6.asset
-  artifactKey: Guid(87ff88626eb9dbd499235fc88f6118f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_6.asset using Guid(87ff88626eb9dbd499235fc88f6118f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4063126f495106379042accfb321eb') in 0.027715 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_15.asset
-  artifactKey: Guid(693cba08e48a5404da58f8f619185427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_15.asset using Guid(693cba08e48a5404da58f8f619185427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a3cb38c8d4b59a5bc1426d15be78c4') in 0.034773 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_18.asset
-  artifactKey: Guid(8f5073ebcba88264ca276f32335d1fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_18.asset using Guid(8f5073ebcba88264ca276f32335d1fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00eddc8f45e72329b415bb6d47ad776e') in 0.030101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.535011 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_29.asset
-  artifactKey: Guid(25c5255710ab78b4eab63542d386b813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_29.asset using Guid(25c5255710ab78b4eab63542d386b813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38bc5c85d750a91d2f6362f703874554') in 0.024125 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_35.asset
-  artifactKey: Guid(0a9883a267d383947a66aa0361ad6d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_35.asset using Guid(0a9883a267d383947a66aa0361ad6d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '227d2d7f5340706c324e19bce6d9b599') in 0.023329 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_31.asset
-  artifactKey: Guid(1426e114d8ce65448a0a7e75e42ffe43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_31.asset using Guid(1426e114d8ce65448a0a7e75e42ffe43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7059825ce9277024a5fb19a3d1343ca6') in 0.034604 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_34.asset
-  artifactKey: Guid(aee16be30f1649c4dae26f2b01bf72df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_34.asset using Guid(aee16be30f1649c4dae26f2b01bf72df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d20087fb81c3ebfb77ec0925bbe0e59') in 0.027147 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.121527 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_38.asset
-  artifactKey: Guid(47fe82bb7fa6f4a4dad0c5d2efa1c37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_38.asset using Guid(47fe82bb7fa6f4a4dad0c5d2efa1c37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e29a73e5a9fd0b9b4f14934faed43f') in 0.021658 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_39.asset
-  artifactKey: Guid(aa9b6e0b977fc6942a17686658a8852f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_39.asset using Guid(aa9b6e0b977fc6942a17686658a8852f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9cfe1aad77cea0f657eb0d6d353f787') in 0.028914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_44.asset
-  artifactKey: Guid(a3782888fd57cd94188cf253ad6ab448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_44.asset using Guid(a3782888fd57cd94188cf253ad6ab448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691685379aa8cd47cad0b203ed36959b') in 0.018919 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_49.asset
-  artifactKey: Guid(839109d2618a4b847871d0ac9f5e8a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_49.asset using Guid(839109d2618a4b847871d0ac9f5e8a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '675996d79a9b6d54ca18c0a18858543b') in 0.032796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_48.asset
-  artifactKey: Guid(c80b3b3d2b43c604c907ec8d97504180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_48.asset using Guid(c80b3b3d2b43c604c907ec8d97504180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7925eea47d90328182d3e71fd643cddd') in 0.025742 seconds 
+  Time since last request: 1237339.891684 seconds.
+  path: Assets/InitTestScene638011250923533935.unity
+  artifactKey: Guid(2b82b841f476c8f409866148df2fdbd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InitTestScene638011250923533935.unity using Guid(2b82b841f476c8f409866148df2fdbd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d62528b91bb5137ac1270c00d8002f') in 0.018722 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000039 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_59.asset
-  artifactKey: Guid(3748914103bbccb47acaafcb9930220c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_59.asset using Guid(3748914103bbccb47acaafcb9930220c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b2dfd9b9bab66971ec782745d4edf0d') in 0.025410 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_58.asset
-  artifactKey: Guid(e35f87b1ba2458a4f826e3a5175a6a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_58.asset using Guid(e35f87b1ba2458a4f826e3a5175a6a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e055587bab1d1a18bdb9aceca82ff475') in 0.034995 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_63.asset
-  artifactKey: Guid(b228205022100674e8d6ef7c9f9f0704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_63.asset using Guid(b228205022100674e8d6ef7c9f9f0704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3655dcd7174c24bafe303e96908e2617') in 0.029719 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_40.asset
-  artifactKey: Guid(827117c8283fbf949bea5334f20e8b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_40.asset using Guid(827117c8283fbf949bea5334f20e8b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b0c93c1c718afcd127e27940e4a5e2f') in 0.024209 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_51.asset
-  artifactKey: Guid(b7868ce788a28144bb5226a7e14bf25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_51.asset using Guid(b7868ce788a28144bb5226a7e14bf25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf7b55c1155a4e29bbb7e835f5657fac') in 0.024194 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_57.asset
-  artifactKey: Guid(5ec4acf3082ee7a4b93e4052b48505ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_57.asset using Guid(5ec4acf3082ee7a4b93e4052b48505ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f4838b19eb785c5a9b432fb5a1ef794') in 0.024258 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_50.asset
-  artifactKey: Guid(99abe8847e5f7fb42b17d1f3f4a0925b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_50.asset using Guid(99abe8847e5f7fb42b17d1f3f4a0925b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8581eea7647c6c516df1f76a5bf72b0f') in 0.029471 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_42.asset
-  artifactKey: Guid(a7349b9c146a2ad4a8b11efd651f1fc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_42.asset using Guid(a7349b9c146a2ad4a8b11efd651f1fc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0e93c2a1f123ccfd3b47a069feb11b') in 0.032505 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.991129 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_65.asset
-  artifactKey: Guid(ee28425407600d74bb905d79f94d9859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_65.asset using Guid(ee28425407600d74bb905d79f94d9859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de497e279d44101bf3de6a2c07150de') in 0.029472 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_69.asset
-  artifactKey: Guid(840223470ff16824ea95f9f6ef95a4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_69.asset using Guid(840223470ff16824ea95f9f6ef95a4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926ff5677348690d53bedddefc060460') in 0.035310 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_72.asset
-  artifactKey: Guid(06143d39c7e89ad4eb119c74c486b8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_72.asset using Guid(06143d39c7e89ad4eb119c74c486b8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e8cb82a50bafa353628c27a11b784d') in 0.021757 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_87.asset
-  artifactKey: Guid(a1092b6b47fcf7646b14d9dfa70335a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_87.asset using Guid(a1092b6b47fcf7646b14d9dfa70335a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1866a2b3c96d5fefac072700dc45a0') in 0.021572 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_90.asset
-  artifactKey: Guid(557bf59974589f04888a75a94af816ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_90.asset using Guid(557bf59974589f04888a75a94af816ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbdb9ea25733cfaf312222d0709db896') in 0.025354 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_76.asset
-  artifactKey: Guid(e13609abe30f3f940a29e628bcc1e234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_76.asset using Guid(e13609abe30f3f940a29e628bcc1e234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583a9b5a2cdfc9bf564c487b24ecd722') in 0.027254 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_81.asset
-  artifactKey: Guid(6f5c77583d53345408c201e3e29cb8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_81.asset using Guid(6f5c77583d53345408c201e3e29cb8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b29db963e30210ec547ea9c10a8844') in 0.027000 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_83.asset
-  artifactKey: Guid(87cbfc74e6c274d4aa10f5a132ae9788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_83.asset using Guid(87cbfc74e6c274d4aa10f5a132ae9788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b283be0e4ecaef9727c26ac44349b530') in 0.035589 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_85.asset
-  artifactKey: Guid(aee8e27448a259f48b7401a929bbf49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_85.asset using Guid(aee8e27448a259f48b7401a929bbf49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc37cedcabb4a18b80a43b8fb12ef6e') in 0.031205 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_68.asset
-  artifactKey: Guid(3e8fe0ded1a58d94b946ca85f3f5b730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_68.asset using Guid(3e8fe0ded1a58d94b946ca85f3f5b730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07859af518072191bfad18459711c0ce') in 0.022072 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_70.asset
-  artifactKey: Guid(f35f0c50b4f8cbd4bbbd63d01ec4bf43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_70.asset using Guid(f35f0c50b4f8cbd4bbbd63d01ec4bf43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482e2241f6956fdd0a37988b87eef975') in 0.023103 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_67.asset
-  artifactKey: Guid(14f2fe237878c4c4a9cf335eaa55369e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_67.asset using Guid(14f2fe237878c4c4a9cf335eaa55369e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56aa2b72ec89c14f282e62ca542760ad') in 0.021949 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_86.asset
-  artifactKey: Guid(c0deba1b12cc21548b0675686c033692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_86.asset using Guid(c0deba1b12cc21548b0675686c033692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86bf7273d75bbd8eb2ae793f4f4d406') in 0.029795 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_89.asset
-  artifactKey: Guid(5df8f9d13f06f934696a1dabd8f6dc9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_89.asset using Guid(5df8f9d13f06f934696a1dabd8f6dc9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f08527a9d2bf40915a9d7ab65f5356f') in 0.026929 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.443761 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_92.asset
-  artifactKey: Guid(2cb429a025d4cd74e89844f8fc85fc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_92.asset using Guid(2cb429a025d4cd74e89844f8fc85fc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb67d8c2db9d40560c15dc73b80b223c') in 0.023258 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_93.asset
-  artifactKey: Guid(853fa7fc26606de4eacf6003c124fabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_93.asset using Guid(853fa7fc26606de4eacf6003c124fabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a4b3bc6144a64031d3673c53c8f1ed') in 0.025766 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_100.asset
-  artifactKey: Guid(822fa04698324c84683db4d6ee0a2b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_100.asset using Guid(822fa04698324c84683db4d6ee0a2b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1290f64efe194cb5498897a6bb25d41') in 0.017870 seconds 
+  path: Assets/InitTestScene638011186455560876.unity
+  artifactKey: Guid(1d08d3b0175f3cd48b894d4c8e3d1abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InitTestScene638011186455560876.unity using Guid(1d08d3b0175f3cd48b894d4c8e3d1abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31899fec2b7ab4178ca199f138d27c82') in 0.010904 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000028 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_94.asset
-  artifactKey: Guid(084db7edf7ad38d458268e95385b55e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_94.asset using Guid(084db7edf7ad38d458268e95385b55e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afd68aaf596175c86010d07e9d07e48') in 0.026074 seconds 
+  path: Assets/InitTestScene638011239803278288.unity
+  artifactKey: Guid(4741ae8ece66daf43a9ff650b0cbe719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InitTestScene638011239803278288.unity using Guid(4741ae8ece66daf43a9ff650b0cbe719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad91c7162bc957256dee6326d878536d') in 0.012552 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_95.asset
-  artifactKey: Guid(3fb2737461a29df499cdf173def18840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/swamp_tiles/tileset_95.asset using Guid(3fb2737461a29df499cdf173def18840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb056e57655bd8a13bd088e790599a58') in 0.021446 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2544.293081 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Tiles/tileset_1.asset
-  artifactKey: Guid(bf1bb1558871a604dbab24124c29f25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Tiles/tileset_1.asset using Guid(bf1bb1558871a604dbab24124c29f25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd47338a9e95f5ca04faee7b9f2af990') in 0.049608 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Tiles/tileset_4.asset
-  artifactKey: Guid(e4943fbd59aafc84bad5414d75e5e612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Tiles/tileset_4.asset using Guid(e4943fbd59aafc84bad5414d75e5e612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c090d501ce598426183c746fed170516') in 0.020529 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Tiles/tileset_3.asset
-  artifactKey: Guid(468294a4b3a736945ad8b6f15c948a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Tiles/tileset_3.asset using Guid(468294a4b3a736945ad8b6f15c948a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcac1a36c03ff070f5aeb6f598d44f58') in 0.025432 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Tiles/tileset_8.asset
-  artifactKey: Guid(2be959cb99cd0a941b95a6b09457ef1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Tiles/tileset_8.asset using Guid(2be959cb99cd0a941b95a6b09457ef1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce6c742f8712d6b336bbedb4b3f562f2') in 0.032976 seconds 
+  Time since last request: 0.000037 seconds.
+  path: Assets/InitTestScene638011243659589198.unity
+  artifactKey: Guid(9151f79da2ab6dd48bcfe97add66c8d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InitTestScene638011243659589198.unity using Guid(9151f79da2ab6dd48bcfe97add66c8d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b071d8305f1e85fd93bf5286a1b75052') in 0.010129 seconds 
