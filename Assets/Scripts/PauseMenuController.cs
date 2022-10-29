@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenuController : MonoBehaviour
 {
@@ -9,12 +10,18 @@ public class PauseMenuController : MonoBehaviour
     //private GameObject EventSystemRef;
     public bool isPaused;
     public GameObject PauseMenu;
+    public GameObject ResumeButtonRef, OptionsButtonRef, TitleButtonRef, QuitButtonRef, HowToPlayButtonRef;
+    public GameObject HTPScreen;
+    public bool HowToPlayIntro;
     
     // Start is called before the first frame update
     void Start()
     {
-        isPaused = false;
-        PauseMenu.SetActive(false);
+        isPaused = true;
+        Time.timeScale = 0f;
+        //PauseMenu.SetActive(false);
+        HowToPlayOpen();
+        HowToPlayIntro = true;
         DontDestroyOnLoad(gameObject);
     }
 
@@ -41,6 +48,10 @@ public class PauseMenuController : MonoBehaviour
 
     public void TogglePause()
     {
+        if (HTPScreen.activeInHierarchy)
+        {
+            HowToPlayClose();
+        }
         if (isPaused)
         {
             Time.timeScale = 1f;
@@ -60,6 +71,7 @@ public class PauseMenuController : MonoBehaviour
         //not implimented
     }
 
+
     public void TitleButton()
     { 
         //destroy all persistent objects
@@ -70,4 +82,41 @@ public class PauseMenuController : MonoBehaviour
     }
 
     public void ExitButton() => Application.Quit();
+
+    public void HowToPlayOpen()
+    {
+        DisableButton(ResumeButtonRef);
+        DisableButton(OptionsButtonRef);
+        DisableButton(TitleButtonRef);
+        DisableButton(QuitButtonRef);
+        DisableButton(HowToPlayButtonRef);
+        HTPScreen.SetActive(true);
+    }
+
+    public void HowToPlayClose()
+    {
+        EnableButton(ResumeButtonRef);
+        EnableButton(OptionsButtonRef);
+        EnableButton(TitleButtonRef);
+        EnableButton(QuitButtonRef);
+        EnableButton(HowToPlayButtonRef);
+        HTPScreen.SetActive(false);
+        if (HowToPlayIntro)
+        {
+            HowToPlayIntro = false;
+            TogglePause();
+        }
+    }
+
+    public void DisableButton(GameObject toDisable)
+    {
+        toDisable.GetComponent<Image>().color = Color.gray;
+        toDisable.GetComponent<Button>().enabled = false;
+    }
+
+    public void EnableButton(GameObject toEnable)
+    {
+        toEnable.GetComponent<Image>().color = Color.white;
+        toEnable.GetComponent<Button>().enabled = true;
+    }
 }
