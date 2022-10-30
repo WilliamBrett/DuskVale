@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9acdd6fe0b47464093fec2832a4235b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ConnectedCell: 
-  ConnectedSpawn: 
+  ConnectedCell: SwampCell1
+  ConnectedSpawn: B
 --- !u!61 &333780447
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -958,6 +958,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5625488638288793694, guid: 63a64ab15a8a33a48a452f72f5a95e6e, type: 3}
+      propertyPath: FarScenery
+      value: 
+      objectReference: {fileID: 5498854821620249408}
+    - target: {fileID: 5625488638288793694, guid: 63a64ab15a8a33a48a452f72f5a95e6e, type: 3}
+      propertyPath: MidScenery
+      value: 
+      objectReference: {fileID: 5498854821620249407}
     - target: {fileID: 5625488638288793695, guid: 63a64ab15a8a33a48a452f72f5a95e6e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1119,7 +1127,7 @@ TilemapRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 2.9375, y: 1.6875, z: 0}
+  m_ChunkCullingBounds: {x: 2.9375, y: 2, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -1378,3 +1386,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e93c67de65b9c14eb5c50cd7599de13, type: 3}
+--- !u!4 &5498854821620249407 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5498854820202963971, guid: 6e93c67de65b9c14eb5c50cd7599de13, type: 3}
+  m_PrefabInstance: {fileID: 5498854821620249406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5498854821620249408 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5498854819961614128, guid: 6e93c67de65b9c14eb5c50cd7599de13, type: 3}
+  m_PrefabInstance: {fileID: 5498854821620249406}
+  m_PrefabAsset: {fileID: 0}

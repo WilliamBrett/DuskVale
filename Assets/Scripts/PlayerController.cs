@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (Input.GetButtonDown("Dash") || DebugCommand == "Dash")
+            if ((Input.GetButtonDown("Dash") || DebugCommand == "Dash") && DashUnlocked)
             {
                 Dash();
             }
@@ -155,19 +155,19 @@ public class PlayerController : MonoBehaviour
             {
                 thisRB2D.velocity = new Vector2(thisRB2D.velocity.x, jumpForce);
             }
-            else if (Physics2D.OverlapCircle(GripR.position, 0.2f, Ground))
+            else if (WJUnlocked && Physics2D.OverlapCircle(GripR.position, 0.2f, Ground))
             {
                 thisRB2D.velocity = new Vector2(-moveSpeed * 2, jumpForce);
                 DJReady = true;
                 AnimLock = 15;
             }
-            else if (Physics2D.OverlapCircle(GripL.position, 0.2f, Ground))
+            else if (WJUnlocked && Physics2D.OverlapCircle(GripL.position, 0.2f, Ground))
             {
                 thisRB2D.velocity = new Vector2(moveSpeed * 2, jumpForce);
                 AnimLock = 15;
                 DJReady = true;
             }
-            else if (DJReady && AnimLock == 0)
+            else if (DJReady && DJUnlocked && AnimLock == 0)
             {
                 thisRB2D.velocity = new Vector2(thisRB2D.velocity.x, jumpForce);
                 DJReady = false;

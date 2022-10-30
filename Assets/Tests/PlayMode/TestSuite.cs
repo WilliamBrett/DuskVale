@@ -218,6 +218,8 @@ public class TestSuite : InputTestFixture
     public IEnumerator JumpTest()
     {
         while (TestsCompleted != JumpTestID - 1) { yield return null; }
+        PCRef.DJUnlocked = true;
+        PCRef.WJUnlocked = true;
         Vector3 pos1 = PCRef.thistf.localPosition;
         PCRef.DebugCommand = "Jump";
         yield return new WaitForSeconds(1f);
@@ -233,6 +235,7 @@ public class TestSuite : InputTestFixture
     public IEnumerator DashTest()
     {
         while (TestsCompleted != DashTestID - 1) { yield return null; }
+        PCRef.DashUnlocked = true;
         PCRef.DebugCommand = "MoveRight";
         yield return new WaitForSeconds(0.1f);
         PCRef.DebugCommand = "Jump";

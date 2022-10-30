@@ -41,7 +41,7 @@ public class HealthManager : MonoBehaviour
         if (iframe == 0)
         {
             currenthealth -= i;
-            iframe = (i * 100);
+            iframe = (i * 20);
             //knockback?
             if (currenthealth <= 0)
             {
