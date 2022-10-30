@@ -8,12 +8,14 @@ public class LoadManager : MonoBehaviour
     public GameObject PlayerPresetRef;
     public GameObject CanvasPresetRef;
     public GameObject SpawnedPlayerRef;
+    public GameObject SpawnedCanvasRef;
     private PlayerController ControllerRef;
     private int MaxHP;
     private bool DJUnlocked;
     private bool DashUnlocked;
     private bool WJUnlocked;
     public PlayerRecord RecordRef;
+
     
     // Start is called before the first frame update
     /*void Start()
@@ -85,6 +87,10 @@ public class LoadManager : MonoBehaviour
         DashUnlocked = TranslateBool(0);
         WJUnlocked = TranslateBool(0);
         RecordRef.SetupRecord(DJUnlocked, DashUnlocked, WJUnlocked, MaxHP);
+        Time.timeScale = 0f;
+        SpawnedCanvasRef.GetComponent<PauseMenuController>().HowToPlayOpen();
+        SpawnedCanvasRef.GetComponent<PauseMenuController>().isPaused = true;
+        SpawnedCanvasRef.GetComponent<PauseMenuController>().HowToPlayIntro = true;
         SceneManager.LoadScene("FortCell2");
         
     }
@@ -105,6 +111,6 @@ public class LoadManager : MonoBehaviour
     private void SpawnPlayer()
     {
         SpawnedPlayerRef = Instantiate(PlayerPresetRef, new Vector3(0, 0, 0), new Quaternion());
-        Instantiate(CanvasPresetRef, new Vector3(0, 0, 0), new Quaternion()); //test
+        SpawnedCanvasRef = Instantiate(CanvasPresetRef, new Vector3(0, 0, 0), new Quaternion()); //test
     }
 }

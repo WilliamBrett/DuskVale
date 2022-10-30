@@ -129,10 +129,14 @@ public class TestSuite : InputTestFixture
         //string curScene = SceneManager.GetActiveScene().name;
         
         NGButton.GetComponent<Button>().onClick.Invoke();
+        while (SceneManager.GetActiveScene().name != "FortCell2") { yield return null; }
+        //yield return new WaitForSeconds(3f);
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().HowToPlayClose();
         yield return new WaitForSeconds(3f);
         //while (curScene == SceneManager.GetActiveScene().name) { yield return null; }
-        Assert.AreEqual(SceneManager.GetActiveScene().name, "FortCell2");
-        TestsCompleted = NewGameTestID;
+        //Assert.AreEqual(SceneManager.GetActiveScene().name, "FortCell2");
+         TestsCompleted = NewGameTestID;
+        Assert.Pass();
         yield return null;
     }
 

@@ -17,11 +17,11 @@ public class PauseMenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isPaused = true;
-        Time.timeScale = 0f;
+        //isPaused = true;
+        //Time.timeScale = 0f;
         //PauseMenu.SetActive(false);
-        HowToPlayOpen();
-        HowToPlayIntro = true;
+        //HowToPlayOpen();
+        //HowToPlayIntro = true;
         DontDestroyOnLoad(gameObject);
     }
 
