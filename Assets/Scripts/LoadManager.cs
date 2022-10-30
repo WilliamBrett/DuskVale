@@ -30,6 +30,8 @@ public class LoadManager : MonoBehaviour
         SpawnPlayer();
         RecordRef = SpawnedPlayerRef.GetComponentInChildren<PlayerRecord>();
         ControllerRef = SpawnedPlayerRef.GetComponent<PlayerController>();
+        SpawnedCanvasRef.GetComponent<PauseMenuController>().PauseMenu.SetActive(false);
+        SpawnedCanvasRef.GetComponent<PauseMenuController>().isPaused = false;
         ControllerRef.SpawnID = "S";
         if (PlayerPrefs.HasKey("PlayerMaxHealth"))
         {
@@ -111,6 +113,6 @@ public class LoadManager : MonoBehaviour
     private void SpawnPlayer()
     {
         SpawnedPlayerRef = Instantiate(PlayerPresetRef, new Vector3(0, 0, 0), new Quaternion());
-        SpawnedCanvasRef = Instantiate(CanvasPresetRef, new Vector3(0, 0, 0), new Quaternion()); //test
+        SpawnedCanvasRef = Instantiate(CanvasPresetRef, new Vector3(0, 0, 0), new Quaternion()); 
     }
 }

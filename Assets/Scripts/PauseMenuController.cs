@@ -77,6 +77,7 @@ public class PauseMenuController : MonoBehaviour
         //destroy all persistent objects
         Destroy(PlayerRef);
         //Destroy(EventSystemRef);
+        Time.timeScale = 1f;
         SceneManager.LoadScene("TitleMenu");
         Destroy(gameObject);
     }
