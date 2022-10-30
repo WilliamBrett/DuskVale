@@ -49,9 +49,10 @@ public class HealthManager : MonoBehaviour
                 {
                     this.gameObject.SetActive(false);
                 }
-                else if (this.tag == "Hostile")
+                else if (this.tag == "Hostile" && !dying)
                 {
                     this.deathDelay = deathTime;
+                    this.dying = true;
                     thisAnim.SetBool("Dying", true);
                 }
             }
