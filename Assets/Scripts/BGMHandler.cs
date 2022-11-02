@@ -6,59 +6,45 @@ using UnityEngine.SceneManagement;
 public class BGMHandler : MonoBehaviour
 {
     private bool BGMLoaded;
-    private GameObject CurBGM;
+    private AudioSource CurBGM;
+    private GameObject CurBGMPlayer;
     public GameObject TitleBGM;
     public GameObject FortBGM;
     public GameObject SwampBGM;
     public GameObject GraveBGM;
     public GameObject ChapelBGM;
-    //private AudioSource thisAS;
-    //AUDIO SOURCE AS VARIABLE, VAR.Play() to PLAY
-    // Start is called before the first frame update
 
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        DetermineBGM();
-        //thisAS = this.GetComponent<AudioSource>();
+        BGMLoaded = false;
     }
 
     private void OnLevelWasLoaded(int level)
     {
-        DetermineBGM();
-        //ZoneIn();
+        BGMLoaded = false;
     }
 
-    public void DetermineBGM()
+    public void ChooseBGM()
     {
-        BGMLoaded = false;
+        
         switch (SceneManager.GetActiveScene().name)
         {
             case "TitleMenu":
-                CurBGM = TitleBGM;
+                StartBGM(TitleBGM);
                 return;
             default:
+                CurBGMPlayer = null;
                 CurBGM = null;
                 return;
         }
-        //SceneManager.GetActiveScene().name;
-        /*switch (SpawnID)
-        {
-            case "A":
-                return SpawnA != null ? SpawnA : SpawnDefault;
-            case "B":
-                return SpawnB != null ? SpawnB : SpawnDefault;
-            case "C":
-                return SpawnC != null ? SpawnC : SpawnDefault;
-            case "D":
-                return SpawnD != null ? SpawnD : SpawnDefault;
-            case "S":
-                return LoadSavePointTF();
-            case null://error handling
-                return SpawnDefault;
-            default://error handling
-                return SpawnDefault;
-        }*/
+    }
+
+    public void StartBGM(GameObject ChosenBGM)
+    {
+        CurBGMPlayer = Instantiate(ChosenBGM, new Vector3(0, 0, 0), new Quaternion());
+        CurBGM = CurBGMPlayer.GetComponent<AudioSource>();
+        CurBGM.Play();
     }
 
     // Update is called once per frame
@@ -66,10 +52,26 @@ public class BGMHandler : MonoBehaviour
     {
         if (!BGMLoaded)
         {
-            //fade
-            //if fully faded, destroy
-            //delay
-            //start next song
+            if (CurBGMPlayer)
+            {
+                if (CurBGM.volume > 0) {
+                    CurBGM.volume -= 0.02f;
+                }
+                else
+                {
+                    BGMLoaded = true;
+                    Destroy(CurBGMPlayer);
+                    ChooseBGM();
+                    
+                }
+            }
+            else
+            {
+                BGMLoaded = true;
+                ChooseBGM();
+                
+            }
+           
         }
     }
 }
