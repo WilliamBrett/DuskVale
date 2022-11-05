@@ -15,7 +15,7 @@ C:/Users/William Brett/Documents/GitHub/DuskVale
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64340
+61654
 Successfully changed project path to: C:/Users/William Brett/Documents/GitHub/DuskVale
 C:/Users/William Brett/Documents/GitHub/DuskVale
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/William Brett/Documents/GitHub/DuskVale
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 165.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 145.29 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.8f1 (b30333d56e81)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -63,7 +63,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56552
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
@@ -71,7 +71,7 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.016224 seconds.
+Registered in 0.016252 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
@@ -80,39 +80,39 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 208.43 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 136.52 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.421 seconds
+- Completed reload, in  0.992 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1422ms)
-		BeginReloadAssembly (129ms)
+	ReloadAssembly (992ms)
+		BeginReloadAssembly (139ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1116ms)
-			LoadAssemblies (126ms)
+		EndReloadAssembly (693ms)
+			LoadAssemblies (135ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (258ms)
+			SetupTypeCache (159ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (127ms)
-			SetupLoadedEditorAssemblies (609ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (421ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (143ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (209ms)
+				InitializePlatformSupportModulesInManaged (84ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (137ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (184ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
+				ProcessInitializeOnLoadAttributes (141ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.022205 seconds.
+Registered in 0.020090 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -127,48 +127,48 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 200.79 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 133.14 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 [ScriptCompilation] Requested script compilation because: Recompiling scripts with coverage information.
 Code Coverage is enabled. Note that Code Coverage can affect the performance of the Editor.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.717 seconds
+- Completed reload, in  1.871 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2720ms)
-		BeginReloadAssembly (225ms)
+	ReloadAssembly (1872ms)
+		BeginReloadAssembly (151ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (2274ms)
-			LoadAssemblies (214ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1563ms)
+			LoadAssemblies (138ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (567ms)
+			SetupTypeCache (406ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (142ms)
-			SetupLoadedEditorAssemblies (1265ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (875ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (75ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (201ms)
-				BeforeProcessingInitializeOnLoad (209ms)
-				ProcessInitializeOnLoadAttributes (661ms)
-				ProcessInitializeOnLoadMethodAttributes (102ms)
-				AfterProcessingInitializeOnLoad (16ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (133ms)
+				BeforeProcessingInitializeOnLoad (162ms)
+				ProcessInitializeOnLoadAttributes (460ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 3.50 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4518 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 49 unused Assets / (200.3 KB). Loaded Objects now: 4997.
 Memory consumption went from 190.2 MB to 190.0 MB.
-Total: 7.756300 ms (FindLiveObjects: 0.595100 ms CreateObjectMapping: 0.550500 ms MarkObjects: 6.356100 ms  DeleteObjects: 0.252800 ms)
+Total: 4.354900 ms (FindLiveObjects: 0.405900 ms CreateObjectMapping: 0.364300 ms MarkObjects: 3.378600 ms  DeleteObjects: 0.204800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -183,151 +183,127 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1225.522308 seconds.
-  path: Assets/Scenes/ExampleScene.unity
-  artifactKey: Guid(800fcb1cc0871d449bd258b89b4aa861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ExampleScene.unity using Guid(800fcb1cc0871d449bd258b89b4aa861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2dc3a6831ed9de9054c4408f83de43') in 0.013692 seconds 
+  Time since last request: 75704.625683 seconds.
+  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Prefabs/tileset_0.asset
+  artifactKey: Guid(a25fa720482b2a546bdf9f962d5485da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Prefabs/tileset_0.asset using Guid(a25fa720482b2a546bdf9f962d5485da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ff16df8210f0ce3347945b65a3a1623') in 0.106374 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.756540 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c50a097e7124608cdf66086b486a8e1') in 0.011947 seconds 
+  Time since last request: 0.000083 seconds.
+  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Prefabs/tileset_7.asset
+  artifactKey: Guid(c78aa4c8a20fe5949b2050d14cd2eb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Prefabs/tileset_7.asset using Guid(c78aa4c8a20fe5949b2050d14cd2eb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabcff209d361b6255937c90b534d4a6') in 0.020641 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.879186 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06a88c3ecca46d65d9aa262e0b9be99') in 0.005350 seconds 
+  Time since last request: 0.000055 seconds.
+  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Prefabs/tileset_9.asset
+  artifactKey: Guid(a3f65cc46ae9ca848bd5ae185a81262b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Prefabs/tileset_9.asset using Guid(a3f65cc46ae9ca848bd5ae185a81262b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a1eaf1dcb520d0254e2ac72014a4ba') in 0.021932 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.808243 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3036530f614c4a64161e539e77879ea8') in 0.006553 seconds 
+  Time since last request: 0.000048 seconds.
+  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Prefabs/tileset_2.asset
+  artifactKey: Guid(0a683c23f4690924393e1d00478f5b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Prefabs/tileset_2.asset using Guid(0a683c23f4690924393e1d00478f5b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c9dc0e2d2a2aa6157ac35efaa252a83') in 0.020938 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.490509 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22316c859d7d0b7360edc9850e7e5585') in 0.005553 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Prefabs/tileset_8.asset
+  artifactKey: Guid(314c78c25fce6ca4da7399da60589e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Swamp Artwork/Evironment/Swamp_Prefabs/tileset_8.asset using Guid(314c78c25fce6ca4da7399da60589e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb72edaba3f7350c1efea326ed80dbb') in 0.020567 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.649201 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0d62ad8af5b5598546b6ae268abab5') in 0.004239 seconds 
+  Time since last request: 230.977993 seconds.
+  path: Assets/Resources/SavePoint.prefab
+  artifactKey: Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/SavePoint.prefab using Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06edc1810542886e9789f1863b2fcd5a') in 0.134052 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.966765 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a968dd5e18a1f99b3d4085126b7dee') in 0.007260 seconds 
+  Time since last request: 8.700567 seconds.
+  path: Assets/Resources/SavePoint.prefab
+  artifactKey: Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/SavePoint.prefab using Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1bf20292ec2bb22ebd8c5ef79c2c24c') in 0.020502 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.965068 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd53f7dbbd94d1bb1011b536d2c805cd') in 0.005988 seconds 
+  Time since last request: 2.233169 seconds.
+  path: Assets/Resources/SavePoint.prefab
+  artifactKey: Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/SavePoint.prefab using Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ddaaa3df9477520ab5110635393e1b') in 0.016070 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 392.198525 seconds.
-  path: Assets/Scenes/DevCell.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/DevCell.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b41f9d599bf173ce845496d9e44410') in 0.011992 seconds 
+  Time since last request: 4.417763 seconds.
+  path: Assets/Resources/SavePoint.prefab
+  artifactKey: Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/SavePoint.prefab using Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9767b7c599f890c31b103e6bb5635a4b') in 0.015444 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 86.046330 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e63183bace584bb0ae3e18312218c01') in 0.004326 seconds 
+  Time since last request: 4.014446 seconds.
+  path: Assets/Resources/SavePoint.prefab
+  artifactKey: Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/SavePoint.prefab using Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45bd81392b284c95eed27521d40a5bcd') in 0.019221 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.104500 seconds.
-  path: Assets/Scenes/FortCell2.unity
-  artifactKey: Guid(ca133d614427d9f4b9b73928f1161893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell2.unity using Guid(ca133d614427d9f4b9b73928f1161893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '869ee16e5c6c73a9257c0816d0c51556') in 0.005416 seconds 
+  Time since last request: 140.570004 seconds.
+  path: Assets/Resources/SavePoint.prefab
+  artifactKey: Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/SavePoint.prefab using Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39d0657ca3877d82bfe6a5a8f2114c0') in 0.015381 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.923486 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4fd71e5236fbb6fd516f6116f5484fc') in 0.004369 seconds 
+  Time since last request: 3.791920 seconds.
+  path: Assets/Resources/SavePoint.prefab
+  artifactKey: Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/SavePoint.prefab using Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc8ba5c3bb29f75d5af9c79f664f7fa') in 0.016424 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 61.729371 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '246fbae4ece423bd6253f56c20c7fa8d') in 0.004035 seconds 
+  Time since last request: 39.820989 seconds.
+  path: Assets/Resources/SavePoint.prefab
+  artifactKey: Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/SavePoint.prefab using Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af5a7b3506a691f83a44b7cfadb15dba') in 0.015947 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 226.796090 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc1037fe59e972102d19d1f02f46db2') in 0.004709 seconds 
+  Time since last request: 1.770362 seconds.
+  path: Assets/Resources/SavePoint.prefab
+  artifactKey: Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/SavePoint.prefab using Guid(19252d210a0c57541b41bd342c2d990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e74616ba84443a851871a28b024000a') in 0.014802 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 64.767908 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f40873e74d5554e0e7efa8bb6a4e59b') in 0.008731 seconds 
+  Time since last request: 11.973528 seconds.
+  path: Assets/Library/Dark_Brown_GUI_kit/icon
+  artifactKey: Guid(99a7143206ad24042999785773bf7715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Dark_Brown_GUI_kit/icon using Guid(99a7143206ad24042999785773bf7715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dfae0d0c34a72d71e7da53b27eb3757') in 0.009151 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.518250 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6ba3dba91eeb9a7f180dcf55906127a') in 0.005901 seconds 
+  Time since last request: 1.525843 seconds.
+  path: Assets/Library/Dark_Brown_GUI_kit/icon/simple
+  artifactKey: Guid(16b1276f9897e0a45a0c8e385d9609a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Dark_Brown_GUI_kit/icon/simple using Guid(16b1276f9897e0a45a0c8e385d9609a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '486f20ae77f857d0013bec612ba71d46') in 0.011532 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 153.864756 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2fa0e05fba85709acb69efc2de3dc78') in 0.004748 seconds 
+  Time since last request: 1.575109 seconds.
+  path: Assets/Library/Dark_Brown_GUI_kit/icon/simple/sword.png
+  artifactKey: Guid(1225aae5cdb5cfb4196e11d97df783b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Dark_Brown_GUI_kit/icon/simple/sword.png using Guid(1225aae5cdb5cfb4196e11d97df783b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a271fc6be851e558c0c5a7d5a359662') in 0.075039 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.083881 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca427897ce61d7e0d02416d93b5766b9') in 0.005429 seconds 
+  Time since last request: 16.965505 seconds.
+  path: Assets/Library/Dark_Brown_GUI_kit/icon/full_simple
+  artifactKey: Guid(6b761e434fd46804796cfbd9499b7364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Dark_Brown_GUI_kit/icon/full_simple using Guid(6b761e434fd46804796cfbd9499b7364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe0c3a128054c1012db13cdec760eac') in 0.010020 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 71.883523 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43527db34197f15bf339443d3e3b3f95') in 0.004754 seconds 
+  Time since last request: 1.318859 seconds.
+  path: Assets/Library/Dark_Brown_GUI_kit/icon/full_simple/sword-.png
+  artifactKey: Guid(1f795c83ee1684c4eb53f09770a58985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Dark_Brown_GUI_kit/icon/full_simple/sword-.png using Guid(1f795c83ee1684c4eb53f09770a58985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e2d46a38bdb761f3b2f87767007e66') in 0.033150 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.739597 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1cb941033cd34e25359929d328177b') in 0.004327 seconds 
+  Time since last request: 0.000032 seconds.
+  path: Assets/Library/Dark_Brown_GUI_kit/icon/full_simple/upload-.png
+  artifactKey: Guid(ffd60eba22e4f5d46bc0a5de3f2e15ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Dark_Brown_GUI_kit/icon/full_simple/upload-.png using Guid(ffd60eba22e4f5d46bc0a5de3f2e15ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fef02c670fc327acb512d73232c478') in 0.029563 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.213376 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e671075f60a2b2d877113618241895') in 0.005564 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 63.813916 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ce3ac921e13d08729b119ba886e49c') in 0.004342 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.042311 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0f0746a5e25bb21f5770362ecb1873') in 0.004776 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.311514 seconds.
-  path: Assets/Scenes/FortCell4.unity
-  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23f3acea6a919853268735196f0b90c') in 0.004550 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.162474 seconds.
-  path: Assets/Scenes/FortCell5.unity
-  artifactKey: Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCell5.unity using Guid(645aa3264b8f399469b885f50009db17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e85695470fca3eb839bc359573d61c4') in 0.004497 seconds 
+  Time since last request: 1.818296 seconds.
+  path: Assets/Library/Dark_Brown_GUI_kit/icon/full_simple/numbers
+  artifactKey: Guid(938a35f7046a45649877cb9b0b54bff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Dark_Brown_GUI_kit/icon/full_simple/numbers using Guid(938a35f7046a45649877cb9b0b54bff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '285e78d7b8bc44f798343ba3bae9e95c') in 0.010742 seconds 

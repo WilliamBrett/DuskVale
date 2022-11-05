@@ -12,6 +12,7 @@ public class PauseMenuController : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject ResumeButtonRef, OptionsButtonRef, TitleButtonRef, QuitButtonRef, HowToPlayButtonRef;
     public GameObject HTPScreen;
+    public GameObject SavePrompt;
     public bool HowToPlayIntro;
     
     // Start is called before the first frame update
@@ -32,7 +33,15 @@ public class PauseMenuController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                TogglePause();
+                if (SavePrompt.activeSelf)
+                {
+                    SavePromptOpenClose();
+                }
+                else
+                {
+                    TogglePause();
+                }
+               
             }
         }
         else
@@ -107,6 +116,27 @@ public class PauseMenuController : MonoBehaviour
             HowToPlayIntro = false;
             TogglePause();
         }
+    }
+
+    public void SavePromptOpenClose()
+    {
+        if (Time.timeScale == 0f)
+        {
+            Time.timeScale = 1f;
+            PauseMenu.SetActive(false);
+            isPaused = false;
+        }
+        else
+        {
+            Time.timeScale = 0f;
+            PauseMenu.SetActive(true);
+            isPaused = true;
+        }
+    }
+
+    public void forwardSaveRequest()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<SaveManager>().SaveGame();
     }
 
     public void DisableButton(GameObject toDisable)
