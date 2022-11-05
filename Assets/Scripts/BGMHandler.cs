@@ -30,12 +30,29 @@ public class BGMHandler : MonoBehaviour
         
         switch (SceneManager.GetActiveScene().name)
         {
-            case "TitleMenu":
+            /*case "TitleMenu":
                 StartBGM(TitleBGM);
+                BGMLoaded = true;
+                return;*/
+            case "FortCell1":
+                StartBGM(FortBGM);
+                return;
+            case "FortCell2":
+                StartBGM(FortBGM);
+                return;
+            case "FortCell3":
+                StartBGM(FortBGM);
+                return;
+            case "FortCell4":
+                StartBGM(FortBGM);
+                return;
+            case "FortCell5":
+                StartBGM(FortBGM);
                 return;
             default:
                 CurBGMPlayer = null;
                 CurBGM = null;
+                BGMLoaded = true;
                 return;
         }
     }
