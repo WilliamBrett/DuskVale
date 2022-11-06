@@ -8,6 +8,7 @@ public class BGMHandler : MonoBehaviour
     private bool BGMLoaded;
     private AudioSource CurBGM;
     private GameObject CurBGMPlayer;
+    public string curBGM;
     public GameObject TitleBGM;
     public GameObject FortBGM;
     public GameObject SwampBGM;
@@ -22,7 +23,46 @@ public class BGMHandler : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
-        BGMLoaded = false;
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "TitleMenu":
+                if ((curBGM) != "Title") BGMLoaded = false; 
+                return;
+            case "FortCell1":
+                if ((curBGM) != "Fort") BGMLoaded = false;
+                return;
+            case "FortCell2":
+                if ((curBGM) != "Fort") BGMLoaded = false;
+                return;
+            case "FortCell3":
+                if ((curBGM) != "Fort") BGMLoaded = false;
+                return;
+            case "FortCell4":
+                if ((curBGM) != "Fort") BGMLoaded = false;
+                return;
+            case "FortCell5":
+                if ((curBGM) != "Fort") BGMLoaded = false;
+                return;
+            case "SwampCell1":
+                if ((curBGM) != "Swamp") BGMLoaded = false;
+                return;
+            case "SwampCell2":
+                if ((curBGM) != "Swamp") BGMLoaded = false;
+                return;
+            case "SwampCell3":
+                if ((curBGM) != "Swamp") BGMLoaded = false;
+                return;
+            case "SwampCell4":
+                if ((curBGM) != "Swamp") BGMLoaded = false;
+                return;
+            case "SwampCell5":
+                if ((curBGM) != "Swamp") BGMLoaded = false;
+                return;
+            default:
+                BGMLoaded = false;
+                return;
+        }
+       
     }
 
     public void ChooseBGM()
@@ -30,24 +70,49 @@ public class BGMHandler : MonoBehaviour
         
         switch (SceneManager.GetActiveScene().name)
         {
-            /*case "TitleMenu":
+            case "TitleMenu":
+                curBGM = "Title";
                 StartBGM(TitleBGM);
-                BGMLoaded = true;
-                return;*/
+                return;
             case "FortCell1":
+                curBGM = "Fort";
                 StartBGM(FortBGM);
                 return;
             case "FortCell2":
+                curBGM = "Fort";
                 StartBGM(FortBGM);
                 return;
             case "FortCell3":
+                curBGM = "Fort";
                 StartBGM(FortBGM);
                 return;
             case "FortCell4":
+                curBGM = "Fort";
                 StartBGM(FortBGM);
                 return;
             case "FortCell5":
+                curBGM = "Fort";
                 StartBGM(FortBGM);
+                return;
+            case "SwampCell1":
+                curBGM = "Fort";
+                StartBGM(SwampBGM);
+                return;
+            case "SwampCell2":
+                curBGM = "Fort";
+                StartBGM(SwampBGM);
+                return;
+            case "SwampCell3":
+                curBGM = "Fort";
+                StartBGM(SwampBGM);
+                return;
+            case "SwampCell4":
+                curBGM = "Fort";
+                StartBGM(SwampBGM);
+                return;
+            case "SwampCell5":
+                curBGM = "Fort";
+                StartBGM(SwampBGM);
                 return;
             default:
                 CurBGMPlayer = null;

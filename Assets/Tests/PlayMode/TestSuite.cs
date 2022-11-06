@@ -351,9 +351,9 @@ public class TestSuite : InputTestFixture
     public IEnumerator SaveGameTest()
     {
         while (TestsCompleted != SaveGameTestID - 1) { yield return null; }
-        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/FortCell2.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/FortCell5.unity", new LoadSceneParameters(LoadSceneMode.Single));
         yield return new WaitForSeconds(3f);
-        PCRef.thistf.position = new Vector3(-1, 13, 0);
+        PCRef.thistf.position = new Vector3(-6, 13, 0);
         yield return new WaitForSeconds(3f);
         GameObject.FindGameObjectWithTag("SavePoint").GetComponent<SaveManager>().SaveGame();
         TestsCompleted = SaveGameTestID;

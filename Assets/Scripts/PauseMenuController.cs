@@ -55,6 +55,14 @@ public class PauseMenuController : MonoBehaviour
         } 
     }
 
+    private void OnLevelWasLoaded(int level)
+    {
+        if (GameObject.FindGameObjectWithTag("SavePoint"))
+        {
+            GameObject.FindGameObjectWithTag("SavePoint").GetComponent<SaveManager>().PauseRef = this;
+        }
+    }
+
     public void TogglePause()
     {
         if (HTPScreen.activeInHierarchy)
@@ -123,20 +131,20 @@ public class PauseMenuController : MonoBehaviour
         if (Time.timeScale == 0f)
         {
             Time.timeScale = 1f;
-            PauseMenu.SetActive(false);
+            SavePrompt.SetActive(false);
             isPaused = false;
         }
         else
         {
             Time.timeScale = 0f;
-            PauseMenu.SetActive(true);
+            SavePrompt.SetActive(true);
             isPaused = true;
         }
     }
 
     public void forwardSaveRequest()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<SaveManager>().SaveGame();
+        GameObject.FindGameObjectWithTag("SavePoint").GetComponent<SaveManager>().SaveGame();
     }
 
     public void DisableButton(GameObject toDisable)

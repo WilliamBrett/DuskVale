@@ -8,6 +8,7 @@ public class SaveManager : MonoBehaviour
 {
     private GameObject PlayerRef;
     public GameObject SavePrompt;
+    public PauseMenuController PauseRef;
     private BoxCollider2D thisZone;
     public string SpawnId;
     public int SaveDelay;
@@ -15,6 +16,8 @@ public class SaveManager : MonoBehaviour
     public PlayerRecord RecordRef;
     public bool testbool;
     public bool promptGray;
+    public int blinkDelay;
+    public int blinkDelayNum = 200;
 
     public void Start()
     {
@@ -27,31 +30,46 @@ public class SaveManager : MonoBehaviour
 
     public void Update()
     {
+        if (isActiveAndEnabled)
+        {
+            if (blinkDelay <= 0)
+            {
+                if (promptGray)
+                {
+                    SavePrompt.GetComponent<SpriteRenderer>().color = Color.white;
+                    promptGray = false;
+                }
+                else
+                {
+                    SavePrompt.GetComponent<SpriteRenderer>().color = Color.gray;
+                    promptGray = true;
+                }
+                blinkDelay = blinkDelayNum;
+            }
+            else
+            {
+                blinkDelay--;
+            }
+        }
         SaveDelay--;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (promptGray)
-        {
-            SavePrompt.GetComponent<SpriteRenderer>().color = Color.white;
-            promptGray = false;
-        }
-        else
-        {
-            SavePrompt.GetComponent<SpriteRenderer>().color = Color.gray;
-            promptGray = true;
-        }
-        if ((collision.gameObject.CompareTag("Player")) && (Input.GetAxis("Vertical") > 0))
-        {
-            /*if ((SaveDelay < 0) && (RecordRef != null))
+        if (collision.CompareTag("Player")){
+            
+            if ((collision.gameObject.CompareTag("Player")) && (Input.GetAxis("Vertical") > 0))
             {
-                SaveGame();
-                SaveDelay = 1000;
-                testbool = true;
-            }*/
-            GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().SavePromptOpenClose();
+                /*if ((SaveDelay < 0) && (RecordRef != null))
+                {
+                    SaveGame();
+                    SaveDelay = 1000;
+                    testbool = true;
+                }*/
+                if (PauseRef) PauseRef.SavePromptOpenClose();
+            }
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -60,7 +78,8 @@ public class SaveManager : MonoBehaviour
         {
             PlayerRef = collision.gameObject;
             RecordRef = PlayerRef.GetComponentInChildren<PlayerRecord>();
-            
+            SavePrompt.SetActive(true);
+            blinkDelay = blinkDelayNum;
         }
     }
 
