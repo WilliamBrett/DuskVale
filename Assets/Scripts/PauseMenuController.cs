@@ -13,7 +13,11 @@ public class PauseMenuController : MonoBehaviour
     public GameObject ResumeButtonRef, OptionsButtonRef, TitleButtonRef, QuitButtonRef, HowToPlayButtonRef;
     public GameObject HTPScreen;
     public GameObject SavePrompt;
+    public GameObject DJInfo;
+    public GameObject WJInfo;
+    public GameObject DashInfo;
     public bool HowToPlayIntro;
+    public int UnlockDelay;
     
     // Start is called before the first frame update
     void Start()
@@ -24,12 +28,13 @@ public class PauseMenuController : MonoBehaviour
         //HowToPlayOpen();
         //HowToPlayIntro = true;
         DontDestroyOnLoad(gameObject);
+        UnlockDelay = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (PlayerRef)
+        if (PlayerRef && UnlockDelay == 0)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -44,7 +49,14 @@ public class PauseMenuController : MonoBehaviour
                
             }
         }
-        else
+        else if (UnlockDelay != 0)
+        {
+            Time.timeScale -= 0.01f;
+            if (Time.timeScale <= 0.10f){
+                UnlockedOpenClose(UnlockDelay);
+                UnlockDelay = 0;
+            }
+        }
             {
             GameObject[] PCs = GameObject.FindGameObjectsWithTag("Player");
             if (PCs.Length != 0)
@@ -60,6 +72,11 @@ public class PauseMenuController : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("SavePoint"))
         {
             GameObject.FindGameObjectWithTag("SavePoint").GetComponent<SaveManager>().PauseRef = this;
+        }
+        GameObject[] Pickups = GameObject.FindGameObjectsWithTag("Pickup");
+        if (Pickups.Length != 0)
+        {
+            Pickups[0].GetComponent<PickupHandler>().PauseRef = this;
         }
     }
 
@@ -158,5 +175,44 @@ public class PauseMenuController : MonoBehaviour
     {
         toEnable.GetComponent<Image>().color = Color.white;
         toEnable.GetComponent<Button>().enabled = true;
+    }
+
+    public void UnlockedOpenClose(int unlockId)
+    {
+        if (Time.timeScale == 0f)
+        {
+            Time.timeScale = 1f;
+            isPaused = false;
+            switch (unlockId)
+            {
+                case 1:
+                    DJInfo.SetActive(false);
+                    return;
+                case 2:
+                    WJInfo.SetActive(false);
+                    return;
+                case 3:
+                    DashInfo.SetActive(false);
+                    return;
+            }
+            
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            isPaused = true;
+            switch (unlockId)
+            {
+                case 1:
+                    DJInfo.SetActive(true);
+                    return;
+                case 2:
+                    WJInfo.SetActive(true);
+                    return;
+                case 3:
+                    DashInfo.SetActive(true);
+                    return;
+            }
+        }
     }
 }

@@ -7,6 +7,7 @@ public class PickupHandler : MonoBehaviour
     public int pickupId;
     private GameObject PlayerRef;
     private PlayerRecord PCRecordRef;
+    public PauseMenuController PauseRef;
     //pickupId 1 = red potion / restore health
     //pickupId 2 = /double jump unlock
     //pickupId 3 = /wall jump unlock
@@ -67,16 +68,19 @@ public class PickupHandler : MonoBehaviour
                 case 2: //double jump unlock
                     PlayerRef.GetComponent<PlayerController>().DJUnlocked = true;
                     PCRecordRef.DJUnlocked = true;
+                    if (PauseRef) PauseRef.UnlockDelay = 2;
                     Destroy(gameObject);
                     return;
                 case 3: //wall jump unlock
-                    PlayerRef.GetComponent<PlayerController>().DJUnlocked = true;
-                    PCRecordRef.DJUnlocked = true;
+                    PlayerRef.GetComponent<PlayerController>().WJUnlocked = true;
+                    PCRecordRef.WJUnlocked = true;
+                    if (PauseRef) PauseRef.UnlockDelay = 3;
                     Destroy(gameObject);
                     return;
                 case 4: //dash unlock
-                    PlayerRef.GetComponent<PlayerController>().DJUnlocked = true;
-                    PCRecordRef.DJUnlocked = true;
+                    PlayerRef.GetComponent<PlayerController>().DashUnlocked = true;
+                    PCRecordRef.DashUnlocked = true;
+                    if (PauseRef) PauseRef.UnlockDelay = 4;
                     Destroy(gameObject);
                     return;
                 default:
