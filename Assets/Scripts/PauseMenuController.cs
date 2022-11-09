@@ -78,6 +78,7 @@ public class PauseMenuController : MonoBehaviour
         else
         {
             Time.timeScale = 0f;
+            DisableButton(OptionsButtonRef);
             PauseMenu.SetActive(true);
             isPaused = true;
         }

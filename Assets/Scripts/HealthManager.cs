@@ -59,4 +59,14 @@ public class HealthManager : MonoBehaviour
         }
         //UI health mod if player health. 
     }
+
+    public void RestoreHealth(int restoreAmount)
+    {
+        if (!dying)
+        {
+            int newHP = currenthealth + restoreAmount;
+            if (newHP >= maxhealth) { newHP = maxhealth; }
+            currenthealth = newHP;
+        }
+    }
 }
