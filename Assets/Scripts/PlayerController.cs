@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
         {
             AnimLock--;
         }
-        onGround = Physics2D.OverlapCircle(BottomPoint.position, 0.2f, Ground);
+        onGround = Physics2D.OverlapCircle(BottomPoint.position, 0.3f, Ground);
         if (onGround)
         {
             DJReady = true;
