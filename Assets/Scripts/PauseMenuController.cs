@@ -17,7 +17,6 @@ public class PauseMenuController : MonoBehaviour
     public GameObject WJInfo;
     public GameObject DashInfo;
     public bool HowToPlayIntro;
-    public int UnlockDelay;
     
     // Start is called before the first frame update
     void Start()
@@ -28,13 +27,13 @@ public class PauseMenuController : MonoBehaviour
         //HowToPlayOpen();
         //HowToPlayIntro = true;
         DontDestroyOnLoad(gameObject);
-        UnlockDelay = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (PlayerRef && UnlockDelay == 0)
+        
+        if (PlayerRef)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -46,18 +45,10 @@ public class PauseMenuController : MonoBehaviour
                 {
                     TogglePause();
                 }
-               
+
             }
         }
-        else if (UnlockDelay != 0)
-        {
-            Time.timeScale -= 0.01f;
-            if (Time.timeScale <= 0.10f){
-                UnlockedOpenClose(UnlockDelay);
-                UnlockDelay = 0;
-            }
-        }
-            {
+        else {
             GameObject[] PCs = GameObject.FindGameObjectsWithTag("Player");
             if (PCs.Length != 0)
             {
@@ -76,7 +67,9 @@ public class PauseMenuController : MonoBehaviour
         GameObject[] Pickups = GameObject.FindGameObjectsWithTag("Pickup");
         if (Pickups.Length != 0)
         {
-            Pickups[0].GetComponent<PickupHandler>().PauseRef = this;
+            for (int count = 0; count < Pickups.Length; count++){
+                Pickups[count].GetComponent<PickupHandler>().PauseRef = this;
+            }
         }
     }
 
@@ -156,7 +149,6 @@ public class PauseMenuController : MonoBehaviour
         {
             Time.timeScale = 0f;
             SavePrompt.SetActive(true);
-            isPaused = true;
         }
     }
 
@@ -177,21 +169,21 @@ public class PauseMenuController : MonoBehaviour
         toEnable.GetComponent<Button>().enabled = true;
     }
 
-    public void UnlockedOpenClose(int unlockId)
+    public void UnlockedOpenClose(int UnlockId)
     {
-        if (Time.timeScale == 0f)
+        if (isPaused)
         {
-            Time.timeScale = 1f;
             isPaused = false;
-            switch (unlockId)
+            Time.timeScale = 1f;
+            switch (UnlockId)
             {
-                case 1:
+                case 2:
                     DJInfo.SetActive(false);
                     return;
-                case 2:
+                case 3:
                     WJInfo.SetActive(false);
                     return;
-                case 3:
+                case 4:
                     DashInfo.SetActive(false);
                     return;
             }
@@ -199,17 +191,17 @@ public class PauseMenuController : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 1f;
+            Time.timeScale = 0f;
             isPaused = true;
-            switch (unlockId)
+            switch (UnlockId)
             {
-                case 1:
+                case 2:
                     DJInfo.SetActive(true);
                     return;
-                case 2:
+                case 3:
                     WJInfo.SetActive(true);
                     return;
-                case 3:
+                case 4:
                     DashInfo.SetActive(true);
                     return;
             }

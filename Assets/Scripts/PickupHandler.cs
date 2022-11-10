@@ -68,19 +68,19 @@ public class PickupHandler : MonoBehaviour
                 case 2: //double jump unlock
                     PlayerRef.GetComponent<PlayerController>().DJUnlocked = true;
                     PCRecordRef.DJUnlocked = true;
-                    if (PauseRef) PauseRef.UnlockDelay = 2;
+                    if (PauseRef) PauseRef.UnlockedOpenClose(2);
                     Destroy(gameObject);
                     return;
                 case 3: //wall jump unlock
                     PlayerRef.GetComponent<PlayerController>().WJUnlocked = true;
                     PCRecordRef.WJUnlocked = true;
-                    if (PauseRef) PauseRef.UnlockDelay = 3;
+                    if (PauseRef) PauseRef.UnlockedOpenClose(3);
                     Destroy(gameObject);
                     return;
                 case 4: //dash unlock
                     PlayerRef.GetComponent<PlayerController>().DashUnlocked = true;
                     PCRecordRef.DashUnlocked = true;
-                    if (PauseRef) PauseRef.UnlockDelay = 4;
+                    if (PauseRef) PauseRef.UnlockedOpenClose(4);
                     Destroy(gameObject);
                     return;
                 default:
