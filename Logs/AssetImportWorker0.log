@@ -15,7 +15,7 @@ C:/Users/William Brett/Documents/GitHub/DuskVale
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58790
+62273
 Successfully changed project path to: C:/Users/William Brett/Documents/GitHub/DuskVale
 C:/Users/William Brett/Documents/GitHub/DuskVale
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/William Brett/Documents/GitHub/DuskVale
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 152.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 158.62 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.8f1 (b30333d56e81)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -63,7 +63,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56340
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
@@ -71,7 +71,7 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.017241 seconds.
+Registered in 0.016625 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
@@ -80,39 +80,39 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 152.25 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 153.38 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.046 seconds
+- Completed reload, in  1.062 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1047ms)
-		BeginReloadAssembly (115ms)
+	ReloadAssembly (1063ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (764ms)
-			LoadAssemblies (114ms)
+		EndReloadAssembly (769ms)
+			LoadAssemblies (118ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (163ms)
+			SetupTypeCache (168ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (486ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (477ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (83ms)
+				InitializePlatformSupportModulesInManaged (107ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (152ms)
+				RefreshPlugins (153ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (187ms)
-				ProcessInitializeOnLoadMethodAttributes (62ms)
+				ProcessInitializeOnLoadAttributes (149ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.021259 seconds.
+Registered in 0.021000 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -130,48 +130,48 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 144.73 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 143.37 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 [ScriptCompilation] Requested script compilation because: Recompiling scripts with coverage information.
 Code Coverage is enabled. Note that Code Coverage can affect the performance of the Editor.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.191 seconds
+- Completed reload, in  1.925 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2193ms)
-		BeginReloadAssembly (146ms)
+	ReloadAssembly (1926ms)
+		BeginReloadAssembly (160ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1868ms)
-			LoadAssemblies (145ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1598ms)
+			LoadAssemblies (141ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (561ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (136ms)
-			SetupLoadedEditorAssemblies (902ms)
+			SetupTypeCache (390ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (81ms)
+			SetupLoadedEditorAssemblies (916ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (68ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (145ms)
-				BeforeProcessingInitializeOnLoad (155ms)
-				ProcessInitializeOnLoadAttributes (458ms)
-				ProcessInitializeOnLoadMethodAttributes (64ms)
+				InitializePlatformSupportModulesInManaged (47ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (143ms)
+				BeforeProcessingInitializeOnLoad (174ms)
+				ProcessInitializeOnLoadAttributes (480ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
 				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.04 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4520 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 49 unused Assets / (200.0 KB). Loaded Objects now: 4999.
 Memory consumption went from 190.2 MB to 190.0 MB.
-Total: 5.552800 ms (FindLiveObjects: 0.406100 ms CreateObjectMapping: 0.385200 ms MarkObjects: 4.554500 ms  DeleteObjects: 0.206000 ms)
+Total: 5.523700 ms (FindLiveObjects: 0.505000 ms CreateObjectMapping: 0.512000 ms MarkObjects: 4.211900 ms  DeleteObjects: 0.293500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -186,62 +186,158 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 608754.275140 seconds.
-  path: Assets/Library/Gothicvania Cemetery Artwork/about.txt
-  artifactKey: Guid(f2081db56e2ff4facb0eadc670459f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Cemetery Artwork/about.txt using Guid(f2081db56e2ff4facb0eadc670459f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbda5f68c5673a3896a0d8846de4f9a9') in 0.111732 seconds 
+  Time since last request: 666938.037824 seconds.
+  path: Assets/Scenes/GraveCell1.unity
+  artifactKey: Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GraveCell1.unity using Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022b950f3b644e859f3f9a410697cd92') in 0.011580 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 61.406579 seconds.
-  path: Assets/Tilesets/CemetaryPrefabPalette.prefab
-  artifactKey: Guid(a2ebd90d7b609104e90a56ed24412f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilesets/CemetaryPrefabPalette.prefab using Guid(a2ebd90d7b609104e90a56ed24412f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0354b0414ea1d175c419d05e40e4364f') in 0.145360 seconds 
+  Time since last request: 0.045768 seconds.
+  path: Assets/Scenes/FortGravePathCell.unity
+  artifactKey: Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/FortGravePathCell.unity using Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3803beb469b9703a845fa5010fff3db') in 0.005702 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1341.833977 seconds.
-  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles
-  artifactKey: Guid(4979c7242d8e6064cb3753ce054310b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles using Guid(4979c7242d8e6064cb3753ce054310b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f3cd399470b964283c3b8af31bf4fe') in 0.006933 seconds 
+  Time since last request: 3966.511298 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54af209ba71b02dc7eb651da26983025') in 0.271603 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.831813 seconds.
-  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/prefab-tiles
-  artifactKey: Guid(9f45d012591350744b6db028f152a9fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/prefab-tiles using Guid(9f45d012591350744b6db028f152a9fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d5d1849168c5a5713fbbabf54037cc') in 0.006431 seconds 
+  Time since last request: 1812.123823 seconds.
+  path: Assets/Scenes/GraveCell2.unity
+  artifactKey: Guid(8629e9b04466a8942a152ca4df80ca90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GraveCell2.unity using Guid(8629e9b04466a8942a152ca4df80ca90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956fce97c3c1a94b58cb611937da1f42') in 0.008247 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.694755 seconds.
+  Time since last request: 26.003534 seconds.
+  path: Assets/Scenes/GraveCell1.unity
+  artifactKey: Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GraveCell1.unity using Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c8d67c0ce967e2adc01f6c2f555c4ce') in 0.004980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.646572 seconds.
+  path: Assets/Scenes/GraveCell2.unity
+  artifactKey: Guid(8629e9b04466a8942a152ca4df80ca90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GraveCell2.unity using Guid(8629e9b04466a8942a152ca4df80ca90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c923bcc4845c1df4f64d5621b476d738') in 0.004535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.750766 seconds.
+  path: Assets/Scenes/GraveCell3.unity
+  artifactKey: Guid(6de35f29743730e429fda8c45a7bbf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GraveCell3.unity using Guid(6de35f29743730e429fda8c45a7bbf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801aaa78c2cfba34cedfee03d9561252') in 0.007228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 70.100954 seconds.
+  path: Assets/Scenes/GraveCell4.unity
+  artifactKey: Guid(57300a83452479e43a88ddf628c371f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GraveCell4.unity using Guid(57300a83452479e43a88ddf628c371f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492560aa0c4ec2063f9bd5e502d3d2e0') in 0.007910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 841.466061 seconds.
+  path: Assets/Scenes/FortGravePathCell.unity
+  artifactKey: Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/FortGravePathCell.unity using Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ea3d671e17b71dec0da2739dfbf5a6') in 0.004768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 431.837578 seconds.
   path: Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png
   artifactKey: Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png using Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c753fcc76c32aa4866f84a1af3dbc3b') in 0.088656 seconds 
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png using Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f9e2c1c10e8f563aba7ad34dd87bfda') in 0.192892 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 677.954328 seconds.
+  Time since last request: 94.571684 seconds.
   path: Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png
   artifactKey: Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png using Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2cb8dad181985760dffcdb5a37513a4') in 0.193503 seconds 
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png using Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0826a43db96015dbbc1dbfa5ae2734c5') in 0.109515 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 125.757678 seconds.
-  path: Assets/Scenes/FortCemetaryPathway.unity
-  artifactKey: Guid(36461d4c0c019ae408087300b63baff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortCemetaryPathway.unity using Guid(36461d4c0c019ae408087300b63baff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208fe04a594af97d7a00a6829d36ec48') in 0.005942 seconds 
+  Time since last request: 10.190876 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png
+  artifactKey: Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png using Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c5e43f38cd5117bbd7fb623eff5312') in 0.103769 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.427031 seconds.
-  path: Assets/Scenes/FortGravePathway.unity
-  artifactKey: Guid(682276e15aa4f5640b433a878bc97171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortGravePathway.unity using Guid(682276e15aa4f5640b433a878bc97171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9712850b85505dda304d476a62adcac6') in 0.008726 seconds 
+  Time since last request: 236.678477 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/objects-Sheet.png
+  artifactKey: Guid(d32d0aa35a58b4f7087cf029122e9820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/objects-Sheet.png using Guid(d32d0aa35a58b4f7087cf029122e9820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d5d86b6ad61150d9d9183d4f2f18ec') in 0.024008 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.954090 seconds.
-  path: Assets/Scenes/Gr.cs
-  artifactKey: Guid(0f497927988485242a399e2ac34c705b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Gr.cs using Guid(0f497927988485242a399e2ac34c705b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fad2caee0ccf1b2edc79bdd708d6182c') in 0.017860 seconds 
+  Time since last request: 90.864870 seconds.
+  path: Assets/Scenes/SwampCell3.unity
+  artifactKey: Guid(3169e8ae8a8fc324da4549be03daafa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwampCell3.unity using Guid(3169e8ae8a8fc324da4549be03daafa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2e792b8f6e0e8c29fc191a1f0f83c48') in 0.008152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.828185 seconds.
+  path: Assets/Scenes/SwampCell5.unity
+  artifactKey: Guid(d8a90dfed495e5c41b75270f23860114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwampCell5.unity using Guid(d8a90dfed495e5c41b75270f23860114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c569a04b700c376cb57e97e67419d1') in 0.014401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.713852 seconds.
+  path: Assets/Scenes/SwampCell4.unity
+  artifactKey: Guid(d26144014e2a27948bfba0e98eb76ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SwampCell4.unity using Guid(d26144014e2a27948bfba0e98eb76ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f0a900ed96fb9ac048266ebba719e90') in 0.008988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.880283 seconds.
+  path: Assets/Scenes/GraveCell1.unity
+  artifactKey: Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GraveCell1.unity using Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e218fed345f59701ff590fd28e2118d') in 0.005089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 57.067480 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a4c85a6715d4590d6eb5cdc419b7be0') in 0.024769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.355909 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe6647feeeae148b1b15c703c636b813') in 0.020705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.032824 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363f13beea5693095f9054e1e9f89e97') in 0.021806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.669586 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803e2866838d57e42dfd6b03c68b7445') in 0.022795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.116474 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf86895a6fecc2854eb66fed608bf2b') in 0.019105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.642694 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf29e6e35c4ca4be3333d8d7486027b') in 0.022173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.583288 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78aed8b51bec048c0b5b16ef4dbf949a') in 0.025813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.379109 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972f499f569ca84535dc1d6a7674c474') in 0.021729 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.014274 seconds.
+Registered in 0.020586 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -250,33 +346,897 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.06 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.488 seconds
+- Completed reload, in  3.084 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2489ms)
-		BeginReloadAssembly (319ms)
+	ReloadAssembly (3088ms)
+		BeginReloadAssembly (491ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (19ms)
+			DisableScriptedObjects (28ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (104ms)
-		EndReloadAssembly (1950ms)
-			LoadAssemblies (218ms)
+			CreateAndSetChildDomain (182ms)
+		EndReloadAssembly (2349ms)
+			LoadAssemblies (296ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (542ms)
+			SetupTypeCache (700ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (133ms)
+			SetupLoadedEditorAssemblies (1109ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (107ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (191ms)
+				ProcessInitializeOnLoadAttributes (701ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on PauseMenuController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on BGMHandler
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on PlayerController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Refreshing native plugins compatible for Editor in 6.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4501 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (194.1 KB). Loaded Objects now: 5024.
+Memory consumption went from 193.3 MB to 193.1 MB.
+Total: 10.463600 ms (FindLiveObjects: 0.797300 ms CreateObjectMapping: 0.877300 ms MarkObjects: 8.341000 ms  DeleteObjects: 0.445200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014762 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 3.16 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.772 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2774ms)
+		BeginReloadAssembly (400ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (26ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (144ms)
+		EndReloadAssembly (2113ms)
+			LoadAssemblies (275ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (769ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (121ms)
+			SetupLoadedEditorAssemblies (827ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (127ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (186ms)
+				ProcessInitializeOnLoadAttributes (445ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on PauseMenuController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on BGMHandler
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on PlayerController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Refreshing native plugins compatible for Editor in 3.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4501 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (193.9 KB). Loaded Objects now: 5029.
+Memory consumption went from 193.3 MB to 193.1 MB.
+Total: 4.406800 ms (FindLiveObjects: 0.348600 ms CreateObjectMapping: 0.272700 ms MarkObjects: 3.592000 ms  DeleteObjects: 0.192500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019987 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.51 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.033 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3034ms)
+		BeginReloadAssembly (262ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (2524ms)
+			LoadAssemblies (236ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (726ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (101ms)
-			SetupLoadedEditorAssemblies (983ms)
+			RebuildScriptCaches (131ms)
+			SetupLoadedEditorAssemblies (1257ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (119ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (198ms)
+				ProcessInitializeOnLoadAttributes (792ms)
+				ProcessInitializeOnLoadMethodAttributes (122ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on PauseMenuController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on BGMHandler
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on PlayerController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Refreshing native plugins compatible for Editor in 7.36 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4501 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (194.1 KB). Loaded Objects now: 5034.
+Memory consumption went from 193.3 MB to 193.1 MB.
+Total: 7.083900 ms (FindLiveObjects: 0.758600 ms CreateObjectMapping: 0.742900 ms MarkObjects: 5.342900 ms  DeleteObjects: 0.237600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 271.954790 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/blackout.asset
+  artifactKey: Guid(b043e1d6d58b9644ea8891659ee17902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/blackout.asset using Guid(b043e1d6d58b9644ea8891659ee17902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69cf332e5a4889ca251120a2a71b1472') in 0.073461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeRightB.asset
+  artifactKey: Guid(edc532a4a483c73498b72f6032cc81a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeRightB.asset using Guid(edc532a4a483c73498b72f6032cc81a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe2134277adcf62bff4f3db5c814f2e') in 0.020320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pillarTop.asset
+  artifactKey: Guid(7597ce04fd911784583c6c6cf555532e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pillarTop.asset using Guid(7597ce04fd911784583c6c6cf555532e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6447ea06439baa637c80c85b3d1711') in 0.020185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/slopeRight.asset
+  artifactKey: Guid(68c30f14fa3ac624998f7045b5067e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/slopeRight.asset using Guid(68c30f14fa3ac624998f7045b5067e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0856680abfb69cae3aa819add83545ec') in 0.023186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pillarVine.asset
+  artifactKey: Guid(5e4c938f66d86b64bae284ea1ad9ce9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pillarVine.asset using Guid(5e4c938f66d86b64bae284ea1ad9ce9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a032d340ce891d08850b5f3b9e39be') in 0.030318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pilla.asset
+  artifactKey: Guid(0d66d0bab91c688458e3dd63ae184259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pilla.asset using Guid(0d66d0bab91c688458e3dd63ae184259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f154881c27f19b86e439b457c548861c') in 0.024402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeLeftBG.asset
+  artifactKey: Guid(4346c0de6c99978448c6cbd7c1a0f491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeLeftBG.asset using Guid(4346c0de6c99978448c6cbd7c1a0f491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf975c4bcfebedef01f6821e1d87b394') in 0.025274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/rocksLeftBottom.asset
+  artifactKey: Guid(35ffad9359ef003428ad21ed7bc2c5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/rocksLeftBottom.asset using Guid(35ffad9359ef003428ad21ed7bc2c5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4653080445e742b10092f24e2fff5af0') in 0.024119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/ground_2.asset
+  artifactKey: Guid(0d28389f59d2bb7439c2c2e8ec88aa52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/ground_2.asset using Guid(0d28389f59d2bb7439c2c2e8ec88aa52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d26ea6c46330030344d5028ed11bab') in 0.026083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtBG.asset
+  artifactKey: Guid(7ab131631c9293c47af0af8f967fd840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtBG.asset using Guid(7ab131631c9293c47af0af8f967fd840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fd977693e760c8bb49786b4f6136ac') in 0.023600 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017570 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.970 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2972ms)
+		BeginReloadAssembly (297ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (79ms)
+		EndReloadAssembly (2395ms)
+			LoadAssemblies (253ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (659ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (133ms)
+			SetupLoadedEditorAssemblies (1207ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (111ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (214ms)
+				ProcessInitializeOnLoadAttributes (746ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on PauseMenuController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on BGMHandler
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on PlayerController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Refreshing native plugins compatible for Editor in 7.61 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4501 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (193.5 KB). Loaded Objects now: 5040.
+Memory consumption went from 193.3 MB to 193.1 MB.
+Total: 9.224400 ms (FindLiveObjects: 0.623000 ms CreateObjectMapping: 0.589200 ms MarkObjects: 7.545300 ms  DeleteObjects: 0.464800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 460.056696 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png
+  artifactKey: Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png using Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c915aaed5673f548c519555c13e4ec2') in 0.176278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.207713 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/blackout.asset
+  artifactKey: Guid(b043e1d6d58b9644ea8891659ee17902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/blackout.asset using Guid(b043e1d6d58b9644ea8891659ee17902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e19f9ca94cfa7b4141f5205c047aabb') in 0.028760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeRightB.asset
+  artifactKey: Guid(edc532a4a483c73498b72f6032cc81a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeRightB.asset using Guid(edc532a4a483c73498b72f6032cc81a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6ed5d9c34cd20dccfc7b6b7e3e8629') in 0.021375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pillarTop.asset
+  artifactKey: Guid(7597ce04fd911784583c6c6cf555532e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pillarTop.asset using Guid(7597ce04fd911784583c6c6cf555532e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e49bc82d30a0f72457957476e6f3626') in 0.023226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/ground_1.asset
+  artifactKey: Guid(1420ac41f04d544428c662dce3a5e86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/ground_1.asset using Guid(1420ac41f04d544428c662dce3a5e86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ec6a8e1bf488d3d3d3d0bee87b3696') in 0.020233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeRight.asset
+  artifactKey: Guid(29223e25783f36a4c89f146f9e76ea1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeRight.asset using Guid(29223e25783f36a4c89f146f9e76ea1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c61d8639dc9f7ae99d2b71458b69988') in 0.017283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/rocksRightBottom.asset
+  artifactKey: Guid(8983116e956178e47a22aaf370d6fc85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/rocksRightBottom.asset using Guid(8983116e956178e47a22aaf370d6fc85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c1a217156268e0cdc5e9b42cf3b008') in 0.021266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pilla.asset
+  artifactKey: Guid(0d66d0bab91c688458e3dd63ae184259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pilla.asset using Guid(0d66d0bab91c688458e3dd63ae184259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad13256d2f4c6d1609674ecfb38da85') in 0.019788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeLeftBG.asset
+  artifactKey: Guid(4346c0de6c99978448c6cbd7c1a0f491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeLeftBG.asset using Guid(4346c0de6c99978448c6cbd7c1a0f491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb24b95c0c121fe81ef8104d867d0336') in 0.019148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/rocksLeftBottom.asset
+  artifactKey: Guid(35ffad9359ef003428ad21ed7bc2c5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/rocksLeftBottom.asset using Guid(35ffad9359ef003428ad21ed7bc2c5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d87a40d2f2b8e6b838f7d7dda010c4a') in 0.017893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/ground_2.asset
+  artifactKey: Guid(0d28389f59d2bb7439c2c2e8ec88aa52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/ground_2.asset using Guid(0d28389f59d2bb7439c2c2e8ec88aa52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea08633a3b3e51693004e191053a015') in 0.016296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/groundPillar.asset
+  artifactKey: Guid(bb720c5603b080145aff82b732319a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/groundPillar.asset using Guid(bb720c5603b080145aff82b732319a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f744b00425ef7617a2784ea716491f') in 0.018399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 301.912315 seconds.
+  path: Assets/Scenes/FortCell4.unity
+  artifactKey: Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/FortCell4.unity using Guid(c3f7319e6eea6d544b0426e9243f1426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f804b1774f7be3c7a93918e970bb01a7') in 0.007557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.704967 seconds.
+  path: Assets/Scenes/GraveCell1.unity
+  artifactKey: Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GraveCell1.unity using Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f72602d53950a5cfeac049919c113d2') in 0.004556 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014881 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.502 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3503ms)
+		BeginReloadAssembly (335ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (98ms)
+		EndReloadAssembly (2889ms)
+			LoadAssemblies (284ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (727ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (169ms)
+			SetupLoadedEditorAssemblies (1367ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (125ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (227ms)
+				ProcessInitializeOnLoadAttributes (835ms)
+				ProcessInitializeOnLoadMethodAttributes (143ms)
+				AfterProcessingInitializeOnLoad (33ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on PauseMenuController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on BGMHandler
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on PlayerController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Refreshing native plugins compatible for Editor in 3.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4501 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (193.8 KB). Loaded Objects now: 5046.
+Memory consumption went from 193.3 MB to 193.1 MB.
+Total: 4.371100 ms (FindLiveObjects: 0.639500 ms CreateObjectMapping: 0.285200 ms MarkObjects: 3.243400 ms  DeleteObjects: 0.201500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014507 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.859 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2860ms)
+		BeginReloadAssembly (308ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (85ms)
+		EndReloadAssembly (2330ms)
+			LoadAssemblies (264ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (676ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (122ms)
+			SetupLoadedEditorAssemblies (1121ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (127ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (195ms)
+				ProcessInitializeOnLoadAttributes (678ms)
+				ProcessInitializeOnLoadMethodAttributes (94ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on PauseMenuController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on BGMHandler
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on PlayerController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Refreshing native plugins compatible for Editor in 6.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4501 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (193.7 KB). Loaded Objects now: 5051.
+Memory consumption went from 193.3 MB to 193.1 MB.
+Total: 5.725900 ms (FindLiveObjects: 0.473100 ms CreateObjectMapping: 0.415000 ms MarkObjects: 4.603700 ms  DeleteObjects: 0.232900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016233 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.79 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.942 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2944ms)
+		BeginReloadAssembly (282ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (2413ms)
+			LoadAssemblies (266ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (668ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (141ms)
+			SetupLoadedEditorAssemblies (1206ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (134ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (214ms)
+				ProcessInitializeOnLoadAttributes (726ms)
+				ProcessInitializeOnLoadMethodAttributes (102ms)
+				AfterProcessingInitializeOnLoad (26ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on PauseMenuController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on BGMHandler
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on PlayerController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Refreshing native plugins compatible for Editor in 6.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4501 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (194.8 KB). Loaded Objects now: 5056.
+Memory consumption went from 193.3 MB to 193.1 MB.
+Total: 9.053700 ms (FindLiveObjects: 0.558300 ms CreateObjectMapping: 0.506100 ms MarkObjects: 7.726400 ms  DeleteObjects: 0.260800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015817 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.755 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2756ms)
+		BeginReloadAssembly (234ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (2328ms)
+			LoadAssemblies (195ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (673ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (126ms)
+			SetupLoadedEditorAssemblies (1147ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (116ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (198ms)
+				ProcessInitializeOnLoadAttributes (704ms)
+				ProcessInitializeOnLoadMethodAttributes (104ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on PauseMenuController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on BGMHandler
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on PlayerController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Refreshing native plugins compatible for Editor in 6.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4501 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (193.6 KB). Loaded Objects now: 5061.
+Memory consumption went from 193.3 MB to 193.1 MB.
+Total: 8.224200 ms (FindLiveObjects: 0.587300 ms CreateObjectMapping: 0.996700 ms MarkObjects: 6.274500 ms  DeleteObjects: 0.362900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018058 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.949 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2951ms)
+		BeginReloadAssembly (291ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (2414ms)
+			LoadAssemblies (251ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (717ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (128ms)
+			SetupLoadedEditorAssemblies (1159ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (118ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (189ms)
+				ProcessInitializeOnLoadAttributes (735ms)
+				ProcessInitializeOnLoadMethodAttributes (92ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on PauseMenuController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on BGMHandler
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+OnLevelWasLoaded was found on PlayerController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Refreshing native plugins compatible for Editor in 7.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4501 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (193.8 KB). Loaded Objects now: 5066.
+Memory consumption went from 193.3 MB to 193.2 MB.
+Total: 6.597900 ms (FindLiveObjects: 0.573500 ms CreateObjectMapping: 0.508200 ms MarkObjects: 5.259500 ms  DeleteObjects: 0.254900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 631.808918 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png
+  artifactKey: Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png using Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0bdbb798afc3a33621873bcd8265fd4') in 0.186708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.399591 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png
+  artifactKey: Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png using Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f7efa06b0fc188b513e5cda6c6cd5a3') in 0.198477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.558260 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/blackout.asset
+  artifactKey: Guid(b043e1d6d58b9644ea8891659ee17902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/blackout.asset using Guid(b043e1d6d58b9644ea8891659ee17902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '087820fb3c18d71a9343a5a472acb195') in 0.033662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeRightB.asset
+  artifactKey: Guid(edc532a4a483c73498b72f6032cc81a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeRightB.asset using Guid(edc532a4a483c73498b72f6032cc81a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a65886c5323b28db5b405456ee43e3bf') in 0.018312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pillarTop.asset
+  artifactKey: Guid(7597ce04fd911784583c6c6cf555532e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pillarTop.asset using Guid(7597ce04fd911784583c6c6cf555532e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61dc3b79440300203f9e47cafceb3fd3') in 0.017884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/ground_1.asset
+  artifactKey: Guid(1420ac41f04d544428c662dce3a5e86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/ground_1.asset using Guid(1420ac41f04d544428c662dce3a5e86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa930f005fa7741c22396f3c157bf75') in 0.020570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/slopeRight.asset
+  artifactKey: Guid(68c30f14fa3ac624998f7045b5067e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/slopeRight.asset using Guid(68c30f14fa3ac624998f7045b5067e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '341bedd6f011cacffa93458e04ad841b') in 0.016868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pillarVine.asset
+  artifactKey: Guid(5e4c938f66d86b64bae284ea1ad9ce9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/pillarVine.asset using Guid(5e4c938f66d86b64bae284ea1ad9ce9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '209006aa21b377f0b512c0efcf39fb44') in 0.020054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeLeft.asset
+  artifactKey: Guid(433351eee6ff7ba4a82f48ef211cd728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/dirtSlopeLeft.asset using Guid(433351eee6ff7ba4a82f48ef211cd728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42b65c0b9da4b158825caee14538b1c') in 0.019986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/rocksRightTop.asset
+  artifactKey: Guid(77424ca7c457ad04890b38e2f56c760b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/rocksRightTop.asset using Guid(77424ca7c457ad04890b38e2f56c760b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0da999b47920b0dc74ceeab4f2f39d2') in 0.015783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/rocksLeftBottom.asset
+  artifactKey: Guid(35ffad9359ef003428ad21ed7bc2c5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/rocksLeftBottom.asset using Guid(35ffad9359ef003428ad21ed7bc2c5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6d00765c4372be65161494dbbc63b0') in 0.020229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/slopeLeft.asset
+  artifactKey: Guid(f04428e8669b2d54f89755025827727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/slopeLeft.asset using Guid(f04428e8669b2d54f89755025827727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146832c4424ad0c374e8381034ce7c2b') in 0.019245 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/spikes.asset
+  artifactKey: Guid(3ed08e825722f5d4c9d59906fb80f958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/spikes.asset using Guid(3ed08e825722f5d4c9d59906fb80f958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b84fd7e630cffd57e899fe41d165a62') in 0.020354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/groundPillar.asset
+  artifactKey: Guid(bb720c5603b080145aff82b732319a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/sliced-tiles/groundPillar.asset using Guid(bb720c5603b080145aff82b732319a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc0e326ae6206f2c9c9b285fac3de42') in 0.015047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.772967 seconds.
+  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png
+  artifactKey: Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png using Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00c446097855a5c8c7b8fb02f36e813') in 0.188680 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016366 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\William Brett\Documents\GitHub\DuskVale\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 3.29 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.933 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2934ms)
+		BeginReloadAssembly (253ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (69ms)
+		EndReloadAssembly (2426ms)
+			LoadAssemblies (240ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (693ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (169ms)
+			SetupLoadedEditorAssemblies (1152ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (114ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (177ms)
-				ProcessInitializeOnLoadAttributes (586ms)
-				ProcessInitializeOnLoadMethodAttributes (88ms)
-				AfterProcessingInitializeOnLoad (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (190ms)
+				ProcessInitializeOnLoadAttributes (724ms)
+				ProcessInitializeOnLoadMethodAttributes (100ms)
+				AfterProcessingInitializeOnLoad (20ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (19ms)
@@ -290,12 +1250,12 @@ Add a delegate to SceneManager.sceneLoaded instead to get notifications after sc
 OnLevelWasLoaded was found on PlayerController
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Refreshing native plugins compatible for Editor in 7.66 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 9.86 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4501 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (193.9 KB). Loaded Objects now: 5025.
-Memory consumption went from 193.2 MB to 193.1 MB.
-Total: 6.396400 ms (FindLiveObjects: 0.566000 ms CreateObjectMapping: 0.389500 ms MarkObjects: 5.207600 ms  DeleteObjects: 0.231100 ms)
+Unloading 33 unused Assets / (193.9 KB). Loaded Objects now: 5076.
+Memory consumption went from 193.4 MB to 193.2 MB.
+Total: 7.893400 ms (FindLiveObjects: 0.569300 ms CreateObjectMapping: 0.519300 ms MarkObjects: 5.924800 ms  DeleteObjects: 0.877900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -310,171 +1270,25 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.267739 seconds.
-  path: Assets/Scenes/FortGravePathCell.unity
-  artifactKey: Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortGravePathCell.unity using Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e415c94218e056397e3d8fd53901d0f') in 0.014446 seconds 
+  Time since last request: 374.290323 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa78ca6bc8fca1abf1923bf842a55a8') in 0.086674 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.339165 seconds.
+  Time since last request: 10.415769 seconds.
   path: Assets/Scenes/GraveCell1.unity
   artifactKey: Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell1.unity using Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1114b3196ae2b78a126a8462a0597613') in 0.005724 seconds 
+Start importing Assets/Scenes/GraveCell1.unity using Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e25f1273eb32230fe91ad980aacc6e9') in 0.004245 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.838631 seconds.
-  path: Assets/Scenes/GraveCell2.unity
-  artifactKey: Guid(8629e9b04466a8942a152ca4df80ca90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell2.unity using Guid(8629e9b04466a8942a152ca4df80ca90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f7f62535010a25ab663d9f3466c591') in 0.011905 seconds 
+  Time since last request: 82.124156 seconds.
+  path: Assets/Resources/Backgrounds/GraveBackground.prefab
+  artifactKey: Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Backgrounds/GraveBackground.prefab using Guid(d4bf595f8f30649498e89d29f4b5c549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36aa25b8c4d748e09295983ecc6ee6cc') in 0.023729 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.546324 seconds.
-  path: Assets/Scenes/GraveCell3.unity
-  artifactKey: Guid(6de35f29743730e429fda8c45a7bbf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell3.unity using Guid(6de35f29743730e429fda8c45a7bbf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528237102333a5d6f0fd520729223a9f') in 0.008134 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.826219 seconds.
-  path: Assets/Scenes/GraveCell4.unity
-  artifactKey: Guid(57300a83452479e43a88ddf628c371f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell4.unity using Guid(57300a83452479e43a88ddf628c371f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44208269bcbc926f06e647d67d1e109') in 0.007253 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.570682 seconds.
-  path: Assets/Scenes/GraveCell5.unity
-  artifactKey: Guid(001356c51bdc4a842bf87b08960f5e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell5.unity using Guid(001356c51bdc4a842bf87b08960f5e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e732a34aeb2b8ac0687d86e1b4ef3d') in 0.007565 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 204.361127 seconds.
-  path: Assets/Scenes/FortGravePathCell.unity
-  artifactKey: Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortGravePathCell.unity using Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aeec5ccb28693a7ab11f9f4d92b61c5') in 0.005967 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.223248 seconds.
-  path: Assets/Scenes/FortGravePathCell.unity
-  artifactKey: Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortGravePathCell.unity using Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6488205ab094c2eb65117959f8d0fc59') in 0.004440 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.616460 seconds.
+  Time since last request: 97.801795 seconds.
   path: Assets/Scenes/GraveCell1.unity
   artifactKey: Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell1.unity using Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6bfa0f907599bdc500b4d172d31b4e4') in 0.006465 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.132142 seconds.
-  path: Assets/Scenes/GraveCell2.unity
-  artifactKey: Guid(8629e9b04466a8942a152ca4df80ca90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell2.unity using Guid(8629e9b04466a8942a152ca4df80ca90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff4bd95e8ab881bceb5fc32cf9861ae') in 0.005373 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.154863 seconds.
-  path: Assets/Scenes/GraveCell3.unity
-  artifactKey: Guid(6de35f29743730e429fda8c45a7bbf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell3.unity using Guid(6de35f29743730e429fda8c45a7bbf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afbdbbdadd2ae914aa3ae1551431d24e') in 0.005313 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.544016 seconds.
-  path: Assets/Scenes/GraveCell4.unity
-  artifactKey: Guid(57300a83452479e43a88ddf628c371f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell4.unity using Guid(57300a83452479e43a88ddf628c371f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfcbb1e20b1ee581546d2a0080882ccc') in 0.004400 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.004362 seconds.
-  path: Assets/Scenes/GraveCell5.unity
-  artifactKey: Guid(001356c51bdc4a842bf87b08960f5e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell5.unity using Guid(001356c51bdc4a842bf87b08960f5e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3356bb8d9b789df30bff32dce533ff2') in 0.004496 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.721590 seconds.
-  path: Assets/Scenes/FortGravePathCell.unity
-  artifactKey: Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortGravePathCell.unity using Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc9a72092086515d87ee2c82d89a0b50') in 0.005010 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.955870 seconds.
-  path: Assets/Scenes/GraveCell1.unity
-  artifactKey: Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell1.unity using Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22391519e62babc57c386e3b0fc3896c') in 0.006994 seconds 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 9.20 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 33 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (191.4 KB). Loaded Objects now: 5025.
-Memory consumption went from 103.9 MB to 103.7 MB.
-Total: 5.633700 ms (FindLiveObjects: 0.356700 ms CreateObjectMapping: 0.276700 ms MarkObjects: 4.608200 ms  DeleteObjects: 0.390900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 53.468204 seconds.
-  path: Assets/Scenes/GraveCell2.unity
-  artifactKey: Guid(8629e9b04466a8942a152ca4df80ca90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell2.unity using Guid(8629e9b04466a8942a152ca4df80ca90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a8dac78451094d46f9ff74f42d1b15b') in 0.005340 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.415950 seconds.
-  path: Assets/Scenes/GraveCell3.unity
-  artifactKey: Guid(6de35f29743730e429fda8c45a7bbf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell3.unity using Guid(6de35f29743730e429fda8c45a7bbf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8401bec9b0d750d2bcdac4b073ad5d') in 0.005039 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.784714 seconds.
-  path: Assets/Scenes/GraveCell4.unity
-  artifactKey: Guid(57300a83452479e43a88ddf628c371f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell4.unity using Guid(57300a83452479e43a88ddf628c371f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fde9e73bfc90617df61d59a987aaa15') in 0.005208 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.769923 seconds.
-  path: Assets/Scenes/GraveCell5.unity
-  artifactKey: Guid(001356c51bdc4a842bf87b08960f5e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell5.unity using Guid(001356c51bdc4a842bf87b08960f5e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba09549bcf518f95183195a7ea2b107') in 0.004573 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.370452 seconds.
-  path: Assets/Scenes/GraveCell4.unity
-  artifactKey: Guid(57300a83452479e43a88ddf628c371f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GraveCell4.unity using Guid(57300a83452479e43a88ddf628c371f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a469335149f956c19669ee98e1614be9') in 0.004749 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 626.841559 seconds.
-  path: Assets/Scenes/FortGravePathCell.unity
-  artifactKey: Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortGravePathCell.unity using Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563462421a5f43984303cffdb4a3a1d3') in 0.004428 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 171.796798 seconds.
-  path: Assets/Scenes/FortGravePathCell.unity
-  artifactKey: Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortGravePathCell.unity using Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ead596650d85a9bd77d29491b97adf') in 0.005121 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 173.626148 seconds.
-  path: Assets/Scenes/FortGravePathCell.unity
-  artifactKey: Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortGravePathCell.unity using Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b05b4dc32827a01c9eb93554c85ce7f') in 0.005474 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1600.650866 seconds.
-  path: Assets/Scenes/FortGravePathCell.unity
-  artifactKey: Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FortGravePathCell.unity using Guid(d8908ee5d8454d34581bd3bef6b053da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f68f788d2eb7010bc7178c9220d2d12') in 0.005584 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 355.086774 seconds.
-  path: Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png
-  artifactKey: Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Library/Gothicvania Cemetery Artwork/Environment/tileset.png using Guid(4beee00ff01304c92a8c3ae5c089ef92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f254a8322f083c84bfc7b1ea0b52aa1') in 0.237006 seconds 
+Start importing Assets/Scenes/GraveCell1.unity using Guid(65e5c24e1bd15bd43a8bd74341670835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f3aa1ca52f6a1dff936b905097b2b6') in 0.005061 seconds 
