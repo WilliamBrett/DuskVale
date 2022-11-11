@@ -128,6 +128,18 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: GameAssembly
+    fullTypeName: MainMenuStart
+    methodName: SetStartMenu
+  - assembly: GameAssembly
+    fullTypeName: LoadManager
+    methodName: LoadGame
+  - assembly: GameAssembly
+    fullTypeName: ExitButton
+    methodName: ExitGame
+  - assembly: GameAssembly
+    fullTypeName: LoadManager
+    methodName: NewGame
+  - assembly: GameAssembly
     fullTypeName: PauseMenuController
     methodName: OptionsButton
   - assembly: GameAssembly
@@ -160,18 +172,6 @@ ScriptsOnlyBuild:
   - assembly: GameAssembly
     fullTypeName: PauseMenuController
     methodName: HowToPlayClose
-  - assembly: GameAssembly
-    fullTypeName: MainMenuStart
-    methodName: SetStartMenu
-  - assembly: GameAssembly
-    fullTypeName: LoadManager
-    methodName: LoadGame
-  - assembly: GameAssembly
-    fullTypeName: ExitButton
-    methodName: ExitGame
-  - assembly: GameAssembly
-    fullTypeName: LoadManager
-    methodName: NewGame
   - assembly: GameAssembly
     fullTypeName: PauseMenuController
     methodName: OptionsButton
@@ -656,8 +656,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
-    - Class: 62
-      Script: {instanceID: 0}
     - Class: 66
       Script: {instanceID: 0}
     - Class: 68
@@ -693,11 +691,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9744}
     - Class: 114
-      Script: {instanceID: 10088}
-    - Class: 114
       Script: {instanceID: 10172}
-    - Class: 114
-      Script: {instanceID: 10450}
     - Class: 114
       Script: {instanceID: 10540}
     - Class: 115
