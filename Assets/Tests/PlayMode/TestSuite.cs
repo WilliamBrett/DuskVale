@@ -34,17 +34,20 @@ public class TestSuite : InputTestFixture
     private static readonly int PlayerVerifyTestID = 5;
     private static readonly int CellPathTestID = 6;
     private static readonly int LoadTestCellID = 7;
-    private static readonly int HorizontalMovementTestID = 8;
-    private static readonly int JumpTestID = 9;
-    private static readonly int DashTestID = 10;
-    private static readonly int CombatTestID = 11;
-    private static readonly int CameraLimitTestID = 12;
-    private static readonly int PlatformEffectorTestID = 13;
-    private static readonly int HPBarTestID = 14;
-    private static readonly int PauseMenuTestID = 15;
-    private static readonly int SaveGameTestID = 16;
-    private static readonly int PauseTitleTestID = 17;
-    private static readonly int LoadGameTestID = 18;
+    private static readonly int PickupUnlockTestID = 8;
+    private static readonly int HorizontalMovementTestID = 9;
+    private static readonly int JumpTestID = 10;
+    private static readonly int DashTestID = 11;
+    private static readonly int CombatTestID = 12;
+    private static readonly int CameraLimitTestID = 13;
+    private static readonly int PlatformEffectorTestID = 14;
+    private static readonly int HPBarTestID = 15;
+    private static readonly int PickupRestoreTestID = 16;
+    private static readonly int PauseMenuTestID = 17;
+    private static readonly int SaveGameTestID = 18;
+    private static readonly int PauseTitleTestID = 19;
+    private static readonly int LoadGameTestID = 20;
+    private static readonly int PickupDestructionTestID = 21;
 
     public void GetTestRefs() => TestRefs = GameObject.FindGameObjectWithTag("TestData").GetComponent<TestReferenceLedger>();
 
@@ -193,6 +196,25 @@ public class TestSuite : InputTestFixture
     }
 
     [UnityTest, Order(8)]
+    public IEnumerator PickupUnlockTest()
+    {
+        while (TestsCompleted != PickupUnlockTestID - 1) { yield return null; }
+        PCRef.thistf.position = new Vector3(-23, 15, 0);
+        while (Time.timeScale != 0f) { yield return null; }
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().UnlockedOpenClose(2);
+        PCRef.thistf.position = new Vector3(-20, 15, 0);
+        while (Time.timeScale != 0f) { yield return null; }
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().UnlockedOpenClose(3);
+        PCRef.thistf.position = new Vector3(-17, 15, 0);
+        while (Time.timeScale != 0f) { yield return null; }
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().UnlockedOpenClose(4);
+        PCRef.thistf.position = new Vector3(0, 0, 0);
+        TestsCompleted = PickupUnlockTestID;
+        Assert.Pass();
+        yield return null;
+    }
+
+    [UnityTest, Order(9)]
     public IEnumerator HorizontalMovementTest()
     {
         while (TestsCompleted != HorizontalMovementTestID - 1) { yield return null; }
@@ -214,7 +236,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(9)]
+    [UnityTest, Order(10)]
     public IEnumerator JumpTest()
     {
         while (TestsCompleted != JumpTestID - 1) { yield return null; }
@@ -231,7 +253,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(10)]
+    [UnityTest, Order(11)]
     public IEnumerator DashTest()
     {
         while (TestsCompleted != DashTestID - 1) { yield return null; }
@@ -259,7 +281,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(11)]
+    [UnityTest, Order(12)]
     public IEnumerator CombatTest()
     {
         while (TestsCompleted != CombatTestID - 1) { yield return null; }
@@ -281,7 +303,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(12)]
+    [UnityTest, Order(13)]
     public IEnumerator CameraLimitTest()
     {
 
@@ -308,7 +330,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(13)]
+    [UnityTest, Order(14)]
     public IEnumerator PlatformEffectorTest()
     {
         while (TestsCompleted != PlatformEffectorTestID - 1) { yield return null; }
@@ -324,7 +346,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(14)]
+    [UnityTest, Order(15)]
     public IEnumerator HPBarTest()
     {
         while (TestsCompleted != HPBarTestID - 1) { yield return null; }
@@ -336,7 +358,20 @@ public class TestSuite : InputTestFixture
         TestsCompleted = HPBarTestID;
         yield return null;
     }
-    [UnityTest, Order(15)]
+
+    [UnityTest, Order(16)]
+    public IEnumerator PickupRestoreTest()
+    {
+        while (TestsCompleted != PickupRestoreTestID - 1) { yield return null; }
+        int curHP = PCHP.currenthealth;
+        PCRef.thistf.position = new Vector3(-28, 29, 0);
+        yield return new WaitForSeconds(1f);
+        int curHP2 = PCHP.currenthealth;
+        Assert.AreNotEqual(curHP, curHP2);
+        TestsCompleted = PickupRestoreTestID;
+        yield return null;
+    }
+    [UnityTest, Order(17)]
     public IEnumerator PauseMenuTest()
     {
         while (TestsCompleted != PauseMenuTestID - 1) { yield return null; }
@@ -347,7 +382,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(16)]
+    [UnityTest, Order(18)]
     public IEnumerator SaveGameTest()
     {
         while (TestsCompleted != SaveGameTestID - 1) { yield return null; }
@@ -362,7 +397,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(17)]
+    [UnityTest, Order(19)]
     public IEnumerator PauseTitleTest()
     {
         while (TestsCompleted != PauseTitleTestID - 1) { yield return null; }
@@ -392,7 +427,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(18)]
+    [UnityTest, Order(20)]
     public IEnumerator LoadGameTest()
     {
         while (TestsCompleted != LoadGameTestID - 1) { yield return null; }
@@ -407,4 +442,28 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
+    [UnityTest, Order(21)]
+    public IEnumerator PickupDestructionTest()
+    {
+        while (TestsCompleted != PickupDestructionTestID - 1) { yield return null; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/SwampCell4.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        GameObject[] PickupsTally = GameObject.FindGameObjectsWithTag("Pickup");
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/GraveCell4.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        GameObject[] PickupsTally2 = GameObject.FindGameObjectsWithTag("Pickup");
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/SwampCell5.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        GameObject[] PickupsTally3 = GameObject.FindGameObjectsWithTag("Pickup");
+        TestsCompleted = PickupDestructionTestID;
+        if (PickupsTally.Length == 0 && PickupsTally2.Length == 0 && PickupsTally3.Length == 0)
+        {
+            Assert.Pass();
+        }
+        else
+        {
+            Assert.Fail();
+        }
+        yield return null;
+    }
 }
