@@ -58,6 +58,24 @@ public class BGMHandler : MonoBehaviour
             case "SwampCell5":
                 if ((curBGM) != "Swamp") BGMLoaded = false;
                 return;
+            case "SwampCell6":
+                if ((curBGM) != "Swamp") BGMLoaded = false;
+                return;
+            case "GraveCell1":
+                if ((curBGM) != "Grave") BGMLoaded = false;
+                return;
+            case "GraveCell2":
+                if ((curBGM) != "Grave") BGMLoaded = false;
+                return;
+            case "GraveCell3":
+                if ((curBGM) != "Grave") BGMLoaded = false;
+                return;
+            case "GraveCell4":
+                if ((curBGM) != "Grave") BGMLoaded = false;
+                return;
+            case "GraveCell5":
+                if ((curBGM) != "Grave") BGMLoaded = false;
+                return;
             default:
                 BGMLoaded = false;
                 return;
@@ -95,24 +113,48 @@ public class BGMHandler : MonoBehaviour
                 StartBGM(FortBGM);
                 return;
             case "SwampCell1":
-                curBGM = "Fort";
+                curBGM = "Swamp";
                 StartBGM(SwampBGM);
                 return;
             case "SwampCell2":
-                curBGM = "Fort";
+                curBGM = "Swamp";
                 StartBGM(SwampBGM);
                 return;
             case "SwampCell3":
-                curBGM = "Fort";
+                curBGM = "Swamp";
                 StartBGM(SwampBGM);
                 return;
             case "SwampCell4":
-                curBGM = "Fort";
+                curBGM = "Swamp";
                 StartBGM(SwampBGM);
                 return;
             case "SwampCell5":
-                curBGM = "Fort";
+                curBGM = "Swamp";
                 StartBGM(SwampBGM);
+                return;
+            case "SwampCell6":
+                curBGM = "Swamp";
+                StartBGM(SwampBGM);
+                return;
+            case "GraveCell1":
+                curBGM = "Grave";
+                StartBGM(GraveBGM);
+                return;
+            case "GraveCell2":
+                curBGM = "Grave";
+                StartBGM(GraveBGM);
+                return;
+            case "GraveCell3":
+                curBGM = "Grave";
+                StartBGM(GraveBGM);
+                return;
+            case "GraveCell4":
+                curBGM = "Grave";
+                StartBGM(GraveBGM);
+                return;
+            case "GraveCell5":
+                curBGM = "Grave";
+                StartBGM(GraveBGM);
                 return;
             default:
                 CurBGMPlayer = null;
