@@ -155,6 +155,7 @@ public class PauseMenuController : MonoBehaviour
     public void forwardSaveRequest()
     {
         GameObject.FindGameObjectWithTag("SavePoint").GetComponent<SaveManager>().SaveGame();
+        SavePromptOpenClose();
     }
 
     public void DisableButton(GameObject toDisable)

@@ -31,7 +31,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
@@ -53,11 +52,10 @@ ScriptsOnlyBuild:
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    - Packages.Rider.Editor.UnitTesting.SyncTestRunEventsHandler
     Unity.TestTools.CodeCoverage.Editor.dll:
-    - UnityEditor.TestTools.CodeCoverage.Analytics.CoverageAnalytics
     - UnityEditor.TestTools.CodeCoverage.CodeCoverageWindow
     - UnityEditor.TestTools.CodeCoverage.CoverageRunData
     Unity.TextMeshPro.dll:
@@ -76,8 +74,6 @@ ScriptsOnlyBuild:
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
-    - UnityEditor.TestTools.TestRunner.RerunCallbackData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
@@ -129,6 +125,18 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: GameAssembly
+    fullTypeName: MainMenuStart
+    methodName: SetStartMenu
+  - assembly: GameAssembly
+    fullTypeName: LoadManager
+    methodName: LoadGame
+  - assembly: GameAssembly
+    fullTypeName: ExitButton
+    methodName: ExitGame
+  - assembly: GameAssembly
+    fullTypeName: LoadManager
+    methodName: NewGame
+  - assembly: GameAssembly
     fullTypeName: PauseMenuController
     methodName: OptionsButton
   - assembly: GameAssembly
@@ -161,18 +169,6 @@ ScriptsOnlyBuild:
   - assembly: GameAssembly
     fullTypeName: PauseMenuController
     methodName: HowToPlayClose
-  - assembly: GameAssembly
-    fullTypeName: MainMenuStart
-    methodName: SetStartMenu
-  - assembly: GameAssembly
-    fullTypeName: LoadManager
-    methodName: LoadGame
-  - assembly: GameAssembly
-    fullTypeName: ExitButton
-    methodName: ExitGame
-  - assembly: GameAssembly
-    fullTypeName: LoadManager
-    methodName: NewGame
   - assembly: GameAssembly
     fullTypeName: PauseMenuController
     methodName: OptionsButton
@@ -859,32 +855,20 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
-    - Class: 62
-      Script: {instanceID: 0}
     - Class: 66
       Script: {instanceID: 0}
     - Class: 68
       Script: {instanceID: 0}
     - Class: 70
       Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
     - Class: 81
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 688}
     - Class: 114
-      Script: {instanceID: 2558}
-    - Class: 114
       Script: {instanceID: 2638}
-    - Class: 114
-      Script: {instanceID: 3726}
     - Class: 114
       Script: {instanceID: 5654}
     - Class: 114
@@ -892,11 +876,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9746}
     - Class: 114
-      Script: {instanceID: 10090}
-    - Class: 114
       Script: {instanceID: 10174}
-    - Class: 114
-      Script: {instanceID: 10452}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
