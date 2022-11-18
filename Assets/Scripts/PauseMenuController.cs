@@ -12,6 +12,7 @@ public class PauseMenuController : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject ResumeButtonRef, OptionsButtonRef, TitleButtonRef, QuitButtonRef, HowToPlayButtonRef;
     public GameObject HTPScreen;
+    public GameObject OptionsScreen;
     public GameObject SavePrompt;
     public GameObject DJInfo;
     public GameObject WJInfo;
@@ -99,6 +100,25 @@ public class PauseMenuController : MonoBehaviour
         //not implimented
     }
 
+    public void OptionsOpen()
+    {
+        DisableButton(ResumeButtonRef);
+        DisableButton(OptionsButtonRef);
+        DisableButton(TitleButtonRef);
+        DisableButton(QuitButtonRef);
+        DisableButton(HowToPlayButtonRef);
+        OptionsScreen.SetActive(true);
+    }
+
+    public void OptionsClose()
+    {
+        EnableButton(ResumeButtonRef);
+        EnableButton(OptionsButtonRef);
+        EnableButton(TitleButtonRef);
+        EnableButton(QuitButtonRef);
+        EnableButton(HowToPlayButtonRef);
+        OptionsScreen.SetActive(false);
+    }
 
     public void TitleButton()
     { 
