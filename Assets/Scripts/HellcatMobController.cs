@@ -12,6 +12,7 @@ public class HellcatMobController : MonoBehaviour
     public float speed;
     private float curFade;
     public int mobTime;
+    public HellcatController controllerRef;
     
     // Start is called before the first frame update
     void Start()
@@ -20,11 +21,11 @@ public class HellcatMobController : MonoBehaviour
         thisTF = GetComponent<Transform>();
         thisHealth = GetComponent<HealthManager>();
         thisRB2D = GetComponent<Rigidbody2D>();
-        if (thisTF.rotation.x == -1)
+        /*if (thisTF.rotation.x == -1)
         {
             thisSR.flipX = true;
             //thisVel = new Vector3(-speed, 0, 0);
-        }
+        }*/
         /*else
         {
             thisVel = new Vector3(speed, 0, 0);
@@ -55,18 +56,19 @@ public class HellcatMobController : MonoBehaviour
             }
             if (thisSR.flipX)
             {
-                thisTF.position = new Vector3((thisTF.position.x - 0.035f) , thisTF.position.y, 0);
+                thisTF.position = new Vector3((thisTF.position.x + 0.035f) , thisTF.position.y, 0);
             }
             else
             {
-                thisTF.position = new Vector3((thisTF.position.x + 0.035f), thisTF.position.y, 0);
+                thisTF.position = new Vector3((thisTF.position.x - 0.035f), thisTF.position.y, 0);
             }
             mobTime--;
             //thisRB2D.velocity = new Vector2(speed, thisRB2D.velocity.y);
         }
-        else
+        else if (controllerRef)
         {
-            GetComponentInParent<HellcatController>().SpawnDelay = 1000000;
+            controllerRef.dead = true;
+            controllerRef = null;
         }
     }
 

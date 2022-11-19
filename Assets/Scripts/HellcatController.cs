@@ -9,6 +9,8 @@ public class HellcatController : MonoBehaviour
     public GameObject Mob;
     public Transform Spawn;
     public int SpawnDelay;
+    public GameObject MobRef;
+    public bool dead;
 
 
     
@@ -21,18 +23,28 @@ public class HellcatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SpawnDelay--;
-        if (SpawnDelay > 10000)//change to give a few seconds for hellcat to die
+        if (dead)
         {
             Destroy(gameObject);
         }
+        SpawnDelay--;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (triggerRight && (SpawnDelay <= 0))
         {
-            Instantiate(Mob, Spawn.position, Spawn.rotation);
+            MobRef = Instantiate(Mob, Spawn.position, Spawn.rotation);
+            MobRef.GetComponent<SpriteRenderer>().flipX = true;
+            MobRef.GetComponent<HellcatMobController>().controllerRef = this;
+            SpawnDelay = 500;
+            Twin.SpawnDelay = 500;
+        }
+        else if (SpawnDelay <= 0)
+        {
+            MobRef = Instantiate(Mob, Spawn.position, Spawn.rotation);
+            MobRef.GetComponent<SpriteRenderer>().flipX = false;
+            MobRef.GetComponent<HellcatMobController>().controllerRef = this;
             SpawnDelay = 500;
             Twin.SpawnDelay = 500;
         }
