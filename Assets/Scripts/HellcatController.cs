@@ -5,9 +5,9 @@ using UnityEngine;
 public class HellcatController : MonoBehaviour
 {
     public bool triggerRight;
+    public HellcatController Twin;
     public GameObject Mob;
-    public Transform LeftSpawn;
-    public Transform RightSpawn;
+    public Transform Spawn;
     public int SpawnDelay;
 
 
@@ -30,18 +30,11 @@ public class HellcatController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GetComponentInParent<HellcatController>().Trigger(triggerRight);
-    }
-
-    public void Trigger(bool isRight)
-    {
-        if (isRight)
+        if (triggerRight && (SpawnDelay <= 0))
         {
-            Instantiate(Mob, RightSpawn.position, RightSpawn.rotation);
-        }
-        else
-        {
-            Instantiate(Mob, LeftSpawn.position, LeftSpawn.rotation);
+            Instantiate(Mob, Spawn.position, Spawn.rotation);
+            SpawnDelay = 500;
+            Twin.SpawnDelay = 500;
         }
     }
 

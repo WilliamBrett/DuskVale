@@ -10,6 +10,8 @@ public class HellcatMobController : MonoBehaviour
     private HealthManager thisHealth;
     private Rigidbody2D thisRB2D;
     public float speed;
+    private float curFade;
+    public int mobTime;
     
     // Start is called before the first frame update
     void Start()
@@ -21,12 +23,15 @@ public class HellcatMobController : MonoBehaviour
         if (thisTF.rotation.x == -1)
         {
             thisSR.flipX = true;
-            thisVel = new Vector3(-speed, 0, 0);
+            //thisVel = new Vector3(-speed, 0, 0);
         }
-        else
+        /*else
         {
             thisVel = new Vector3(speed, 0, 0);
-        }
+        }*/
+        thisSR.color = new Color(1f, 1f, 1f, 0f);
+        mobTime = 500;
+        curFade = 0;
     }
 
     // Update is called once per frame
@@ -34,13 +39,35 @@ public class HellcatMobController : MonoBehaviour
     {
         if (!thisHealth.dying)
         { 
-            thisRB2D.velocity = new Vector2(speed, thisRB2D.velocity.y);
+            if (mobTime > 400)
+            {
+                curFade += 0.01f;
+                thisSR.color = new Color(1f, 1f, 1f, curFade);
+            }
+            else if (mobTime < 100)
+            {
+                if (mobTime < 0)
+                {
+                    Destroy(gameObject);
+                }
+                curFade -= 0.01f;
+                thisSR.color = new Color(1f, 1f, 1f, curFade);
+            }
+            if (thisSR.flipX)
+            {
+                thisTF.position = new Vector3((thisTF.position.x - 0.035f) , thisTF.position.y, 0);
+            }
+            else
+            {
+                thisTF.position = new Vector3((thisTF.position.x + 0.035f), thisTF.position.y, 0);
+            }
+            mobTime--;
+            //thisRB2D.velocity = new Vector2(speed, thisRB2D.velocity.y);
         }
         else
         {
             GetComponentInParent<HellcatController>().SpawnDelay = 1000000;
         }
-        
     }
 
 
