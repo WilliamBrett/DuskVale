@@ -39,15 +39,18 @@ public class TestSuite : InputTestFixture
     private static readonly int JumpTestID = 10;
     private static readonly int DashTestID = 11;
     private static readonly int CombatTestID = 12;
-    private static readonly int CameraLimitTestID = 13;
-    private static readonly int PlatformEffectorTestID = 14;
-    private static readonly int HPBarTestID = 15;
-    private static readonly int PickupRestoreTestID = 16;
-    private static readonly int PauseMenuTestID = 17;
-    private static readonly int SaveGameTestID = 18;
-    private static readonly int PauseTitleTestID = 19;
-    private static readonly int LoadGameTestID = 20;
-    private static readonly int PickupDestructionTestID = 21;
+    private static readonly int DarkWizardTestID = 13;
+    private static readonly int AngelTestID = 14;
+    private static readonly int HellCatTestID = 15;
+    private static readonly int CameraLimitTestID = 16;
+    private static readonly int PlatformEffectorTestID = 17;
+    private static readonly int HPBarTestID = 18;
+    private static readonly int PickupRestoreTestID = 19;
+    private static readonly int PauseMenuTestID = 20;
+    private static readonly int SaveGameTestID = 21;
+    private static readonly int PauseTitleTestID = 22;
+    private static readonly int LoadGameTestID = 23;
+    private static readonly int PickupDestructionTestID = 24;
 
     public void GetTestRefs() => TestRefs = GameObject.FindGameObjectWithTag("TestData").GetComponent<TestReferenceLedger>();
 
@@ -303,7 +306,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(100)]
+    [UnityTest, Order(13)]
     public IEnumerator DarkWizardTest()
     {
         while (TestsCompleted != DarkWizardTestID - 1) { yield return null; }
@@ -326,10 +329,11 @@ public class TestSuite : InputTestFixture
         PCRef.thistf.position = new Vector3(23, 27, 0);
         PCHP.currenthealth = pHP;
         Assert.IsTrue(setToPass);
+        TestsCompleted = DarkWizardTestID;
         yield return null;
     }
 
-    [UnityTest, Order(100)]
+    [UnityTest, Order(14)]
     public IEnumerator AngelTest()
     {
         while (TestsCompleted != AngelTestID - 1) { yield return null; }
@@ -345,18 +349,19 @@ public class TestSuite : InputTestFixture
         PCHP.currenthealth = pHP;
         Assert.IsTrue(setToPass);
         PCHP.currenthealth = pHP;
+        TestsCompleted = AngelTestID;
         yield return null;
     }
 
-    [UnityTest, Order(100)]
+    [UnityTest, Order(15)]
     public IEnumerator HellCatTest()
     {
         while (TestsCompleted != HellCatTestID - 1) { yield return null; }
         int pHP = PCHP.currenthealth;
         bool setToPass = true;
         PCHP.currenthealth = PCHP.maxhealth;
-        PCRef.thistf.position = new Vector3(19, 19, 0);
-        yield return new WaitForSeconds(2f);
+        PCRef.thistf.position = new Vector3(48, 9, 0);
+        yield return new WaitForSeconds(3f);
         if (PCHP.currenthealth == PCHP.maxhealth)
         {
             setToPass = false;
@@ -364,8 +369,8 @@ public class TestSuite : InputTestFixture
         PCRef.thistf.position = new Vector3(23, 27, 0);
         yield return new WaitForSeconds(3f);
         PCHP.currenthealth = PCHP.maxhealth;
-        PCRef.thistf.position = new Vector3(26, 19, 0);
-        yield return new WaitForSeconds(2f);
+        PCRef.thistf.position = new Vector3(62, 9, 0);
+        yield return new WaitForSeconds(3f);
         if (PCHP.currenthealth == PCHP.maxhealth)
         {
             setToPass = false;
@@ -373,13 +378,13 @@ public class TestSuite : InputTestFixture
         PCRef.thistf.position = new Vector3(23, 27, 0);
         PCHP.currenthealth = pHP;
         Assert.IsTrue(setToPass);
-        PCHP.currenthealth = pHP;
+        TestsCompleted = HellCatTestID;
         yield return null;
     }
 
     
 
-    [UnityTest, Order(13)]
+    [UnityTest, Order(16)]
     public IEnumerator CameraLimitTest()
     {
 
@@ -406,7 +411,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(14)]
+    [UnityTest, Order(17)]
     public IEnumerator PlatformEffectorTest()
     {
         while (TestsCompleted != PlatformEffectorTestID - 1) { yield return null; }
@@ -422,7 +427,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(15)]
+    [UnityTest, Order(18)]
     public IEnumerator HPBarTest()
     {
         while (TestsCompleted != HPBarTestID - 1) { yield return null; }
@@ -435,7 +440,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(16)]
+    [UnityTest, Order(19)]
     public IEnumerator PickupRestoreTest()
     {
         while (TestsCompleted != PickupRestoreTestID - 1) { yield return null; }
@@ -447,7 +452,7 @@ public class TestSuite : InputTestFixture
         TestsCompleted = PickupRestoreTestID;
         yield return null;
     }
-    [UnityTest, Order(17)]
+    [UnityTest, Order(20)]
     public IEnumerator PauseMenuTest()
     {
         while (TestsCompleted != PauseMenuTestID - 1) { yield return null; }
@@ -458,7 +463,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(18)]
+    [UnityTest, Order(21)]
     public IEnumerator SaveGameTest()
     {
         while (TestsCompleted != SaveGameTestID - 1) { yield return null; }
@@ -473,7 +478,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(19)]
+    [UnityTest, Order(22)]
     public IEnumerator PauseTitleTest()
     {
         while (TestsCompleted != PauseTitleTestID - 1) { yield return null; }
@@ -503,7 +508,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(20)]
+    [UnityTest, Order(23)]
     public IEnumerator LoadGameTest()
     {
         while (TestsCompleted != LoadGameTestID - 1) { yield return null; }
@@ -518,7 +523,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(21)]
+    [UnityTest, Order(24)]
     public IEnumerator PickupDestructionTest()
     {
         while (TestsCompleted != PickupDestructionTestID - 1) { yield return null; }

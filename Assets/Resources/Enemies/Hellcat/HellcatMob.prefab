@@ -140,7 +140,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.5}
@@ -160,6 +160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   mobTime: 0
+  controllerRef: {fileID: 0}
+  curHazardPot: 1
 --- !u!114 &6044682290593513067
 MonoBehaviour:
   m_ObjectHideFlags: 0

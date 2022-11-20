@@ -13,7 +13,8 @@ public class HellcatMobController : MonoBehaviour
     private float curFade;
     public int mobTime;
     public HellcatController controllerRef;
-    
+    public int curHazardPot;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,5 +73,13 @@ public class HellcatMobController : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            collision.GetComponent<HealthManager>().TakeDamage(curHazardPot);
+        }
+    }
 
 }

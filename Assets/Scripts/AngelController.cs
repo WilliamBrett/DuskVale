@@ -15,6 +15,7 @@ public class AngelController : MonoBehaviour
     private float preferedY2;
     private int Attacking;
     public int AttackDelay;
+    public int curHazardPot;
 
     //thisRB2D.velocity = new Vector2(MoveSpeed, thisRB2D.velocity.y);
     // Start is called before the first frame update
@@ -77,5 +78,13 @@ public class AngelController : MonoBehaviour
     public void Trigger()
     {
             TriggerDelay = 100;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            collision.GetComponent<HealthManager>().TakeDamage(curHazardPot);
+        }
     }
 }

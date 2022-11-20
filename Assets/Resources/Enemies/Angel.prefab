@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 1580492058329162167}
   - component: {fileID: 1580492058329162166}
   - component: {fileID: 1580492058329162161}
+  - component: {fileID: 2339969139301450220}
   m_Layer: 9
   m_Name: Angel
   m_TagString: Hostile
@@ -238,3 +239,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   momentumConstant: 0.5
   AttackDelay: 0
+  curHazardPot: 1
+--- !u!114 &2339969139301450220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580492058329162160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fd1d87929af6044a276e85c167fc61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currenthealth: 1
+  maxhealth: 1
+  deathTime: 50
+  dying: 0
+  iframe: 0
