@@ -303,6 +303,82 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
+    [UnityTest, Order(100)]
+    public IEnumerator DarkWizardTest()
+    {
+        while (TestsCompleted != DarkWizardTestID - 1) { yield return null; }
+        int pHP = PCHP.currenthealth;
+        bool setToPass = true;
+        PCHP.currenthealth = PCHP.maxhealth;
+        PCRef.thistf.position = new Vector3(19, 19, 0);
+        yield return new WaitForSeconds(2f);
+        if (PCHP.currenthealth == PCHP.maxhealth)
+        {
+            setToPass = false;
+        }
+        PCHP.currenthealth = PCHP.maxhealth;
+        PCRef.thistf.position = new Vector3(26, 19, 0);
+        yield return new WaitForSeconds(2f);
+        if (PCHP.currenthealth == PCHP.maxhealth)
+        {
+            setToPass = false;
+        }
+        PCRef.thistf.position = new Vector3(23, 27, 0);
+        PCHP.currenthealth = pHP;
+        Assert.IsTrue(setToPass);
+        yield return null;
+    }
+
+    [UnityTest, Order(100)]
+    public IEnumerator AngelTest()
+    {
+        while (TestsCompleted != AngelTestID - 1) { yield return null; }
+        int pHP = PCHP.currenthealth;
+        bool setToPass = true;
+        PCHP.currenthealth = PCHP.maxhealth;
+        PCRef.thistf.position = new Vector3(40, 19, 0);
+        yield return new WaitForSeconds(2f);
+        if (PCHP.currenthealth == PCHP.maxhealth)
+        {
+            setToPass = false;
+        }
+        PCHP.currenthealth = pHP;
+        Assert.IsTrue(setToPass);
+        PCHP.currenthealth = pHP;
+        yield return null;
+    }
+
+    [UnityTest, Order(100)]
+    public IEnumerator HellCatTest()
+    {
+        while (TestsCompleted != HellCatTestID - 1) { yield return null; }
+        int pHP = PCHP.currenthealth;
+        bool setToPass = true;
+        PCHP.currenthealth = PCHP.maxhealth;
+        PCRef.thistf.position = new Vector3(19, 19, 0);
+        yield return new WaitForSeconds(2f);
+        if (PCHP.currenthealth == PCHP.maxhealth)
+        {
+            setToPass = false;
+        }
+        PCRef.thistf.position = new Vector3(23, 27, 0);
+        yield return new WaitForSeconds(3f);
+        PCHP.currenthealth = PCHP.maxhealth;
+        PCRef.thistf.position = new Vector3(26, 19, 0);
+        yield return new WaitForSeconds(2f);
+        if (PCHP.currenthealth == PCHP.maxhealth)
+        {
+            setToPass = false;
+        }
+        PCRef.thistf.position = new Vector3(23, 27, 0);
+        PCHP.currenthealth = pHP;
+        Assert.IsTrue(setToPass);
+        PCHP.currenthealth = pHP;
+        yield return null;
+    }
+
+    
+
     [UnityTest, Order(13)]
     public IEnumerator CameraLimitTest()
     {
