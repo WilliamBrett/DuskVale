@@ -32,22 +32,26 @@ public class HellcatController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (triggerRight && (SpawnDelay <= 0))
+        if (collision.tag == "Player")
         {
-            MobRef = Instantiate(Mob, Spawn.position, Spawn.rotation);
-            MobRef.GetComponent<SpriteRenderer>().flipX = true;
-            MobRef.GetComponent<HellcatMobController>().controllerRef = this;
-            SpawnDelay = 500;
-            Twin.SpawnDelay = 500;
+            if (triggerRight && (SpawnDelay <= 0))
+            {
+                MobRef = Instantiate(Mob, Spawn.position, Spawn.rotation);
+                MobRef.GetComponent<SpriteRenderer>().flipX = true;
+                 MobRef.GetComponent<HellcatMobController>().controllerRef = this;
+                SpawnDelay = 500;
+                Twin.SpawnDelay = 500;
+            }
+            else if (SpawnDelay <= 0)
+            {
+                MobRef = Instantiate(Mob, Spawn.position, Spawn.rotation);
+                MobRef.GetComponent<SpriteRenderer>().flipX = false;
+                MobRef.GetComponent<HellcatMobController>().controllerRef = this;
+                SpawnDelay = 500;
+                Twin.SpawnDelay = 500;
+            }
         }
-        else if (SpawnDelay <= 0)
-        {
-            MobRef = Instantiate(Mob, Spawn.position, Spawn.rotation);
-            MobRef.GetComponent<SpriteRenderer>().flipX = false;
-            MobRef.GetComponent<HellcatMobController>().controllerRef = this;
-            SpawnDelay = 500;
-            Twin.SpawnDelay = 500;
-        }
+        
     }
 
 }

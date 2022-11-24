@@ -80,11 +80,11 @@ public class AngelController : MonoBehaviour
             TriggerDelay = 100;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (this.tag == "Hostile" && collision.tag == "Player")
         {
             collision.GetComponent<HealthManager>().TakeDamage(curHazardPot);
         }
-    }
+    }*/
 }

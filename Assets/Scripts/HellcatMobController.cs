@@ -32,7 +32,7 @@ public class HellcatMobController : MonoBehaviour
             thisVel = new Vector3(speed, 0, 0);
         }*/
         thisSR.color = new Color(1f, 1f, 1f, 0f);
-        mobTime = 500;
+        mobTime = 350;
         curFade = 0;
     }
 
@@ -41,7 +41,7 @@ public class HellcatMobController : MonoBehaviour
     {
         if (!thisHealth.dying)
         { 
-            if (mobTime > 400)
+            if (mobTime > 250)
             {
                 curFade += 0.01f;
                 thisSR.color = new Color(1f, 1f, 1f, curFade);
@@ -57,11 +57,11 @@ public class HellcatMobController : MonoBehaviour
             }
             if (thisSR.flipX)
             {
-                thisTF.position = new Vector3((thisTF.position.x + 0.035f) , thisTF.position.y, 0);
+                thisTF.position = new Vector3((thisTF.position.x + 0.07f) , thisTF.position.y, 0);
             }
             else
             {
-                thisTF.position = new Vector3((thisTF.position.x - 0.035f), thisTF.position.y, 0);
+                thisTF.position = new Vector3((thisTF.position.x - 0.07f), thisTF.position.y, 0);
             }
             mobTime--;
             //thisRB2D.velocity = new Vector2(speed, thisRB2D.velocity.y);
