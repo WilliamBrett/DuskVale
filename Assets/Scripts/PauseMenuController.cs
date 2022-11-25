@@ -13,6 +13,7 @@ public class PauseMenuController : MonoBehaviour
     public GameObject ResumeButtonRef, OptionsButtonRef, TitleButtonRef, QuitButtonRef, HowToPlayButtonRef;
     public GameObject HTPScreen;
     public GameObject OptionsScreen;
+    public GameObject GameOverScreen;
     public GameObject SavePrompt;
     public GameObject DJInfo;
     public GameObject WJInfo;
@@ -36,7 +37,12 @@ public class PauseMenuController : MonoBehaviour
         
         if (PlayerRef)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (!PlayerRef.activeSelf)
+            {
+                GameOverScreen.SetActive(true);
+                PlayerRef = null;
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (SavePrompt.activeSelf)
                 {

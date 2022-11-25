@@ -14,11 +14,13 @@ public class BGMHandler : MonoBehaviour
     public GameObject SwampBGM;
     public GameObject GraveBGM;
     public GameObject ChapelBGM;
+    public float BGMVolume;
 
     void Start()
     {
         DontDestroyOnLoad(gameObject);
         BGMLoaded = false;
+        BGMVolume = 50f;
     }
 
     private void OnLevelWasLoaded(int level)
@@ -167,6 +169,7 @@ public class BGMHandler : MonoBehaviour
     public void StartBGM(GameObject ChosenBGM)
     {
         CurBGMPlayer = Instantiate(ChosenBGM, new Vector3(0, 0, 0), new Quaternion());
+        CurBGMPlayer.GetComponent<AudioSource>().volume = BGMVolume;
         CurBGM = CurBGMPlayer.GetComponent<AudioSource>();
         CurBGM.Play();
     }
