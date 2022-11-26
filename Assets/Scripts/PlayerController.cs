@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool Alter;
+
     public GameObject[] Metadata;
     public Rigidbody2D thisRB2D;
     private Animator thisAnim;
@@ -93,7 +95,14 @@ public class PlayerController : MonoBehaviour
 
         if ((Input.GetButtonDown("Fire1") || DebugCommand == "Fire") && afterShotDelay == 0 && (thisRB2D.velocity.x == 0 || Crouching))
         {
-            FireBullet();
+            if (!Alter)
+            {
+                FireBullet();
+            }
+            else
+            {
+
+            }
         }
         else if (afterShotDelay > 0)
         {
@@ -214,6 +223,11 @@ public class PlayerController : MonoBehaviour
 
         }
         afterShotDelay = 10;
+    }
+
+    public void AlterAttack()
+    {
+
     }
 
     public void VerticalMove(float VAxis)
