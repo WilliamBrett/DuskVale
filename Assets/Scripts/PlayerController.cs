@@ -42,6 +42,11 @@ public class PlayerController : MonoBehaviour
 
     public string DebugCommand;
 
+    public GameObject StrikeR1;
+    public GameObject StrikeR2;
+    public GameObject StrikeL1;
+    public GameObject StrikeL2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +57,13 @@ public class PlayerController : MonoBehaviour
         thisAnim = this.GetComponent<Animator>();
         thistf = this.GetComponent<Transform>();
         AnimLock = 0;
+        if (Alter)
+        {
+            StrikeR1.SetActive(false);
+            StrikeR2.SetActive(false);
+            StrikeL1.SetActive(false);
+            StrikeL2.SetActive(false);
+        }
         ZoneIn();
     }
 
@@ -64,12 +76,25 @@ public class PlayerController : MonoBehaviour
     public void Update()
     {
         if (Time.timeScale == 0) { return; }
-        if (!(Crouching || afterShotDelay != 0 || AnimLock != 0)) {
+        if (!(Crouching || afterShotDelay != 0 || AnimLock != 0))
+        {
             HorizontalMove(Input.GetAxis("Horizontal"));
         }
         else if (AnimLock > 0)
         {
             AnimLock--;
+            if (Alter && AnimLock < 1)
+            {
+                if (StrikeR2.activeSelf)
+                {
+                    StrikeR2.SetActive(false);
+                }
+                if (StrikeL2.activeSelf)
+                {
+                    StrikeL2.SetActive(false);
+                }
+                //disable strike 1 and 2
+            }
         }
         onGround = Physics2D.OverlapCircle(BottomPoint.position, 0.3f, Ground);
         if (onGround)
@@ -93,15 +118,19 @@ public class PlayerController : MonoBehaviour
             thisRB2D.velocity = new Vector2(thisRB2D.velocity.y, (thisRB2D.velocity.y / 2));
         }
 
-        if ((Input.GetButtonDown("Fire1") || DebugCommand == "Fire") && afterShotDelay == 0 && (thisRB2D.velocity.x == 0 || Crouching))
+        if ((Input.GetButtonDown("Fire1") || DebugCommand == "Fire") && afterShotDelay == 0)
         {
             if (!Alter)
             {
-                FireBullet();
+                if (thisRB2D.velocity.x == 0 || Crouching)
+                {
+                    FireBullet();
+                }
+
             }
             else
             {
-
+                afterShotDelay = 10;
             }
         }
         else if (afterShotDelay > 0)
@@ -109,137 +138,174 @@ public class PlayerController : MonoBehaviour
             afterShotDelay--;
         }
         VerticalMove(Input.GetAxis("Vertical"));
-         if (thisRB2D.velocity.x > 0.1)
+        if (thisRB2D.velocity.x > 0.1)
         {
             thisSR.flipX = false;
+            if (Alter && AnimLock > 0)
+            {
+                if (AnimLock < 6)
+                {
+                    if (!StrikeR2.activeSelf)
+                    {
+                        StrikeR1.SetActive(false);//rightstrike2
+                        StrikeR2.SetActive(true);
+                    }
+                    
+                }
+                else
+                {
+                    if (!StrikeR1.activeSelf)
+                    {
+                        StrikeR1.SetActive(true);//rightstrike1
+                    }
+                    
+                }
+            }
         }
         else if (thisRB2D.velocity.x < -0.1)
         {
             thisSR.flipX = true;
+            if (Alter && AnimLock > 0)
+            {
+                if (AnimLock < 7)
+                {
+                    if (!StrikeR2.activeSelf)
+                    {
+                        StrikeR1.SetActive(false);//rightstrike2
+                        StrikeR2.SetActive(true);
+                    }
+                    
+                }
+                else
+                {
+                    if (!StrikeR1.activeSelf)
+                    {
+                        StrikeR1.SetActive(true);//rightstrike1
+                    }
+                    
+                }
+            }
         }
         thisAnim.SetFloat("moveSpeedY", thisRB2D.velocity.y);
         thisAnim.SetBool("onGround", onGround);
         thisAnim.SetFloat("moveSpeedX", Math.Abs(thisRB2D.velocity.x));
         thisAnim.SetFloat("afterShotDelay", afterShotDelay);
         thisAnim.SetBool("Crouching", Crouching);
+        
     }
 
-    public void ZoneIn()
-    {
-        Metadata = GameObject.FindGameObjectsWithTag("Metadata");
-        if (Metadata.Length != 0)
+        public void ZoneIn()
         {
-            thistf.position = Metadata[0].GetComponent<MetadataRecord>().GetSpawn(SpawnID);
+            Metadata = GameObject.FindGameObjectsWithTag("Metadata");
+            if (Metadata.Length != 0)
+            {
+                thistf.position = Metadata[0].GetComponent<MetadataRecord>().GetSpawn(SpawnID);
+            }
+            else //error handling for cells without a metadata
+            {
+                thistf.position = new Vector3(0, 0, 0);
+            }
+            afterShotDelay = 0;
         }
-        else //error handling for cells without a metadata
-        {
-            thistf.position = new Vector3(0, 0, 0);
-        }
-        afterShotDelay = 0;
-    }
 
-    public void HorizontalMove(float HAxis)
-    {
+        public void HorizontalMove(float HAxis)
+        {
             thisRB2D.velocity = new Vector2(moveSpeed * HAxis, thisRB2D.velocity.y);
-        if (DebugCommand != null)
-        {
-            if (DebugCommand == "MoveLeft")
+            if (DebugCommand != null)
             {
-                thisRB2D.velocity = new Vector2(moveSpeed * -1, thisRB2D.velocity.y);
-            }
-            else if (DebugCommand == "MoveRight")
-            {
-                thisRB2D.velocity = new Vector2(moveSpeed * 1, thisRB2D.velocity.y);
-            }
-            
-        }
-    }
+                if (DebugCommand == "MoveLeft")
+                {
+                    thisRB2D.velocity = new Vector2(moveSpeed * -1, thisRB2D.velocity.y);
+                }
+                else if (DebugCommand == "MoveRight")
+                {
+                    thisRB2D.velocity = new Vector2(moveSpeed * 1, thisRB2D.velocity.y);
+                }
 
-    public void Jump(float VAxis)
-    {
-        if (VAxis >= 0 && afterShotDelay == 0)
-        {
-            Crouching = false;
-            if (onGround)
-            {
-                thisRB2D.velocity = new Vector2(thisRB2D.velocity.x, jumpForce);
-            }
-            else if (WJUnlocked && Physics2D.OverlapCircle(GripR.position, 0.2f, Ground))
-            {
-                thisRB2D.velocity = new Vector2(-moveSpeed * 2, jumpForce);
-                DJReady = true;
-                AnimLock = 15;
-            }
-            else if (WJUnlocked && Physics2D.OverlapCircle(GripL.position, 0.2f, Ground))
-            {
-                thisRB2D.velocity = new Vector2(moveSpeed * 2, jumpForce);
-                AnimLock = 15;
-                DJReady = true;
-            }
-            else if (DJReady && DJUnlocked && AnimLock == 0)
-            {
-                thisRB2D.velocity = new Vector2(thisRB2D.velocity.x, jumpForce);
-                DJReady = false;
             }
         }
-    }
 
-    public void Dash()
-    {
-        if (thisSR.flipX == true)
+        public void Jump(float VAxis)
         {
-            thisRB2D.velocity = new Vector2(moveSpeed * -5, 0);
+            if (VAxis >= 0 && afterShotDelay == 0)
+            {
+                Crouching = false;
+                if (onGround)
+                {
+                    thisRB2D.velocity = new Vector2(thisRB2D.velocity.x, jumpForce);
+                }
+                else if (WJUnlocked && Physics2D.OverlapCircle(GripR.position, 0.2f, Ground))
+                {
+                    thisRB2D.velocity = new Vector2(-moveSpeed * 2, jumpForce);
+                    DJReady = true;
+                    AnimLock = 15;
+                }
+                else if (WJUnlocked && Physics2D.OverlapCircle(GripL.position, 0.2f, Ground))
+                {
+                    thisRB2D.velocity = new Vector2(moveSpeed * 2, jumpForce);
+                    AnimLock = 15;
+                    DJReady = true;
+                }
+                else if (DJReady && DJUnlocked && AnimLock == 0)
+                {
+                    thisRB2D.velocity = new Vector2(thisRB2D.velocity.x, jumpForce);
+                    DJReady = false;
+                }
+            }
         }
-        else
-        {
-            thisRB2D.velocity = new Vector2(moveSpeed * 5, 0);
-        }
-        AnimLock = 30;
-    }
 
-    public void FireBullet()
-    {
-        if (thisSR.flipX)
+        public void Dash()
         {
-            if (!Crouching){
-                Instantiate(Bullet, FirePointLeft.position, FirePointLeft.rotation);
+            if (thisSR.flipX == true)
+            {
+                thisRB2D.velocity = new Vector2(moveSpeed * -5, 0);
             }
             else
             {
-                Instantiate(Bullet, FirePointBottomLeft.position, FirePointBottomLeft.rotation);
+                thisRB2D.velocity = new Vector2(moveSpeed * 5, 0);
             }
-
+            AnimLock = 30;
         }
-        else
+
+        public void FireBullet()
         {
-            if (!Crouching)
+            if (thisSR.flipX)
             {
-                Instantiate(Bullet, FirePointRight.position, FirePointRight.rotation);
+                if (!Crouching) {
+                    Instantiate(Bullet, FirePointLeft.position, FirePointLeft.rotation);
+                }
+                else
+                {
+                    Instantiate(Bullet, FirePointBottomLeft.position, FirePointBottomLeft.rotation);
+                }
+
             }
             else
             {
-                Instantiate(Bullet, FirePointBottomRight.position, FirePointBottomRight.rotation);
+                if (!Crouching)
+                {
+                    Instantiate(Bullet, FirePointRight.position, FirePointRight.rotation);
+                }
+                else
+                {
+                    Instantiate(Bullet, FirePointBottomRight.position, FirePointBottomRight.rotation);
+                }
+
             }
-
+            afterShotDelay = 10;
         }
-        afterShotDelay = 10;
-    }
 
-    public void AlterAttack()
-    {
 
-    }
-
-    public void VerticalMove(float VAxis)
-    {
-        if (VAxis >= 0 || DebugCommand == "Crouch")
+        public void VerticalMove(float VAxis)
         {
-            Crouching = false;
+            if (VAxis >= 0 || DebugCommand == "Crouch")
+            {
+                Crouching = false;
+            }
+            else if (onGround)
+            {
+                thisRB2D.velocity = new Vector2(0, 0);
+                Crouching = true;
+            }
         }
-        else if (onGround)
-        {
-            thisRB2D.velocity = new Vector2(0, 0);
-            Crouching = true;
-        }
-    }
-}
+    } 
