@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 423962999}
   - component: {fileID: 423962998}
   m_Layer: 0
-  m_Name: ExitY
+  m_Name: ExitB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9acdd6fe0b47464093fec2832a4235b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ConnectedCell: 
-  ConnectedSpawn: 
+  ConnectedCell: GraveCell5
+  ConnectedSpawn: A
 --- !u!61 &423962999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423962997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 15, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 530321796}
   - component: {fileID: 530321795}
   m_Layer: 0
-  m_Name: ExitX
+  m_Name: ExitA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,8 +310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9acdd6fe0b47464093fec2832a4235b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ConnectedCell: 
-  ConnectedSpawn: 
+  ConnectedCell: ChurchCell1
+  ConnectedSpawn: B
 --- !u!61 &530321796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -346,7 +346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530321794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -15, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1436,8 +1436,8 @@ MonoBehaviour:
   CameraYMin: 0
   FarScenery: {fileID: 0}
   MidScenery: {fileID: 0}
-  SpawnA: {x: 0, y: 0, z: 0}
-  SpawnB: {x: 0, y: 0, z: 0}
+  SpawnA: {x: -13, y: -5, z: 0}
+  SpawnB: {x: 13, y: -5, z: 0}
   SpawnC: {x: 0, y: 0, z: 0}
   SpawnD: {x: 0, y: 0, z: 0}
 --- !u!4 &823072030
