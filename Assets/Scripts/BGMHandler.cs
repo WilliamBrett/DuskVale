@@ -7,7 +7,7 @@ public class BGMHandler : MonoBehaviour
 {
     private bool BGMLoaded;
     private AudioSource CurBGM;
-    private GameObject CurBGMPlayer;
+    public GameObject CurBGMPlayer;
     public string curBGM;
     public GameObject TitleBGM;
     public GameObject FortBGM;
@@ -158,9 +158,30 @@ public class BGMHandler : MonoBehaviour
                 curBGM = "Grave";
                 StartBGM(GraveBGM);
                 return;
+            case "ChurchCell1":
+                curBGM = "Church";
+                StartBGM(ChapelBGM);
+                return;
+            case "ChurchCell2":
+                curBGM = "Church";
+                StartBGM(ChapelBGM);
+                return;
+            case "ChurchCell3":
+                curBGM = "Church";
+                StartBGM(ChapelBGM);
+                return;
+            case "ChurchCell4":
+                curBGM = "Church";
+                StartBGM(ChapelBGM);
+                return;
+            case "ChurchCell5":
+                curBGM = "Church";
+                StartBGM(ChapelBGM);
+                return;
             default:
                 CurBGMPlayer = null;
                 CurBGM = null;
+                curBGM = "";
                 BGMLoaded = true;
                 return;
         }

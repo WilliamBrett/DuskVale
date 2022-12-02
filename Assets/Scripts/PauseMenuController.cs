@@ -130,6 +130,7 @@ public class PauseMenuController : MonoBehaviour
     { 
         //destroy all persistent objects
         Destroy(PlayerRef);
+        if (GetComponentInChildren<BGMHandler>().CurBGMPlayer != null) { Destroy(GetComponentInChildren<BGMHandler>().CurBGMPlayer); }
         //Destroy(EventSystemRef);
         Time.timeScale = 1f;
         SceneManager.LoadScene("TitleMenu");

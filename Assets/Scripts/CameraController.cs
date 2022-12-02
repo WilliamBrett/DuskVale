@@ -40,23 +40,6 @@ public class CameraController : MonoBehaviour
             CameraYMax = Metadata[0].GetComponent<MetadataRecord>().CameraYMax;
             CameraYMin = Metadata[0].GetComponent<MetadataRecord>().CameraYMin;
         }
-        //metadata camera setting error handling
-        if (CameraXMax.Equals(null))
-        {
-            CameraXMax = 9999;
-        }
-        if (CameraXMax.Equals(null))
-        {
-            CameraXMin = -9999;
-        }
-        if (CameraXMax.Equals(null))
-        {
-            CameraYMax = 9999;
-        }
-        if (CameraXMax.Equals(null))
-        {
-            CameraYMin = 9999;
-        }
     }
 
 

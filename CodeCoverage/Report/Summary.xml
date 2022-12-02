@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>11/20/2022 - 2:11:07 PM</Generatedon>
+    <Generatedon>12/1/2022 - 11:11:59 PM</Generatedon>
     <Parser>MultiReportParser (29x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
-    <Classes>30</Classes>
-    <Files>30</Files>
-    <Coveredlines>1555</Coveredlines>
-    <Uncoveredlines>189</Uncoveredlines>
-    <Coverablelines>1744</Coverablelines>
-    <Totallines>2671</Totallines>
-    <Linecoverage>89.1</Linecoverage>
+    <Classes>33</Classes>
+    <Files>33</Files>
+    <Coveredlines>2060</Coveredlines>
+    <Uncoveredlines>144</Uncoveredlines>
+    <Coverablelines>2204</Coverablelines>
+    <Totallines>3057</Totallines>
+    <Linecoverage>93.4</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
   </Summary>
   <Coverage>
-    <Assembly name="GameAssembly" classes="29" coverage="87.3" coveredlines="1136" coverablelines="1301" totallines="2121" branchcoverage="" coveredbranches="0" totalbranches="0">
+    <Assembly name="GameAssembly" classes="32" coverage="91.9" coveredlines="1376" coverablelines="1497" totallines="2281" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="AlterStrike" coverage="0" coveredlines="0" coverablelines="6" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="AngelController" coverage="100" coveredlines="59" coverablelines="59" totallines="90" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="AngelHitbox" coverage="100" coveredlines="11" coverablelines="11" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="AngelTrigger" coverage="100" coveredlines="12" coverablelines="12" totallines="29" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="BGMHandler" coverage="69.5" coveredlines="98" coverablelines="141" totallines="201" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BGMHandler" coverage="91.9" coveredlines="182" coverablelines="198" totallines="225" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="BGMPersistance" coverage="100" coveredlines="3" coverablelines="3" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="CameraController" coverage="75.4" coveredlines="46" coverablelines="61" totallines="95" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="CameraController" coverage="91" coveredlines="61" coverablelines="67" totallines="78" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="CellPathway" coverage="100" coveredlines="11" coverablelines="11" totallines="26" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="DarkWizardController" coverage="100" coveredlines="84" coverablelines="84" totallines="127" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="DarkWizardTrigger" coverage="100" coveredlines="19" coverablelines="19" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0" />
@@ -28,26 +30,27 @@
       <Class name="EventSystemSpawner" coverage="100" coveredlines="7" coverablelines="7" totallines="17" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="ExitButton" coverage="0" coveredlines="0" coverablelines="1" totallines="8" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="HealthBarController" coverage="100" coveredlines="17" coverablelines="17" totallines="40" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="HealthManager" coverage="93.7" coveredlines="45" coverablelines="48" totallines="72" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="HellcatController" coverage="89.2" coveredlines="25" coverablelines="28" totallines="53" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="HealthManager" coverage="100" coveredlines="48" coverablelines="48" totallines="72" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="HellcatController" coverage="90.3" coveredlines="28" coverablelines="31" totallines="57" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="HellcatMobController" coverage="80.7" coveredlines="42" coverablelines="52" totallines="85" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="LoadChecker" coverage="42.8" coveredlines="3" coverablelines="7" totallines="17" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="LoadManager" coverage="77.7" coveredlines="56" coverablelines="72" totallines="118" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="MainMenuParallax" coverage="100" coveredlines="11" coverablelines="11" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="MainMenuStart" coverage="85" coveredlines="17" coverablelines="20" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="MetadataRecord" coverage="80.9" coveredlines="17" coverablelines="21" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="PauseMenuController" coverage="88.4" coveredlines="161" coverablelines="182" totallines="231" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="PickupHandler" coverage="89.5" coveredlines="43" coverablelines="48" totallines="96" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="MetadataRecord" coverage="85.7" coveredlines="18" coverablelines="21" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PauseMenuController" coverage="96.5" coveredlines="195" coverablelines="202" totallines="238" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PickupHandler" coverage="95.8" coveredlines="46" coverablelines="48" totallines="96" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="PlatformEffector" coverage="100" coveredlines="19" coverablelines="19" totallines="42" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="PlayerController" coverage="86.7" coveredlines="137" coverablelines="158" totallines="231" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PlayerController" coverage="88.7" coveredlines="220" coverablelines="248" totallines="311" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="PlayerRecord" coverage="100" coveredlines="15" coverablelines="15" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="ProjectileManager" coverage="100" coveredlines="39" coverablelines="39" totallines="82" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="SaveManager" coverage="86.2" coveredlines="75" coverablelines="87" totallines="114" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="SkeletonAwake" coverage="100" coveredlines="7" coverablelines="7" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="SkeletonController" coverage="94.2" coveredlines="65" coverablelines="69" totallines="107" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="TestReferenceLedger" coverage="100" coveredlines="3" coverablelines="3" totallines="21" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
-    <Assembly name="PlayMode" classes="1" coverage="94.5" coveredlines="419" coverablelines="443" totallines="550" branchcoverage="" coveredbranches="0" totalbranches="0">
-      <Class name="TestSuite" coverage="94.5" coveredlines="419" coverablelines="443" totallines="550" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    <Assembly name="PlayMode" classes="1" coverage="96.7" coveredlines="684" coverablelines="707" totallines="776" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="TestSuite" coverage="96.7" coveredlines="684" coverablelines="707" totallines="776" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
   </Coverage>
 </CoverageReport>

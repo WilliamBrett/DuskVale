@@ -38,19 +38,22 @@ public class TestSuite : InputTestFixture
     private static readonly int HorizontalMovementTestID = 9;
     private static readonly int JumpTestID = 10;
     private static readonly int DashTestID = 11;
-    private static readonly int CombatTestID = 12;
-    private static readonly int DarkWizardTestID = 13;
-    private static readonly int AngelTestID = 14;
-    private static readonly int HellCatTestID = 15;
-    private static readonly int CameraLimitTestID = 16;
-    private static readonly int PlatformEffectorTestID = 17;
-    private static readonly int HPBarTestID = 18;
-    private static readonly int PickupRestoreTestID = 19;
-    private static readonly int PauseMenuTestID = 20;
-    private static readonly int SaveGameTestID = 21;
-    private static readonly int PauseTitleTestID = 22;
-    private static readonly int LoadGameTestID = 23;
-    private static readonly int PickupDestructionTestID = 24;
+    private static readonly int WallJumpTestID = 12;
+    private static readonly int CombatTestID = 13;
+    private static readonly int DarkWizardTestID = 14;
+    private static readonly int AngelTestID = 15;
+    private static readonly int HellCatTestID = 16;
+    private static readonly int CameraLimitTestID = 17;
+    private static readonly int PlatformEffectorTestID = 18;
+    private static readonly int HPBarTestID = 19;
+    private static readonly int PickupRestoreTestID = 20;
+    private static readonly int PauseMenuTestID = 21;
+    private static readonly int SaveGameTestID = 22;
+    private static readonly int PauseTitleTestID = 23;
+    private static readonly int LoadGameTestID = 24;
+    private static readonly int PickupDestructionTestID = 25;
+    private static readonly int AllBGMsTestID = 26;
+    private static readonly int PlayerAlterTestID = 27;
 
     public void GetTestRefs() => TestRefs = GameObject.FindGameObjectWithTag("TestData").GetComponent<TestReferenceLedger>();
 
@@ -285,6 +288,42 @@ public class TestSuite : InputTestFixture
     }
 
     [UnityTest, Order(12)]
+    public IEnumerator WallJumpTest()
+    {
+        while (TestsCompleted != WallJumpTestID - 1) { yield return null; }
+        bool SetToPass = true;
+        PCRef.thistf.position = new Vector3(12, 0, 0);
+        PCRef.DebugCommand = "MoveRight";
+        yield return new WaitForSeconds(1f);
+        PCRef.DebugCommand = "Null";
+        Vector3 pos1 = PCRef.thistf.localPosition;
+        PCRef.DebugCommand = "Jump";
+        yield return new WaitForSeconds(1f);
+        PCRef.DebugCommand = "Null";
+        Vector3 pos2 = PCRef.thistf.localPosition;
+        if (pos1.x == pos2.x)
+        {
+            SetToPass = false;
+        }
+        PCRef.thistf.position = new Vector3(-17, 0, 0);
+        PCRef.DebugCommand = "MoveLeft";
+        yield return new WaitForSeconds(1f);
+        PCRef.DebugCommand = "Null";
+        pos1 = PCRef.thistf.localPosition;
+        PCRef.DebugCommand = "Jump";
+        yield return new WaitForSeconds(1f);
+        PCRef.DebugCommand = "Null";
+        pos2 = PCRef.thistf.localPosition;
+        if (pos1.x == pos2.x)
+        {
+            SetToPass = false;
+        }
+        TestsCompleted = WallJumpTestID;
+        Assert.IsTrue(SetToPass);
+        yield return null;
+    }
+
+    [UnityTest, Order(13)]
     public IEnumerator CombatTest()
     {
         while (TestsCompleted != CombatTestID - 1) { yield return null; }
@@ -306,7 +345,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(13)]
+    [UnityTest, Order(14)]
     public IEnumerator DarkWizardTest()
     {
         while (TestsCompleted != DarkWizardTestID - 1) { yield return null; }
@@ -333,7 +372,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(14)]
+    [UnityTest, Order(15)]
     public IEnumerator AngelTest()
     {
         while (TestsCompleted != AngelTestID - 1) { yield return null; }
@@ -353,7 +392,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(15)]
+    [UnityTest, Order(16)]
     public IEnumerator HellCatTest()
     {
         while (TestsCompleted != HellCatTestID - 1) { yield return null; }
@@ -384,7 +423,7 @@ public class TestSuite : InputTestFixture
 
     
 
-    [UnityTest, Order(16)]
+    [UnityTest, Order(17)]
     public IEnumerator CameraLimitTest()
     {
 
@@ -411,7 +450,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(17)]
+    [UnityTest, Order(18)]
     public IEnumerator PlatformEffectorTest()
     {
         while (TestsCompleted != PlatformEffectorTestID - 1) { yield return null; }
@@ -427,7 +466,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(18)]
+    [UnityTest, Order(19)]
     public IEnumerator HPBarTest()
     {
         while (TestsCompleted != HPBarTestID - 1) { yield return null; }
@@ -440,7 +479,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(19)]
+    [UnityTest, Order(20)]
     public IEnumerator PickupRestoreTest()
     {
         while (TestsCompleted != PickupRestoreTestID - 1) { yield return null; }
@@ -452,7 +491,7 @@ public class TestSuite : InputTestFixture
         TestsCompleted = PickupRestoreTestID;
         yield return null;
     }
-    [UnityTest, Order(20)]
+    [UnityTest, Order(21)]
     public IEnumerator PauseMenuTest()
     {
         while (TestsCompleted != PauseMenuTestID - 1) { yield return null; }
@@ -463,7 +502,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(21)]
+    [UnityTest, Order(22)]
     public IEnumerator SaveGameTest()
     {
         while (TestsCompleted != SaveGameTestID - 1) { yield return null; }
@@ -471,14 +510,16 @@ public class TestSuite : InputTestFixture
         yield return new WaitForSeconds(3f);
         PCRef.thistf.position = new Vector3(-6, 13, 0);
         yield return new WaitForSeconds(3f);
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().SavePromptOpenClose();
         GameObject.FindGameObjectWithTag("SavePoint").GetComponent<SaveManager>().SaveGame();
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().SavePromptOpenClose();
         TestsCompleted = SaveGameTestID;
         Assert.Pass(); //If save happens successfully, it won't error out and reach this point. 
         
         yield return null;
     }
 
-    [UnityTest, Order(22)]
+    [UnityTest, Order(23)]
     public IEnumerator PauseTitleTest()
     {
         while (TestsCompleted != PauseTitleTestID - 1) { yield return null; }
@@ -508,7 +549,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(23)]
+    [UnityTest, Order(24)]
     public IEnumerator LoadGameTest()
     {
         while (TestsCompleted != LoadGameTestID - 1) { yield return null; }
@@ -523,7 +564,7 @@ public class TestSuite : InputTestFixture
         yield return null;
     }
 
-    [UnityTest, Order(24)]
+    [UnityTest, Order(25)]
     public IEnumerator PickupDestructionTest()
     {
         while (TestsCompleted != PickupDestructionTestID - 1) { yield return null; }
@@ -545,6 +586,191 @@ public class TestSuite : InputTestFixture
         {
             Assert.Fail();
         }
+        TestsCompleted = PickupDestructionTestID;
+        yield return null;
+    }
+
+    [UnityTest, Order(26)]
+    public IEnumerator AllBGMsTest()
+    {
+        while (TestsCompleted != AllBGMsTestID - 1) { yield return null; }
+        bool setToPass = true;
+        BGMHandler BGMref = GameObject.FindGameObjectWithTag("Canvas").GetComponentInChildren<BGMHandler>();
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/FortCell1.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Fort") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/FortCell2.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Fort") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/FortCell3.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Fort") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/FortCell4.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Fort") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/FortCell5.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Fort") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/SwampCell1.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Swamp") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/SwampCell2.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Swamp") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/SwampCell3.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Swamp") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/SwampCell4.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Swamp") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/SwampCell5.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Swamp") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/SwampCell6.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Swamp") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+        
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/GraveCell1.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Grave") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/GraveCell2.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Grave") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/GraveCell3.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Grave") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/GraveCell4.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Grave") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/GraveCell5.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Grave") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/ChurchCell1.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Church") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/ChurchCell2.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Church") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/ChurchCell3.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Church") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/ChurchCell4.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Church") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/ChurchCell5.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        if (BGMref.curBGM != "Church") { setToPass = false; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(5f);
+
+        Assert.IsTrue(setToPass);
+        TestsCompleted = AllBGMsTestID;
+    }
+
+    [UnityTest, Order(27)]
+    public IEnumerator PlayerAlterTest()
+    {
+        while (TestsCompleted != (PlayerAlterTestID - 1)) { yield return null; }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/FortCell5.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        yield return new WaitForSeconds(3f);
+        GameObject[] PCs = GameObject.FindGameObjectsWithTag("Player");
+        if (PCs.Length != 0)
+        {
+            PlayerRef = PCs[0];
+            PCHP = PlayerRef.GetComponent<HealthManager>();
+        }
+        else
+        {
+            Assert.Fail();
+        }
+        PCHP.TakeDamage(999);
+        GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenuController>().GameOverScreen.SetActive(false);
+        GameObject.FindGameObjectWithTag("TestData").GetComponent<TestReferenceLedger>().SpawnAlter();
+        PCs = GameObject.FindGameObjectsWithTag("Player");
+        if (PCs.Length != 0)
+        {
+            PlayerRef = PCs[0];
+            PCRef = PlayerRef.GetComponent<PlayerController>();
+            PCHP = PlayerRef.GetComponent<HealthManager>();
+        }
+        else
+        {
+            Assert.Fail();
+        }
+        EditorSceneManager.LoadSceneInPlayMode("Assets/Scenes/DevCell.unity", new LoadSceneParameters(LoadSceneMode.Single));
+        PCRef.DebugCommand = "MoveRight";
+        yield return new WaitForSeconds(0.1f);
+        PCRef.DebugCommand = "Fire";
+        yield return new WaitForSeconds(3f);
+        PCRef.DebugCommand = null;
+        PCRef.DebugCommand = "MoveLeft";
+        yield return new WaitForSeconds(0.1f);
+        PCRef.DebugCommand = "Fire";
+        yield return new WaitForSeconds(3f);
+        PCRef.DebugCommand = null;
+        GameObject[] BulletRefs = GameObject.FindGameObjectsWithTag("Projectile");
+        Assert.AreEqual(BulletRefs.Length, 0);
+        TestsCompleted = PlayerAlterTestID;
         yield return null;
     }
 }

@@ -11,6 +11,11 @@ public class TestReferenceLedger : MonoBehaviour
     //TestCell
     public GameObject Skeleton1;
     public GameObject Skeleton2;
+    public GameObject Alter;
 
+    public void SpawnAlter()
+    {
+        Instantiate(Alter, new Vector3(0, 0, 0), new Quaternion());
+    }
    
 }
