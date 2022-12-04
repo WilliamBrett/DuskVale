@@ -12,6 +12,7 @@ public class PickupHandler : MonoBehaviour
     //pickupId 2 = /double jump unlock
     //pickupId 3 = /wall jump unlock
     //pickupId 4 = /dash unlock
+    //pickupId 5 = Gamewinner
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,9 @@ public class PickupHandler : MonoBehaviour
                     Destroy(gameObject);
                 }
                 return;
+            case 5:
+                return;
+
             default:
                 return;
 

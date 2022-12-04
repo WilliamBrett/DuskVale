@@ -1,20 +1,23 @@
 # DuskVale
  A Metroidvania style video game created as a capstone project
 
+Sprites
 
-Audio Library Asset Lisences
+The following are free assets under the Standard Unity Asset Store EULA
+Dark Brown GUI Kit by ARCEY (https://abakan735121.wixsite.com/website)
+GothicVania Cemetery by Ansimuz (https://ansimuz.com/site/)
+GothicVania Church by Ansimuz (https://ansimuz.com/site/)
+GothicVania Swamp by Ansimuz (https://ansimuz.com/site/)
+GothicVania Town byAnsimuz (https://ansimuz.com/site/)
+Platformer Set by Sdazi Art (https://www.artstation.com/szadiart)
 
-Echoes of Time v2 by Kevin MacLeod http://incompetech.com
-Creative Commons — Attribution 4.0 International — CC BY 4.0
-Free Download / Stream: https://bit.ly/echoes-of-time-v2
-Music promoted by Audio Library https://youtu.be/BNE9uj3CQ6s
+The following is a free asset provided without any formal license
+Roguelike Items by @JoeCreates (https://twitter.com/JoeCreates)
 
-Lonely Road by From Ashes https://soundcloud.com/fromashesedm
-Creative Commons — Attribution 3.0 Unported — CC BY 3.0
-Free Download / Stream: https://bit.ly/lonely-road-from-ashes
-Music promoted by Audio Library https://youtu.be/emnqVhZ8TT8 
-
-Alone by Pold https://soundcloud.com/pold-music/alone
-Creative Commons — Attribution-ShareAlike 3.0 Unported — CC BY-SA 3.0
-Free Download / Stream: https://bit.ly/_alone
-Music promoted by Audio Library https://youtu.be/crsKDKeMr2k 
+Audio
+The following audio clips are used, unaltered, under the Creative Commons License. The Creative Commons License can be viewed at https://creativecommons.org/licenses/by/3.0/
+Echoes of Time V2 by Kevin MacLeod
+Lonely Road by From Ashes
+Night Music by Kevin MacLeod
+Alone by Pold
+Under Water by Silent Partner 
